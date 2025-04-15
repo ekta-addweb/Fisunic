@@ -1,0 +1,1355 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <title>Fisunic</title>
+      <!-- Favicons -->
+      <link rel="icon" href="assets/images/logo.svg">
+      <!-- build:css -->
+      <link href="dist/assets/css/app.min.css" rel="stylesheet" type="text/css">
+      <!-- endbuild -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!--font-awesome-->
+      <!-- Swiper CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+     
+   </head>
+   <body>
+      <!--header start-->
+      <header class="border-bottom">
+         <div class="container">
+           <div class="header-row d-flex flex-wrap align-items-center justify-content-between">
+             <a href="/">
+               <img src="assets/images/logo.svg" alt="LOGO">
+             </a>
+             <form class="col-6" role="search">
+              <div class="search-wrapper">
+                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+              </div>
+            </form>            
+             <div class="dropdown">
+               <a href="#" class="d-block text-decoration-none dropdown-toggle text-dark" data-bs-toggle="dropdown" aria-expanded="false">
+                 <span>$ USD</span>
+               </a>
+               <ul class="dropdown-menu text-small my-2">
+                 <li><a class="dropdown-item" href="#">USD1</a></li>
+                 <li><a class="dropdown-item" href="#">USD2</a></li>
+                 <li><a class="dropdown-item" href="#">USD3</a></li>
+                 <li><hr class="dropdown-divider"></li>
+                 <li><a class="dropdown-item" href="#">Sign out</a></li>
+               </ul>
+             </div>
+
+             <div class="dropdown">
+               <a href="#" class="d-block text-decoration-none dropdown-toggle text-dark" data-bs-toggle="dropdown" aria-expanded="false">
+                 <span><i class="fa-solid fa-globe"></i> English</span>
+               </a>
+               <ul class="dropdown-menu dropdown-menu-end text-small my-2">
+                 <li><a class="dropdown-item" href="#">English1</a></li>
+                 <li><a class="dropdown-item" href="#">English2</a></li>
+                 <li><a class="dropdown-item" href="#">English3</a></li>
+               </ul>
+             </div>
+
+             <i class="fa-regular fa-user text-primary"></i>
+           </div>
+         </div>
+       </header>
+      <!--header end-->
+
+      <!--nav start-->
+      <section class="nav py-3">
+         <div class="container">
+           <nav class="navbar navbar-expand-lg">
+             <div class="container-fluid">
+               <button class="navbar-toggler my-3" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+               </button>
+
+               <div class="collapse navbar-collapse" id="mainNavbar">
+                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                   <li class="nav-item">
+                     <a class="nav-link active" href="#">All Categories</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">Blog</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">Contact Us</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">About Us</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">Return and Payment</a>
+                   </li>
+                 </ul>
+                 <div class="d-flex align-items-center">
+                   <img src="assets/images/delete-Buttons.svg" alt="delete-btn" style="cursor: pointer;">
+                 </div>
+               </div>
+             </div>
+           </nav>
+         </div>
+       </section>
+      <!--nav end-->
+
+      <!--hero-section start-->
+      <section class="hero">
+         <div class="container">
+            <div class="row hero-row d-flex flex-wrap justify-content-between align-items-center">
+               <div class="hero-left col-md-6">
+                  <h2>Physiotherapy Equipements</h2>
+                  <p>Cutting-edge physiotherapy equipment: Empowering recovery and enhancing mobility for optimal rehabilitation.</p>
+                  <button class="btn">Discover Now</button>
+               </div>
+               <div class="hero-right col-md-6">
+                  <img src="assets/images/hero-image.svg" alt="hero-image" class="img-fluid hero-img">
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--hero-section end-->
+
+      <!--Category start-->
+      <section class="categories">
+        <div class="container">
+          <div class="cate-heading d-flex justify-content-between flex-wrap align-items-center mb-3 gap-5">
+            <div class="c-heading-left d-flex align-items-center gap-2 text-primary">
+              <img src="assets/images/category.svg" alt="Category Icon">
+              <h5 class="mb-0">Browse By Category</h5>
+            </div>
+          
+            <div class="c-heading-right d-flex align-items-center gap-2">
+              <div class="category-prev rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                <i class="fa-solid fa-arrow-left"></i>
+              </div>
+              <div class="category-next rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>          
+          <div class="swiper categorySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
+                <img src="assets/images/con-laser-img.svg">
+                <p>Laser</p>
+              </div>
+
+              <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
+                <img src="assets/images/con-laser-img.svg">
+                <p>Laser</p>
+              </div>
+
+              <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
+                <img src="assets/images/con-laser-img.svg">
+                <p>Laser</p>
+              </div>
+
+              <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
+                <img src="assets/images/con-laser-img.svg">
+                <p>Laser</p>
+              </div>
+
+              <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
+                <img src="assets/images/con-laser-img.svg">
+                <p>Laser</p>
+              </div>
+
+              <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
+                <img src="assets/images/con-laser-img.svg">
+                <p>Laser</p>
+              </div>
+
+              <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
+                <img src="assets/images/con-laser-img.svg">
+                <p>Laser</p>
+              </div>
+
+              <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
+                <img src="assets/images/con-laser-img.svg">
+                <p>Laser</p>
+              </div>
+            </div>
+          </div>        
+        </div>
+      </section>
+      <!--Category end-->
+
+      <!--products start-->
+      <section class="product">
+        <div class="container">
+          <h2 class="title">Our Products</h2>
+      
+          <!-- Tabs-->
+          <ul class="nav nav-tabs justify-content-center flex-wrap" id="productTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab">All</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="recent-tab" data-bs-toggle="tab" data-bs-target="#recent" type="button" role="tab">Recent</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="machines-tab" data-bs-toggle="tab" data-bs-target="#machines" type="button" role="tab">Machines</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="equipments-tab" data-bs-toggle="tab" data-bs-target="#equipments" type="button" role="tab">Equipments</button>
+            </li>
+          </ul>
+      
+          <!-- Tabs Content -->
+          <div class="tab-content" id="productTabsContent">
+            <div class="tab-pane fade show active" id="all" role="tabpanel">
+              <!--ALL Crads-->
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4" id="all">
+                <div class="col">
+                  <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/images/product1.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
+                    <div class="card-hover d-flex align-items-center justify-content-center">
+                     <div class="hover-btn">
+                       <button class="h-btn1">Add to cart</button>
+                       <button class="h-btn2">Rent Now</button>
+                     </div>
+                   </div>
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Lorem Ipsum</h5>
+                      <p class="card-text">Lorem Ipsum</p>
+                      <p class="card-price">$ 675.00</p>
+                      <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
+                    </div>
+                  </div>
+                </div>
+                 <!--card 2-->
+                <div class="col">
+                   <div class="card h-100 shadow-sm border-0">
+                     <img src="assets/images/product1.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
+                     <div class="card-hover d-flex align-items-center justify-content-center">
+                       <div class="hover-btn">
+                         <button class="h-btn1">Add to cart</button>
+                         <button class="h-btn2">Rent Now</button>
+                       </div>
+                     </div>
+                     <div class="card-body d-flex flex-column">
+                       <h5 class="card-title">Lorem Ipsum</h5>
+                       <p class="card-text">Lorem Ipsum</p>
+                       <p class="card-price">$ 675.00</p>
+                       <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
+                     </div>
+                   </div>
+                 </div>
+              <!--card 3-->
+                 <div class="col">
+                   <div class="card h-100 shadow-sm border-0">
+                     <img src="assets/images/product2.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
+                     <div class="card-body d-flex flex-column">
+                       <h5 class="card-title">Lorem Ipsum</h5>
+                       <p class="card-text">Lorem Ipsum</p>
+                       <p class="card-price">$ 675.00</p>
+                       <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
+                       <div class="card-hover d-flex align-items-center justify-content-center">
+                         <div class="hover-btn">
+                           <button class="h-btn1">Add to cart</button>
+                           <button class="h-btn2">Rent Now</button>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+              <!--card 4-->
+                 <div class="col">
+                   <div class="card h-100 shadow-sm border-0">
+                     <img src="assets/images/product1.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
+                     <div class="card-body d-flex flex-column">
+                       <h5 class="card-title">Lorem Ipsum</h5>
+                       <p class="card-text">Lorem Ipsum</p>
+                       <p class="card-price">$ 675.00</p>
+                       <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
+                     </div>
+                     <div class="card-hover d-flex align-items-center justify-content-center">
+                       <div class="hover-btn">
+                         <button class="h-btn1">Add to cart</button>
+                         <button class="h-btn2">Rent Now</button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+              <!--card 5-->
+                 <div class="col">
+                   <div class="card h-100 shadow-sm border-0">
+                     <img src="assets/images/product3.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
+                     <div class="card-body d-flex flex-column">
+                       <h5 class="card-title">Lorem Ipsum</h5>
+                       <p class="card-text">Lorem Ipsum</p>
+                       <p class="card-price">$ 675.00</p>
+                       <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
+                     </div>
+                     <div class="card-hover d-flex align-items-center justify-content-center">
+                       <div class="hover-btn">
+                         <button class="h-btn1">Add to cart</button>
+                         <button class="h-btn2">Rent Now</button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+              <!--card 6-->
+                 <div class="col">
+                   <div class="card h-100 shadow-sm border-0">
+                     <img src="assets/images/product4.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
+                     <div class="card-body d-flex flex-column">
+                       <h5 class="card-title">Lorem Ipsum</h5>
+                       <p class="card-text">Lorem Ipsum</p>
+                       <p class="card-price">$ 675.00</p>
+                       <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
+                     </div>
+                     <div class="card-hover d-flex align-items-center justify-content-center">
+                       <div class="hover-btn">
+                         <button class="h-btn1">Add to cart</button>
+                         <button class="h-btn2">Rent Now</button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+              <!--card 7-->
+                 <div class="col">
+                   <div class="card h-100 shadow-sm border-0">
+                     <img src="assets/images/product5.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
+                     <div class="card-body d-flex flex-column">
+                       <h5 class="card-title">Lorem Ipsum</h5>
+                       <p class="card-text">Lorem Ipsum</p>
+                       <p class="card-price">$ 675.00</p>
+                       <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
+                     </div>
+                     <div class="card-hover d-flex align-items-center justify-content-center">
+                       <div class="hover-btn">
+                         <button class="h-btn1">Add to cart</button>
+                         <button class="h-btn2">Rent Now</button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+              <!--card 8-->
+                 <div class="col">
+                   <div class="card h-100 shadow-sm border-0">
+                     <img src="assets/images/product6.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
+                     <div class="card-body d-flex flex-column">
+                       <h5 class="card-title">Lorem Ipsum</h5>
+                       <p class="card-text">Lorem Ipsum</p>
+                       <p class="card-price">$ 675.00</p>
+                       <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
+                     </div>
+                     <div class="card-hover d-flex align-items-center justify-content-center">
+                       <div class="hover-btn">
+                         <button class="h-btn1">Add to cart</button>
+                         <button class="h-btn2">Rent Now</button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+              </div>
+            </div>
+            
+            <!--Recent Cards-->
+            <div class="tab-pane fade" id="recent" role="tabpanel">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4" id="all">
+                <div class="col">
+                  <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/images/product1.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
+                    <div class="card-hover d-flex align-items-center justify-content-center">
+                     <div class="hover-btn">
+                       <button class="h-btn1">Add to cart</button>
+                       <button class="h-btn2">Rent Now</button>
+                     </div>
+                   </div>
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Lorem Ipsum</h5>
+                      <p class="card-text">Lorem Ipsum</p>
+                      <p class="card-price">$ 675.00</p>
+                      <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
+                    </div>
+                  </div>
+                </div>
+                 <!--card 2-->
+                <div class="col">
+                   <div class="card h-100 shadow-sm border-0">
+                     <img src="assets/images/product1.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
+                     <div class="card-hover d-flex align-items-center justify-content-center">
+                       <div class="hover-btn">
+                         <button class="h-btn1">Add to cart</button>
+                         <button class="h-btn2">Rent Now</button>
+                       </div>
+                     </div>
+                     <div class="card-body d-flex flex-column">
+                       <h5 class="card-title">Lorem Ipsum</h5>
+                       <p class="card-text">Lorem Ipsum</p>
+                       <p class="card-price">$ 675.00</p>
+                       <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
+                     </div>
+                   </div>
+                 </div>
+              <!--card 3-->
+                 <div class="col">
+                   <div class="card h-100 shadow-sm border-0">
+                     <img src="assets/images/product2.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
+                     <div class="card-body d-flex flex-column">
+                       <h5 class="card-title">Lorem Ipsum</h5>
+                       <p class="card-text">Lorem Ipsum</p>
+                       <p class="card-price">$ 675.00</p>
+                       <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
+                       <div class="card-hover d-flex align-items-center justify-content-center">
+                         <div class="hover-btn">
+                           <button class="h-btn1">Add to cart</button>
+                           <button class="h-btn2">Rent Now</button>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+              <!--card 4-->
+                 <div class="col">
+                   <div class="card h-100 shadow-sm border-0">
+                     <img src="assets/images/product1.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
+                     <div class="card-body d-flex flex-column">
+                       <h5 class="card-title">Lorem Ipsum</h5>
+                       <p class="card-text">Lorem Ipsum</p>
+                       <p class="card-price">$ 675.00</p>
+                       <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
+                     </div>
+                     <div class="card-hover d-flex align-items-center justify-content-center">
+                       <div class="hover-btn">
+                         <button class="h-btn1">Add to cart</button>
+                         <button class="h-btn2">Rent Now</button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+              <!--card 5-->
+                 <div class="col">
+                   <div class="card h-100 shadow-sm border-0">
+                     <img src="assets/images/product3.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
+                     <div class="card-body d-flex flex-column">
+                       <h5 class="card-title">Lorem Ipsum</h5>
+                       <p class="card-text">Lorem Ipsum</p>
+                       <p class="card-price">$ 675.00</p>
+                       <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
+                     </div>
+                     <div class="card-hover d-flex align-items-center justify-content-center">
+                       <div class="hover-btn">
+                         <button class="h-btn1">Add to cart</button>
+                         <button class="h-btn2">Rent Now</button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+              <!--card 6-->
+                 <div class="col">
+                   <div class="card h-100 shadow-sm border-0">
+                     <img src="assets/images/product4.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
+                     <div class="card-body d-flex flex-column">
+                       <h5 class="card-title">Lorem Ipsum</h5>
+                       <p class="card-text">Lorem Ipsum</p>
+                       <p class="card-price">$ 675.00</p>
+                       <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
+                     </div>
+                     <div class="card-hover d-flex align-items-center justify-content-center">
+                       <div class="hover-btn">
+                         <button class="h-btn1">Add to cart</button>
+                         <button class="h-btn2">Rent Now</button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+              <!--card 7-->
+                 <div class="col">
+                   <div class="card h-100 shadow-sm border-0">
+                     <img src="assets/images/product5.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
+                     <div class="card-body d-flex flex-column">
+                       <h5 class="card-title">Lorem Ipsum</h5>
+                       <p class="card-text">Lorem Ipsum</p>
+                       <p class="card-price">$ 675.00</p>
+                       <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
+                     </div>
+                     <div class="card-hover d-flex align-items-center justify-content-center">
+                       <div class="hover-btn">
+                         <button class="h-btn1">Add to cart</button>
+                         <button class="h-btn2">Rent Now</button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+              <!--card 8-->
+                 <div class="col">
+                   <div class="card h-100 shadow-sm border-0">
+                     <img src="assets/images/product6.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
+                     <div class="card-body d-flex flex-column">
+                       <h5 class="card-title">Lorem Ipsum</h5>
+                       <p class="card-text">Lorem Ipsum</p>
+                       <p class="card-price">$ 675.00</p>
+                       <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
+                     </div>
+                     <div class="card-hover d-flex align-items-center justify-content-center">
+                       <div class="hover-btn">
+                         <button class="h-btn1">Add to cart</button>
+                         <button class="h-btn2">Rent Now</button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+              </div>
+            </div>
+            
+            <!--Machines Cards-->
+            <div class="tab-pane fade" id="machines" role="tabpanel">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4" id="all">
+                <div class="col">
+                  <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/images/product1.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
+                    <div class="card-hover d-flex align-items-center justify-content-center">
+                     <div class="hover-btn">
+                       <button class="h-btn1">Add to cart</button>
+                       <button class="h-btn2">Rent Now</button>
+                     </div>
+                   </div>
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Lorem Ipsum</h5>
+                      <p class="card-text">Lorem Ipsum</p>
+                      <p class="card-price">$ 675.00</p>
+                      <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
+                    </div>
+                  </div>
+                </div>
+                 <!--card 2-->
+                <div class="col">
+                   <div class="card h-100 shadow-sm border-0">
+                     <img src="assets/images/product1.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
+                     <div class="card-hover d-flex align-items-center justify-content-center">
+                       <div class="hover-btn">
+                         <button class="h-btn1">Add to cart</button>
+                         <button class="h-btn2">Rent Now</button>
+                       </div>
+                     </div>
+                     <div class="card-body d-flex flex-column">
+                       <h5 class="card-title">Lorem Ipsum</h5>
+                       <p class="card-text">Lorem Ipsum</p>
+                       <p class="card-price">$ 675.00</p>
+                       <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
+                     </div>
+                   </div>
+                 </div>
+              <!--card 3-->
+                 <div class="col">
+                   <div class="card h-100 shadow-sm border-0">
+                     <img src="assets/images/product2.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
+                     <div class="card-body d-flex flex-column">
+                       <h5 class="card-title">Lorem Ipsum</h5>
+                       <p class="card-text">Lorem Ipsum</p>
+                       <p class="card-price">$ 675.00</p>
+                       <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
+                       <div class="card-hover d-flex align-items-center justify-content-center">
+                         <div class="hover-btn">
+                           <button class="h-btn1">Add to cart</button>
+                           <button class="h-btn2">Rent Now</button>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+              <!--card 4-->
+                 <div class="col">
+                   <div class="card h-100 shadow-sm border-0">
+                     <img src="assets/images/product1.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
+                     <div class="card-body d-flex flex-column">
+                       <h5 class="card-title">Lorem Ipsum</h5>
+                       <p class="card-text">Lorem Ipsum</p>
+                       <p class="card-price">$ 675.00</p>
+                       <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
+                     </div>
+                     <div class="card-hover d-flex align-items-center justify-content-center">
+                       <div class="hover-btn">
+                         <button class="h-btn1">Add to cart</button>
+                         <button class="h-btn2">Rent Now</button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+              <!--card 5-->
+                 <div class="col">
+                   <div class="card h-100 shadow-sm border-0">
+                     <img src="assets/images/product3.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
+                     <div class="card-body d-flex flex-column">
+                       <h5 class="card-title">Lorem Ipsum</h5>
+                       <p class="card-text">Lorem Ipsum</p>
+                       <p class="card-price">$ 675.00</p>
+                       <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
+                     </div>
+                     <div class="card-hover d-flex align-items-center justify-content-center">
+                       <div class="hover-btn">
+                         <button class="h-btn1">Add to cart</button>
+                         <button class="h-btn2">Rent Now</button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+              </div>
+            </div>
+            
+            <!--Equipments Cards-->
+            <div class="tab-pane fade" id="equipments" role="tabpanel">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4" id="all">
+                <div class="col">
+                  <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/images/product1.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
+                    <div class="card-hover d-flex align-items-center justify-content-center">
+                     <div class="hover-btn">
+                       <button class="h-btn1">Add to cart</button>
+                       <button class="h-btn2">Rent Now</button>
+                     </div>
+                   </div>
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Lorem Ipsum</h5>
+                      <p class="card-text">Lorem Ipsum</p>
+                      <p class="card-price">$ 675.00</p>
+                      <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
+                    </div>
+                  </div>
+                </div>
+                 <!--card 2-->
+                <div class="col">
+                   <div class="card h-100 shadow-sm border-0">
+                     <img src="assets/images/product1.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
+                     <div class="card-hover d-flex align-items-center justify-content-center">
+                       <div class="hover-btn">
+                         <button class="h-btn1">Add to cart</button>
+                         <button class="h-btn2">Rent Now</button>
+                       </div>
+                     </div>
+                     <div class="card-body d-flex flex-column">
+                       <h5 class="card-title">Lorem Ipsum</h5>
+                       <p class="card-text">Lorem Ipsum</p>
+                       <p class="card-price">$ 675.00</p>
+                       <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
+                     </div>
+                   </div>
+                 </div>
+              <!--card 3-->
+                 <div class="col">
+                   <div class="card h-100 shadow-sm border-0">
+                     <img src="assets/images/product2.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
+                     <div class="card-body d-flex flex-column">
+                       <h5 class="card-title">Lorem Ipsum</h5>
+                       <p class="card-text">Lorem Ipsum</p>
+                       <p class="card-price">$ 675.00</p>
+                       <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
+                       <div class="card-hover d-flex align-items-center justify-content-center">
+                         <div class="hover-btn">
+                           <button class="h-btn1">Add to cart</button>
+                           <button class="h-btn2">Rent Now</button>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+              <!--card 4-->
+                 <div class="col">
+                   <div class="card h-100 shadow-sm border-0">
+                     <img src="assets/images/product1.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
+                     <div class="card-body d-flex flex-column">
+                       <h5 class="card-title">Lorem Ipsum</h5>
+                       <p class="card-text">Lorem Ipsum</p>
+                       <p class="card-price">$ 675.00</p>
+                       <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
+                     </div>
+                     <div class="card-hover d-flex align-items-center justify-content-center">
+                       <div class="hover-btn">
+                         <button class="h-btn1">Add to cart</button>
+                         <button class="h-btn2">Rent Now</button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+              <!--card 5-->
+                 <div class="col">
+                   <div class="card h-100 shadow-sm border-0">
+                     <img src="assets/images/product3.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
+                     <div class="card-body d-flex flex-column">
+                       <h5 class="card-title">Lorem Ipsum</h5>
+                       <p class="card-text">Lorem Ipsum</p>
+                       <p class="card-price">$ 675.00</p>
+                       <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
+                     </div>
+                     <div class="card-hover d-flex align-items-center justify-content-center">
+                       <div class="hover-btn">
+                         <button class="h-btn1">Add to cart</button>
+                         <button class="h-btn2">Rent Now</button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+              <!--card 6-->
+                 <div class="col">
+                   <div class="card h-100 shadow-sm border-0">
+                     <img src="assets/images/product4.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
+                     <div class="card-body d-flex flex-column">
+                       <h5 class="card-title">Lorem Ipsum</h5>
+                       <p class="card-text">Lorem Ipsum</p>
+                       <p class="card-price">$ 675.00</p>
+                       <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
+                     </div>
+                     <div class="card-hover d-flex align-items-center justify-content-center">
+                       <div class="hover-btn">
+                         <button class="h-btn1">Add to cart</button>
+                         <button class="h-btn2">Rent Now</button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="btn1 mt-4 text-center">
+            <button class="btn">Discover More</button>
+          </div>
+        </div>
+      </section>
+<!--products end-->
+
+<!--Subscription plan section start-->
+      <section class="Subscription">
+        <div class="container">
+          <div class="sub-title text-center">
+            <h2 class="title">Fisunic Subscription</h2>
+            <p>Cutting-edge physiotherapy equipment: Empowering recovery and enhancing mobility for optimal rehabilitation.
+              <span> How It Works</span>
+            </p>
+          </div>
+
+          <ul class="nav nav-pills d-flex justify-content-center" id="subscriptionTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="silver-tab" data-bs-toggle="pill" data-bs-target="#silver" type="button" role="tab" aria-controls="silver" aria-selected="true">Silver</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="gold-tab" data-bs-toggle="pill" data-bs-target="#gold" type="button" role="tab" aria-controls="gold" aria-selected="false">Gold</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="platinum-tab" data-bs-toggle="pill" data-bs-target="#platinum" type="button" role="tab" aria-controls="platinum" aria-selected="false">Platinum</button>
+            </li>
+          </ul>
+
+          <div class="tab-content" id="subscriptionTabsContent">
+            <!-- Silver tabs cards -->
+            <div class="tab-pane fade show active" id="silver" role="tabpanel" aria-labelledby="silver-tab">
+              <div class="row justify-content-center">
+                <div class="col-lg-4">
+                  <div class="left-card card shadow-sm border-0 p-4">
+                    <h3>Silver</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <h2>$12<span> /mo</span></h2>
+                    <div class="btn1">
+                      <button class="btn">Rent Now</button>
+                    </div>
+                    <hr>
+                    <h6>What's included</h6>
+                    <ul class="sub-list">
+                      <li><i class="fa-solid fa-check"></i> Features Name</li>
+                      <li><i class="fa-solid fa-check"></i> Features Name</li>
+                      <li><i class="fa-solid fa-check"></i> Features Name</li>
+                      <li><i class="fa-solid fa-check"></i> Features Name</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="right-col col-lg-8">
+                  <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+                    <div class="col">
+                      <div class="card h-100 shadow-sm border-0">
+                        <img src="assets/images/product1.svg" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                          <h5 class="card-title">Lorem Ipsum</h5>
+                          <p class="card-text">Lorem Ipsum</p>
+                          <p class="card-price">$675.00</p>
+                          <img src="assets/images/starts-number.svg" alt="Rating" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col">
+                      <div class="card h-100 shadow-sm border-0 position-relative">
+                        <img src="assets/images/product1.svg" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                          <h5 class="card-title">Lorem Ipsum</h5>
+                          <p class="card-text">Lorem Ipsum</p>
+                          <p class="card-price">$675.00</p>
+                          <img src="assets/images/starts-number.svg" alt="Rating" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card h-100 shadow-sm border-0 position-relative">
+                        <img src="assets/images/product1.svg" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                          <h5 class="card-title">Lorem Ipsum</h5>
+                          <p class="card-text">Lorem Ipsum</p>
+                          <p class="card-price">$675.00</p>
+                          <img src="assets/images/starts-number.svg" alt="Rating" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card h-100 shadow-sm border-0 position-relative">
+                        <img src="assets/images/product1.svg" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                          <h5 class="card-title">Lorem Ipsum</h5>
+                          <p class="card-text">Lorem Ipsum</p>
+                          <p class="card-price">$675.00</p>
+                          <img src="assets/images/starts-number.svg" alt="Rating" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card h-100 shadow-sm border-0 position-relative">
+                        <img src="assets/images/product1.svg" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                          <h5 class="card-title">Lorem Ipsum</h5>
+                          <p class="card-text">Lorem Ipsum</p>
+                          <p class="card-price">$675.00</p>
+                          <img src="assets/images/starts-number.svg" alt="Rating" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card h-100 shadow-sm border-0 position-relative">
+                        <img src="assets/images/product1.svg" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                          <h5 class="card-title">Lorem Ipsum</h5>
+                          <p class="card-text">Lorem Ipsum</p>
+                          <p class="card-price">$675.00</p>
+                          <img src="assets/images/starts-number.svg" alt="Rating" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Gold tabs cards -->
+            <div class="tab-pane fade" id="gold" role="tabpanel" aria-labelledby="gold-tab">
+              <div class="row justify-content-center">
+                <div class="col-lg-4">
+                  <div class="left-card card shadow-sm border-0 p-4">
+                    <h3>Gold</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <h2>$12<span> /mo</span></h2>
+                    <div class="btn1">
+                      <button class="btn">Rent Now</button>
+                    </div>
+                    <hr>
+                    <h6>What's included</h6>
+                    <ul class="sub-list">
+                      <li><i class="fa-solid fa-check"></i> Features Name</li>
+                      <li><i class="fa-solid fa-check"></i> Features Name</li>
+                      <li><i class="fa-solid fa-check"></i> Features Name</li>
+                      <li><i class="fa-solid fa-check"></i> Features Name</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="right-col col-lg-8">
+                  <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+                    <div class="col">
+                      <div class="card h-100 shadow-sm border-0">
+                        <img src="assets/images/product1.svg" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                          <h5 class="card-title">Lorem Ipsum</h5>
+                          <p class="card-text">Lorem Ipsum</p>
+                          <p class="card-price">$675.00</p>
+                          <img src="assets/images/starts-number.svg" alt="Rating" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col">
+                      <div class="card h-100 shadow-sm border-0 position-relative">
+                        <img src="assets/images/product1.svg" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                          <h5 class="card-title">Lorem Ipsum</h5>
+                          <p class="card-text">Lorem Ipsum</p>
+                          <p class="card-price">$675.00</p>
+                          <img src="assets/images/starts-number.svg" alt="Rating" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card h-100 shadow-sm border-0 position-relative">
+                        <img src="assets/images/product1.svg" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                          <h5 class="card-title">Lorem Ipsum</h5>
+                          <p class="card-text">Lorem Ipsum</p>
+                          <p class="card-price">$675.00</p>
+                          <img src="assets/images/starts-number.svg" alt="Rating" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card h-100 shadow-sm border-0 position-relative">
+                        <img src="assets/images/product1.svg" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                          <h5 class="card-title">Lorem Ipsum</h5>
+                          <p class="card-text">Lorem Ipsum</p>
+                          <p class="card-price">$675.00</p>
+                          <img src="assets/images/starts-number.svg" alt="Rating" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card h-100 shadow-sm border-0 position-relative">
+                        <img src="assets/images/product1.svg" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                          <h5 class="card-title">Lorem Ipsum</h5>
+                          <p class="card-text">Lorem Ipsum</p>
+                          <p class="card-price">$675.00</p>
+                          <img src="assets/images/starts-number.svg" alt="Rating" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card h-100 shadow-sm border-0 position-relative">
+                        <img src="assets/images/product1.svg" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                          <h5 class="card-title">Lorem Ipsum</h5>
+                          <p class="card-text">Lorem Ipsum</p>
+                          <p class="card-price">$675.00</p>
+                          <img src="assets/images/starts-number.svg" alt="Rating" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- platinum tabs cards -->
+            <div class="tab-pane fade" id="platinum" role="tabpanel" aria-labelledby="platinum-tab">
+            <div class="row justify-content-center">
+                <div class="col-lg-4">
+                  <div class="left-card card shadow-sm border-0 p-4">
+                    <h3>platinum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <h2>$12<span> /mo</span></h2>
+                    <div class="btn1">
+                      <button class="btn">Rent Now</button>
+                    </div>
+                    <hr>
+                    <h6>What's included</h6>
+                    <ul class="sub-list">
+                      <li><i class="fa-solid fa-check"></i> Features Name</li>
+                      <li><i class="fa-solid fa-check"></i> Features Name</li>
+                      <li><i class="fa-solid fa-check"></i> Features Name</li>
+                      <li><i class="fa-solid fa-check"></i> Features Name</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="right-col col-lg-8">
+                  <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+                    <div class="col">
+                      <div class="card h-100 shadow-sm border-0">
+                        <img src="assets/images/product1.svg" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                          <h5 class="card-title">Lorem Ipsum</h5>
+                          <p class="card-text">Lorem Ipsum</p>
+                          <p class="card-price">$675.00</p>
+                          <img src="assets/images/starts-number.svg" alt="Rating" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col">
+                      <div class="card h-100 shadow-sm border-0 position-relative">
+                        <img src="assets/images/product1.svg" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                          <h5 class="card-title">Lorem Ipsum</h5>
+                          <p class="card-text">Lorem Ipsum</p>
+                          <p class="card-price">$675.00</p>
+                          <img src="assets/images/starts-number.svg" alt="Rating" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card h-100 shadow-sm border-0 position-relative">
+                        <img src="assets/images/product1.svg" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                          <h5 class="card-title">Lorem Ipsum</h5>
+                          <p class="card-text">Lorem Ipsum</p>
+                          <p class="card-price">$675.00</p>
+                          <img src="assets/images/starts-number.svg" alt="Rating" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card h-100 shadow-sm border-0 position-relative">
+                        <img src="assets/images/product1.svg" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                          <h5 class="card-title">Lorem Ipsum</h5>
+                          <p class="card-text">Lorem Ipsum</p>
+                          <p class="card-price">$675.00</p>
+                          <img src="assets/images/starts-number.svg" alt="Rating" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card h-100 shadow-sm border-0 position-relative">
+                        <img src="assets/images/product1.svg" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                          <h5 class="card-title">Lorem Ipsum</h5>
+                          <p class="card-text">Lorem Ipsum</p>
+                          <p class="card-price">$675.00</p>
+                          <img src="assets/images/starts-number.svg" alt="Rating" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card h-100 shadow-sm border-0 position-relative">
+                        <img src="assets/images/product1.svg" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                          <h5 class="card-title">Lorem Ipsum</h5>
+                          <p class="card-text">Lorem Ipsum</p>
+                          <p class="card-price">$675.00</p>
+                          <img src="assets/images/starts-number.svg" alt="Rating" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Subscription plan section end-->
+
+      <!--company start-->
+      <section class="categories">
+        <div class="container">
+          <div class="cate-heading d-flex justify-content-between flex-wrap align-items-center mb-3 gap-5">
+            <div class="c-heading-left d-flex align-items-center gap-2 text-primary">
+              <img src="assets/images/category.svg" alt="Category Icon">
+              <h5 class="mb-0">Browse By Brands</h5>
+            </div>
+            <div class="c-heading-right d-flex align-items-center gap-2">
+              <div class="category-prev rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                <i class="fa-solid fa-arrow-left"></i>
+              </div>
+              <div class="category-next rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>          
+          <div class="swiper categorySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
+                <img src="assets/images/brands1.svg">
+              </div>
+
+              <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
+                <img src="assets/images/brands-2.svg">
+              </div>
+
+              <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
+                <img src="assets/images/brands-3.svg">
+              </div>
+
+              <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
+                <img src="assets/images/brands1.svg">
+              </div>
+
+              <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
+                <img src="assets/images/brands-2.svg">
+              </div>
+
+              <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
+                <img src="assets/images/brands-3.svg">
+              </div>
+
+              <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
+                <img src="assets/images/brands1.svg">
+              </div>
+
+              <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
+                <img src="assets/images/brands-2.svg">
+              </div>
+            </div>
+          </div>        
+        </div>
+      </section>
+      <!--company end-->
+
+      <!--deals section start-->
+      <section class="deal">
+          <div class="row deal-row d-flex flex-wrap justify-content-center align-items-center">
+            <div class="deal-left col-md-6">
+              <p><img src="assets/images/deal-line.jpg"> deal of the week <img src="assets/images/deal-line.jpg"></p>
+               <h2>10% off<span> on machines</span></h2>
+               <button class="btn">Discover Now</button>
+            </div>
+            <div class="deal-right col-md-6">
+               <img src="assets/images/deal-image.svg" alt="hero-image" class="img-fluid hero-img">
+            </div>
+         </div>
+      </section>
+      <!--deals section end-->
+
+      <!--client section start-->
+      <section class="client">
+        <div class="container">
+          <h2 class="title">What Our Client Says</h2>
+          <div class="swiper clientSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-left">
+                  <img src="assets/images/c-image1.svg" alt="client-image">
+                </div>
+                <div class="swiper-right">
+                  <img src="assets/images/c-quotes.svg" alt="quotes" width="27px" height="20px" class="quotes-img">
+                  <p>Aut nihil mollitia deserunt quia sed rem. Quibusdam amet veniam rerum id rerum beatae. Quas rerum iste necessitatibus. At voluptates ad magnam blanditiis excepturi expedita aut. Aut repellat inventore qui minima illum est.</p>
+                  <h5>Joanna Prohaska</h5>
+                  <span>Lead Product Manager</span>
+                </div>
+              </div>
+        
+              <div class="swiper-slide">
+                <div class="swiper-left">
+                  <img src="assets/images/c-image2.png" alt="client-image">
+                </div>
+                <div class="swiper-right">
+                  <img src="assets/images/c-quotes.svg" alt="quotes" width="27px" height="20px" class="quotes-img">
+                  <p>Aut nihil mollitia deserunt quia sed rem. Quibusdam amet veniam rerum id rerum beatae. Quas rerum iste necessitatibus. At voluptates ad magnam blanditiis excepturi expedita aut. Aut repellat inventore qui minima illum est.</p>
+                  <h5>Joanna Prohaska</h5>
+                  <span>Lead Product Manager</span>
+                </div>
+              </div>
+        
+              <div class="swiper-slide">
+                <div class="swiper-left">
+                  <img src="assets/images/c-image1.svg" alt="client-image">
+                </div>
+                <div class="swiper-right">
+                  <img src="assets/images/c-quotes.svg" alt="quotes" width="27px" height="20px" class="quotes-img">
+                  <p>Aut nihil mollitia deserunt quia sed rem. Quibusdam amet veniam rerum id rerum beatae. Quas rerum iste necessitatibus. At voluptates ad magnam blanditiis excepturi expedita aut. Aut repellat inventore qui minima illum est.</p>
+                  <h5>Joanna Prohaska</h5>
+                  <span>Lead Product Manager</span>
+                </div>
+              </div>
+        
+              <div class="swiper-slide">
+                <div class="swiper-left">
+                  <img src="assets/images/c-image2.png" alt="client-image">
+                </div>
+                <div class="swiper-right">
+                  <img src="assets/images/c-quotes.svg" alt="quotes" width="27px" height="20px" class="quotes-img">
+                  <p>Aut nihil mollitia deserunt quia sed rem. Quibusdam amet veniam rerum id rerum beatae. Quas rerum iste necessitatibus. At voluptates ad magnam blanditiis excepturi expedita aut. Aut repellat inventore qui minima illum est.</p>
+                  <h5>Joanna Prohaska</h5>
+                  <span>Lead Product Manager</span>
+                </div>
+              </div>
+        
+              <div class="swiper-slide">
+                <div class="swiper-left">
+                  <img src="assets/images/c-image2.png" alt="client-image">
+                </div>
+                <div class="swiper-right">
+                  <img src="assets/images/c-quotes.svg" alt="quotes" width="27px" height="20px" class="quotes-img">
+                  <p>Aut nihil mollitia deserunt quia sed rem. Quibusdam amet veniam rerum id rerum beatae. Quas rerum iste necessitatibus. At voluptates ad magnam blanditiis excepturi expedita aut. Aut repellat inventore qui minima illum est.</p>
+                  <h5>Joanna Prohaska</h5>
+                  <span>Lead Product Manager</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-nav-wrapper">
+              <div class="swiper-button-prev client-prev"></div>
+              <div class="swiper-pagination client-pagination"></div>
+              <div class="swiper-button-next client-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--client section end-->
+
+      <!--company section start-->
+      <section class="company-section">
+        <div class="container my-3">
+          <div class="company d-flex flex-column flex-md-row justify-content-between align-items-center gap-4">
+            <div class="company-col1 text-center text-md-start">
+              <p class="text-dark">Our Partners</p>
+            </div>
+            <div class="company-col swiper companySwiper w-100">
+              <div class="swiper-wrapper d-flex align-items-center">
+                <div class="swiper-slide"><a href="#"><img src="assets/images/company1.svg" alt="Company 1"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="assets/images/company2.svg" alt="Company 2"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="assets/images/company3.svg" alt="Company 3"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="assets/images/company4.svg" alt="Company 4"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="assets/images/company5.svg" alt="Company 5"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="assets/images/company6.svg" alt="Company 6"></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!--company section end-->
+
+      <!--footer start-->
+      <footer>
+        <div class="container">
+          <div class="footer-upper row justify-content-center align-items-center">
+            <div class="footer-upper-left col-12 col-md-6 mb-3 mb-md-0">
+              <h3>NewsLetter</h3>
+              <p>Be the first one to know about discounts, offers and events</p>
+            </div>
+            <div class="footer-upper-right col-12 col-md-6">
+              <div class="input-wrapper position-relative">
+                <input type="email" class="form-control" placeholder="Enter Your Work Email">
+                <button class="btn btn-primary submit-btn">Submit</button>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="footer-lower row row-cols-1 row-cols-sm-2 row-cols-md-4">
+            <div class="f-col-1 col">
+              <img src="assets/images/logo.svg" width="165px" height="45px">
+              <ul class="ul d-flex gap-3">
+                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+              </ul>
+            </div>
+          
+            <div class="f-col-2 col">
+              <h5>Quick Links</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link">About Us</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link">Contact Us</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link">Payment Card Options</a></li>
+              </ul>
+            </div>
+          
+            <div class="f-col-2 col">
+              <h5>Help And Information</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link">Privacy Policy</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link">Terms & Conditions</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link">Disclamers</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link">FAQs</a></li>
+              </ul>
+            </div>
+          
+            <div class="f-col-4 col">
+              <div class="f-last-row d-flex align-items-center gap-3">
+                <div class="f-last-left"><i class="fa-solid fa-phone-volume"></i></div>
+                <div class="f-last-right">
+                  <h6>Contact Number</h6>
+                  <p>0000-111-2222</p>
+                </div>
+              </div>
+
+              <div class="f-last-row d-flex align-items-center gap-3">
+                <div class="f-last-left"><i class="fa-solid fa-envelope"></i></div>
+                <div class="f-last-right">
+                  <h6>Email Address</h6>
+                  <p>demo@gamil.com</p>
+                </div>
+              </div>
+
+              <div class="f-last-row d-flex align-items-center gap-3">
+                <div class="f-last-left"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="f-last-right">
+                  <h6>Office Address</h6>
+                  <p>31 Turtle Creek Road, Pickens,sc, 29631  United States</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--footer end-->
+
+<!-- Swiper java-script -->
+ 
+ <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  // Category Swiper
+  const categorySwiper = new Swiper(".categorySwiper", {
+  slidesPerView: 6,
+  centeredSlides: true,
+  spaceBetween: 20,
+  loop: true,
+  navigation: {
+    nextEl: ".category-next",
+    prevEl: ".category-prev",
+  },
+  breakpoints: {
+    320: { slidesPerView: 2.2 },
+    576: { slidesPerView: 3 },
+    768: { slidesPerView: 4 },
+    992: { slidesPerView: 5 },
+    1200: { slidesPerView: 6 },
+  },
+});
+
+  //Client Swiper
+  const clientSwiper = new Swiper(".clientSwiper", {
+    spaceBetween: 20,
+    centeredSlides: true,
+    loop: true,
+
+    navigation: {
+      nextEl: ".client-next",
+      prevEl: ".client-prev",
+    },
+
+    pagination: {
+    el: ".client-pagination",   
+    clickable: true,   
+  },
+    breakpoints: {
+      320: { slidesPerView: 1 },
+      576: { slidesPerView: 1.2 },
+      768: { slidesPerView: 1.5 },
+      992: { slidesPerView: 2 },
+      1200: { slidesPerView: 2.2 },
+      1400: { slidesPerView: 2.5 },
+      1600: { slidesPerView: 3.2 },
+      1920: { slidesPerView: 3.5 },
+    }
+  });
+
+  /*Company swiper*/
+  var swiper = new Swiper(".companySwiper", {
+  slidesPerView: 5,
+  spaceBetween: 10,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+});
+</script>
+
+      <script src="assets/vendor/BS5/js/bootstrap.bundle.min.js"></script>
+      <!-- build:js -->
+      <script src="dist/assets/js/custom.min.js"></script>
+      <!-- endbuild -->
+   </body>
+</html>

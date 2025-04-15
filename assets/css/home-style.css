@@ -1,0 +1,44 @@
+.hero-section {
+  border-radius: 10px;
+}
+.hero-section .hero-wrapper {
+  min-height: 485px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-section .hero-text h2 {
+  color: #007bff;
+  font-size: 36px;
+  font-weight: 600;
+}
+.hero-section .hero-text p {
+  font-size: 18px;
+  margin-top: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+.hero-section .hero-text .discover-btn {
+  margin-top: 32px;
+  padding: 12px 28px;
+  border-radius: 8px;
+  border: 2px solid #007bff;
+  background: transparent;
+  color: #007bff;
+  transition: 0.3s ease;
+}
+.hero-section .hero-text .discover-btn:hover {
+  background: #007bff;
+  color: #fff;
+}
+.hero-section .hero-img-wrapper {
+  text-align: center;
+}
+.hero-section .hero-img-wrapper .hero-img {
+  height: 485px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0 10px 10px 0;
+  border: 2px solid #000;
+}
