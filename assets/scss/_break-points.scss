@@ -8,6 +8,10 @@ $brkmx992: '(max-width: 991.98px)';
 $brkmx768: '(max-width: 767.98px)';
 $brkmx576: '(max-width: 575.98px)';
 
+//self created
+
+$brkmx672: '(max-width : 672px)';
+
 @mixin respond-to($media) {
     @media only screen and #{$media} {
         @content;
@@ -15,3 +19,20 @@ $brkmx576: '(max-width: 575.98px)';
 }
 
 /* Media Query Break Point END */
+
+@media #{$brkmx768} {
+    .hero{
+        .container{
+            &::before{
+                opacity: 0;
+            }
+        }
+    }
+  .hero{
+    .hero-left
+    {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+  }
+}

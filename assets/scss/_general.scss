@@ -14,6 +14,10 @@ body {
 	-webkit-overflow-scrolling: touch;
 	background-color: $white !important;
 	font-family: "DM Sans", sans-serif !important;
+	overflow-x: hidden !important;
+}
+html{
+	overflow-x: hidden !important;
 }
 /* COMMON DESIGN START */
 
@@ -63,44 +67,56 @@ img {
     color: #3A3A3A;
     margin-bottom: 32px;
 }
+@media #{$brkmx768} {
+	.title {
+	  @include text-style(700, 25px, 28px, 0%);
+	  margin-bottom: 24px;
+	}
+  }
+  
 
 /*button style*/
 .btn{
 	border-radius: 10px;
 	border-width: 2px;
-	padding-top: 14px;
-	padding-right: 32px;
-	padding-bottom: 14px;
-	padding-left: 32px;
+	padding: 14px 32px;
 	border: 2px solid $main-color;
 	color: $main-color;
 	margin-top: 32px;
-  }
-  .btn:hover{
+}
+.btn:hover{
 	background-color: $main-color;
 	color: $white;
+}
+@media #{$brkmx768}{
+	.btn {
+	  padding: 10px 24px;
+	  font-size: 14px;
+	  margin-top: 24px;
+	}
   }
+  
 /*card style*/
-  .card{
+.card{
 	position: relative;
-		  .card-title{
-			  @include text-style(700, 24px,20px,0%);
-			  color: $heading-color;
-			  margin-bottom: 8px
-		  }
+		.card-title{
+		  @include text-style(700, 24px,20px,0%);
+		  color: $heading-color;
+		  margin-bottom: 8px
+		}
 
-		  .card-text{
-			  @include text-style(500, 16px,20px,0%);
-			  color: #898989;
-			  margin-bottom: 8px
-		  }
-		  .card-price{
-			  @include text-style(700, 18px,20px,0%);
-			  margin-bottom: 8px;
-		  }
-	   }
-	.btn1{
-	  margin-top: 16px;
-	  text-align: center;
-	}   
+		.card-text{
+		  @include text-style(500, 16px,20px,0%);
+		  color: #898989;
+		  margin-bottom: 8px
+		}
+		.card-price{
+		  @include text-style(700, 18px,20px,0%);
+		  margin-bottom: 8px;
+		}
+	}
+.btn1{
+  margin-top: 16px;
+  text-align: center;
+}   
 
