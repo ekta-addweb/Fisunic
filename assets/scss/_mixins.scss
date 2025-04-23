@@ -150,3 +150,20 @@
 	line-height: $line-height;
     letter-spacing: $letter-spacing;
 }
+
+//after msg box mixins
+
+@mixin msg-box($top,$bottom,$left,$right)
+{
+  &::after{
+    content: "";
+    position: absolute;
+    top: $top;
+    left: $left;
+    bottom: $bottom;
+    right: $right;
+    background: url('../../../assets/images/msg-logo.svg') no-repeat;
+    width: 62px;
+    height: 60px;
+  }
+}

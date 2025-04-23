@@ -91,12 +91,9 @@
         }
     }
 }
-
 /*category style start*/
 .categories{
-  margin-bottom: 120px;
   .container{
-    margin-top: 64px;
       .cate-heading{
         margin-bottom: 64px;
 
@@ -218,57 +215,55 @@
             white-space: nowrap;
           }
         }
-        
-        .card-hover {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: rgba(74, 74, 74, 0.7);
-          opacity: 0;
-          visibility: hidden;
-          transition: opacity 0.3s ease, visibility 0.3s ease;
-          z-index: 2;
-          @include rounded(10px);
-        
-          .hover-btn {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        
-            .h-btn1, .h-btn2 {
-              border-radius: 10px;
-              padding: 8px 40px;
-              @include text-style(700, 16px,20px,0%);
-              border: none;
-            }
-        
-            .h-btn1 {
-              background-color: $white;
-              color: $main-color;
-            }
-        
-            .h-btn2 {
-              background-color: transparent;
-              border: 1px solid $white;
-              color: $white;
-              margin-top: 13px;
-            }
-          }
-        }
-      
-        .card:hover .card-hover {
-          opacity: 1;
-          visibility: visible;
-        }
     }
+}
+
+.card-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(74, 74, 74, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 2;
+  @include rounded(10px);
+
+  .hover-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .h-btn1, .h-btn2 {
+      border-radius: 10px;
+      padding: 8px 40px;
+      @include text-style(700, 16px,20px,0%);
+      border: none;
+    }
+
+    .h-btn1 {
+      background-color: $white;
+      color: $main-color;
+    }
+
+    .h-btn2 {
+      background-color: transparent;
+      border: 1px solid $white;
+      color: $white;
+      margin-top: 13px;
+    }
+  }
+}
+.card:hover .card-hover {
+  opacity: 1;
+  visibility: visible;
 }
 /*Subscription style start*/
 
 .Subscription{
   background:#F1F7FF;
-  margin-top: 64px;
   padding-bottom: 64px;
   .container{
     .sub-title{
@@ -451,11 +446,10 @@
     }
 }
  
+/*client style*/
 .client {
   .container {
     .title {
-      margin-top: 64px;
-      margin-bottom: 64px;
       text-align: center;
 
       @media #{$brkmx768}
@@ -612,7 +606,6 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-top: 64px;
 
   @media #{$brkmx768} {
     flex-direction: row;
@@ -661,6 +654,155 @@
 
     .swiper-slide {
       width: auto;
+    }
+  }
+}
+
+
+/*our product 
+
+        style start
+
+                  From here*/
+
+/*pro-title style*/
+.pro-title{
+  .container{
+    text-align: center;
+    background-color: #F1F7FF;
+    padding: 32px 0;
+
+    h2{
+        @include text-style(700,32px,40px,0%);
+        margin: 0;
+        padding: 0;
+    }
+
+    .direction{
+      gap: 15px;
+
+      a{
+        @include text-style(400,16px,24px,-0.2px);
+        color: $heading-color;
+      }
+
+      .active
+      {
+        @include text-style(500,16px,24px,-0.2px);
+        color: $main-color;
+      }
+    }
+  }
+}
+
+/*main section style*/
+
+.pro-main{
+  .container{
+
+    /*left side card */
+    .pro-left-upper-card
+    {
+      margin-bottom: 31px;
+      h5{
+        @include text-style(500,20px,24px,0%);
+        color: $main-color;
+        display: inline;
+        margin-top: 10px;
+      }
+      .btn1
+      {
+        padding: 8px 24px;
+        border-radius: 4px;
+        border: 1px solid rgba(137, 137, 137, 0.3);
+        @include text-style(400,14px,24px,0%);
+        color: $small-font-text;
+        background-color: transparent;
+
+        &:hover
+        {
+          background-color: $main-color;
+          color: $white;
+        }
+      }
+    }
+    .pro-left-card
+    {
+      .Category-drop
+      {
+        border-bottom: 1px solid rgba(137, 137, 137, 0.3);
+        .drop-title
+        {
+          @include text-style(500,20px,24px,0%);
+          color: $heading-color;
+        }
+        .fa-angle-down
+        {
+          font-size: 20px;
+        }
+        .check-label
+        {
+          color: $small-font-text;
+          @include text-style(400,16px,100%,0%);
+          margin-left: 6px;
+        }
+
+        .show-more-text{
+          @include text-style(500,14px,24px,0%);
+          text-decoration: underline;
+          text-decoration-style: solid;
+          text-decoration-thickness: 0%;
+          color: $main-color;
+          margin-top: 16px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    .pro-right-card{
+
+      position: relative;
+
+      &::after{
+        content: "";
+        position: absolute;
+        top: 200px;
+        right: -100px;
+        background: url('../../../assets/images/msg-logo.svg') no-repeat;
+        width: 62px;
+        height: 60px;
+      }
+      .pro-right-text{
+        @include text-style(500,14px,20px,0%);
+        color: $heading-color;
+      }
+
+      .custom-pagination {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        margin-top: 82px;
+      }
+      
+      .custom-pagination .page-item .page-link {
+        max-width: 40px;
+        width: 100%;
+        height: 40px;
+        border: 1px solid #F3F3F3;
+        border-radius: 4px;
+        padding: 8px;
+        color: #000;
+        text-align: center;
+        @include text-style(700,14px,20px,0%);
+        color: $heading-color;
+        background-color: #fff;
+        transition: background-color 0.2s, color 0.2s;
+
+        &:hover{
+          background-color: $main-color;
+          color: $white;
+        }
+      } 
     }
   }
 }

@@ -60,6 +60,7 @@ img {
 	height: auto;
 }
 
+
 /*title style*/
 .title{
     @include text-style(700, 32px,40px,0%);
@@ -119,4 +120,16 @@ img {
   margin-top: 16px;
   text-align: center;
 }   
+
+.section-wapper
+{
+	margin-top: 64px;
+	margin-bottom: 64px;
+
+	@media (max-width:425px)
+	{
+		margin-top: 24px;
+		margin-bottom: 24px;
+	}
+}
 
