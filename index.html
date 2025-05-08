@@ -14,12 +14,11 @@
       <!--font-awesome-->
       <!-- Swiper CSS -->
       <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
-     
    </head>
    <body>
       <!--header start-->
-      <header class="border-bottom header">
-        <div class="container">
+      <header class="border-bottom">
+        <div class="container-xl">
           <div class="header-row row align-items-center g-3">
             <!-- Logo -->
             <div class="header-col col-6 col-md-2">
@@ -31,13 +30,13 @@
             <!-- Search -->
             <div class="header-col col-md-6">
               <form role="search">
-                <div class="search-wrapper d-flex align-items-center px-3">
+                <div class="search-wrapper d-flex align-items-center px-1">
                   <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
                 </div>
               </form>   
             </div>
-            <div class="header-col col-12 col-md-4 d-flex justify-content-center gap-5">
-              <div class="dropdown">
+            <div class="header-col col-12 col-md-4 d-flex justify-content-center gap-5 align-items-center">
+              <div class="dropdown text-center position-relative">
                 <a href="#" class="text-decoration-none dropdown-toggle text-dark" data-bs-toggle="dropdown" aria-expanded="false">
                   <span>$ USD</span>
                 </a>
@@ -47,7 +46,7 @@
                   <li><a class="dropdown-item" href="#">USD3</a></li>
                 </ul>
               </div>
-              <div class="dropdown">
+              <div class="dropdown text-center position-relative">
                 <a href="#" class="text-decoration-none dropdown-toggle text-dark" data-bs-toggle="dropdown" aria-expanded="false">
                   <span><i class="fa-solid fa-globe me-1"></i> English</span>
                 </a>
@@ -63,18 +62,16 @@
         </div>
       </header>
       <!--header end-->
-
       <!--nav start-->
       <section class="nav">
-         <div class="container">
-           <nav class="navbar navbar-expand-lg">
-             <div class="container-fluid">
-               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+         <div class="container-xl">
+           <nav class="navbar navbar-expand-lg justify-content-between">
+             <div class="container-xl">
+               <button class="navbar-toggler d-block d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
                  <span class="navbar-toggler-icon"></span>
                </button>
-
-               <div class="collapse navbar-collapse my-3" id="mainNavbar">
-                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <div class="collapse navbar-collapse my-3 gap-3 align-items-center text-start" id="mainNavbar">
+                 <ul class="navbar-nav me-auto mb-lg-0">
                    <li class="nav-item">
                      <a class="nav-link active" href="#">All Categories</a>
                    </li>
@@ -102,26 +99,67 @@
       <!--nav end-->
 
       <!--hero-section start-->
-      <section class="hero">
-         <div class="container">
-            <div class="row hero-row d-flex flex-wrap justify-content-between align-items-center">
-               <div class="hero-left col-md-6">
-                  <h2>Physiotherapy Equipements</h2>
-                  <p>Cutting-edge physiotherapy equipment: Empowering recovery and enhancing mobility for optimal rehabilitation.</p>
-                  <button class="btn">Discover Now</button>
-               </div>
-               <div class="hero-right col-md-6">
-                  <img src="assets/images/hero-image.svg" alt="hero-image" class="img-fluid hero-img">
-               </div>
+      <section class="hero-section">
+        <div class="container-xl">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators custom-indicators d-flex flex-column align-items-end">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="indicators-btn active">01</button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="indicators-btn "><img src="assets/images/hero-nuber-line.svg"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="indicators-btn mt-2">02</button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="indicators-btn "><img src="assets/images/hero-nuber-line.svg"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="indicators-btn mt-2">03</button>
             </div>
-         </div>
+            
+            <div class="carousel-inner">
+              <!--slide 1-->
+              <div class="carousel-item active">
+                <div class="row hero-row d-flex flex-wrap justify-content-between align-items-center">
+                  <div class="hero-left col-md-6">
+                    <h2 class="hero-title">Physiotherapy Equipements</h2>
+                    <p class="hero-text">Cutting-edge physiotherapy equipment: Empowering recovery and enhancing mobility for optimal rehabilitation.</p>
+                    <button class="btn btn-outline-primary">Discover Now</button>
+                  </div>
+                  <div class="hero-right text-center col-md-6">
+                    <img src="assets/images/hero-image.svg" alt="hero-image" class="img-fluid hero-img">
+                  </div>
+              </div>
+              </div>
+              <!--slide 2-->
+              <div class="carousel-item">
+                <div class="row hero-row d-flex flex-wrap justify-content-between align-items-center">
+                  <div class="hero-left col-md-6">
+                    <h2 class="hero-title">Physiotherapy Equipements</h2>
+                    <p class="hero-text">Cutting-edge physiotherapy equipment: Empowering recovery and enhancing mobility for optimal rehabilitation.</p>
+                    <button class="btn btn-outline-primary">Discover Now</button>
+                  </div>
+                  <div class="hero-right text-center col-md-6">
+                    <img src="assets/images/hero-image.svg" alt="hero-image" class="img-fluid hero-img">
+                  </div>
+              </div>
+              </div>
+              <!--slide 3-->
+              <div class="carousel-item">
+                <div class="row hero-row d-flex flex-wrap justify-content-between align-items-center">
+                  <div class="hero-left col-md-6">
+                    <h2 class="hero-title">Physiotherapy Equipements</h2>
+                    <p class="hero-text">Cutting-edge physiotherapy equipment: Empowering recovery and enhancing mobility for optimal rehabilitation.</p>
+                    <button class="btn btn-outline-primary">Discover Now</button>
+                  </div>
+                  <div class="hero-right text-center col-md-6">
+                    <img src="assets/images/hero-image.svg" alt="hero-image" class="img-fluid hero-img">
+                  </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!--hero-section end-->
 
       <!--Category start-->
-      <section class="categories">
-        <div class="container section-wapper">
-          <div class="cate-heading d-flex justify-content-between flex-wrap align-items-center mb-3 gap-3">
+      <section class="categories-slider-section section-wapper">
+        <div class="container-xl">
+          <div class="cate-heading d-flex justify-content-between flex-wrap align-items-center gap-3 section-wapper pt-0">
             <div class="c-heading-left d-flex align-items-center gap-2 text-primary">
               <img src="assets/images/category.svg" alt="Category Icon">
               <h5 class="mb-0">Browse By Category</h5>
@@ -140,42 +178,57 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
                 <img src="assets/images/con-laser-img.svg">
-                <p>Laser</p>
+                <p class="slider-title">Laser</p>
               </div>
 
               <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
                 <img src="assets/images/con-laser-img.svg">
-                <p>Laser</p>
+                <p class="slider-title">Laser</p>
               </div>
 
               <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
                 <img src="assets/images/con-laser-img.svg">
-                <p>Laser</p>
+                <p class="slider-title">Laser</p>
               </div>
 
               <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
                 <img src="assets/images/con-laser-img.svg">
-                <p>Laser</p>
+                <p class="slider-title">Laser</p>
               </div>
 
               <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
                 <img src="assets/images/con-laser-img.svg">
-                <p>Laser</p>
+                <p class="slider-title">Laser</p>
               </div>
 
               <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
                 <img src="assets/images/con-laser-img.svg">
-                <p>Laser</p>
+                <p class="slider-title">Laser</p>
               </div>
 
               <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
                 <img src="assets/images/con-laser-img.svg">
-                <p>Laser</p>
+                <p class="slider-title">Laser</p>
               </div>
 
               <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
                 <img src="assets/images/con-laser-img.svg">
-                <p>Laser</p>
+                <p class="slider-title">Laser</p>
+              </div>
+
+              <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
+                <img src="assets/images/con-laser-img.svg">
+                <p class="slider-title">Laser</p>
+              </div>
+
+              <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
+                <img src="assets/images/con-laser-img.svg">
+                <p class="slider-title">Laser</p>
+              </div>
+
+              <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
+                <img src="assets/images/con-laser-img.svg">
+                <p class="slider-title">Laser</p>
               </div>
             </div>
           </div>        
@@ -184,12 +237,12 @@
       <!--Category end-->
 
       <!--products start-->
-      <section class="product">
-        <div class="container">
-          <h2 class="title">Our Products</h2>
-          <!-- Tabs-->
+      <section class="product-card-section section-wapper">
+        <div class="container-xl">
+          <h2 class="title text-center">Our Products</h2>
+          <!--Tabs-->
           <div class="tab-wrapper">
-            <ul class="nav nav-tabs tab-scroll" id="productTabs" role="tablist">
+            <ul class="nav nav-tabs tab-scroll d-flex justify-content-center" id="productTabs" role="tablist">
               <li class="nav-item" role="presentation">
                 <button class="nav-link" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab">All</button>
               </li>
@@ -215,8 +268,8 @@
                     <img src="assets/images/product1.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
                     <div class="card-hover d-flex align-items-center justify-content-center">
                      <div class="hover-btn">
-                       <button class="h-btn1">Add to cart</button>
-                       <button class="h-btn2">Rent Now</button>
+                       <button class="btn btn-light h-btn1">Add to cart</button>
+                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
                      </div>
                    </div>
                     <div class="card-body d-flex flex-column">
@@ -232,10 +285,10 @@
                    <div class="card h-100 shadow-sm border-0">
                      <img src="assets/images/product1.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                       <div class="hover-btn">
-                         <button class="h-btn1">Add to cart</button>
-                         <button class="h-btn2">Rent Now</button>
-                       </div>
+                      <div class="hover-btn">
+                       <button class="btn btn-light h-btn1">Add to cart</button>
+                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                     </div>
                      </div>
                      <div class="card-body d-flex flex-column">
                        <h5 class="card-title">Lorem Ipsum</h5>
@@ -255,10 +308,10 @@
                        <p class="card-price">$ 675.00</p>
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                        <div class="card-hover d-flex align-items-center justify-content-center">
-                         <div class="hover-btn">
-                           <button class="h-btn1">Add to cart</button>
-                           <button class="h-btn2">Rent Now</button>
-                         </div>
+                      <div class="hover-btn">
+                       <button class="btn btn-light h-btn1">Add to cart</button>
+                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                     </div>
                        </div>
                      </div>
                    </div>
@@ -274,10 +327,10 @@
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                      </div>
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                       <div class="hover-btn">
-                         <button class="h-btn1">Add to cart</button>
-                         <button class="h-btn2">Rent Now</button>
-                       </div>
+                      <div class="hover-btn">
+                       <button class="btn btn-light h-btn1">Add to cart</button>
+                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                     </div>
                      </div>
                    </div>
                  </div>
@@ -292,10 +345,10 @@
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                      </div>
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                       <div class="hover-btn">
-                         <button class="h-btn1">Add to cart</button>
-                         <button class="h-btn2">Rent Now</button>
-                       </div>
+                      <div class="hover-btn">
+                       <button class="btn btn-light h-btn1">Add to cart</button>
+                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                     </div>
                      </div>
                    </div>
                  </div>
@@ -310,10 +363,10 @@
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                      </div>
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                       <div class="hover-btn">
-                         <button class="h-btn1">Add to cart</button>
-                         <button class="h-btn2">Rent Now</button>
-                       </div>
+                      <div class="hover-btn">
+                       <button class="btn btn-light h-btn1">Add to cart</button>
+                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                     </div>
                      </div>
                    </div>
                  </div>
@@ -328,10 +381,10 @@
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                      </div>
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                       <div class="hover-btn">
-                         <button class="h-btn1">Add to cart</button>
-                         <button class="h-btn2">Rent Now</button>
-                       </div>
+                      <div class="hover-btn">
+                       <button class="btn btn-light h-btn1">Add to cart</button>
+                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                     </div>
                      </div>
                    </div>
                  </div>
@@ -346,10 +399,10 @@
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                      </div>
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                       <div class="hover-btn">
-                         <button class="h-btn1">Add to cart</button>
-                         <button class="h-btn2">Rent Now</button>
-                       </div>
+                      <div class="hover-btn">
+                       <button class="btn btn-light h-btn1">Add to cart</button>
+                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                     </div>
                      </div>
                    </div>
                  </div>
@@ -381,10 +434,10 @@
                    <div class="card h-100 shadow-sm border-0">
                      <img src="assets/images/product1.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                       <div class="hover-btn">
-                         <button class="h-btn1">Add to cart</button>
-                         <button class="h-btn2">Rent Now</button>
-                       </div>
+                      <div class="hover-btn">
+                       <button class="btn btn-light h-btn1">Add to cart</button>
+                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                     </div>
                      </div>
                      <div class="card-body d-flex flex-column">
                        <h5 class="card-title">Lorem Ipsum</h5>
@@ -404,10 +457,10 @@
                        <p class="card-price">$ 675.00</p>
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                        <div class="card-hover d-flex align-items-center justify-content-center">
-                         <div class="hover-btn">
-                           <button class="h-btn1">Add to cart</button>
-                           <button class="h-btn2">Rent Now</button>
-                         </div>
+                          <div class="hover-btn">
+                       <button class="btn btn-light h-btn1">Add to cart</button>
+                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                     </div>
                        </div>
                      </div>
                    </div>
@@ -423,10 +476,10 @@
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                      </div>
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                       <div class="hover-btn">
-                         <button class="h-btn1">Add to cart</button>
-                         <button class="h-btn2">Rent Now</button>
-                       </div>
+                      <div class="hover-btn">
+                       <button class="btn btn-light h-btn1">Add to cart</button>
+                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                     </div>
                      </div>
                    </div>
                  </div>
@@ -441,10 +494,10 @@
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                      </div>
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                       <div class="hover-btn">
-                         <button class="h-btn1">Add to cart</button>
-                         <button class="h-btn2">Rent Now</button>
-                       </div>
+                      <div class="hover-btn">
+                       <button class="btn btn-light h-btn1">Add to cart</button>
+                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                     </div>
                      </div>
                    </div>
                  </div>
@@ -459,10 +512,10 @@
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                      </div>
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                       <div class="hover-btn">
-                         <button class="h-btn1">Add to cart</button>
-                         <button class="h-btn2">Rent Now</button>
-                       </div>
+                      <div class="hover-btn">
+                       <button class="btn btn-light h-btn1">Add to cart</button>
+                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                     </div>
                      </div>
                    </div>
                  </div>
@@ -477,10 +530,10 @@
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                      </div>
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                       <div class="hover-btn">
-                         <button class="h-btn1">Add to cart</button>
-                         <button class="h-btn2">Rent Now</button>
-                       </div>
+                      <div class="hover-btn">
+                       <button class="btn btn-light h-btn1">Add to cart</button>
+                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                     </div>
                      </div>
                    </div>
                  </div>
@@ -495,10 +548,10 @@
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                      </div>
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                       <div class="hover-btn">
-                         <button class="h-btn1">Add to cart</button>
-                         <button class="h-btn2">Rent Now</button>
-                       </div>
+                      <div class="hover-btn">
+                       <button class="btn btn-light h-btn1">Add to cart</button>
+                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                     </div>
                      </div>
                    </div>
                  </div>
@@ -530,10 +583,10 @@
                    <div class="card h-100 shadow-sm border-0">
                      <img src="assets/images/product1.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                       <div class="hover-btn">
-                         <button class="h-btn1">Add to cart</button>
-                         <button class="h-btn2">Rent Now</button>
-                       </div>
+                      <div class="hover-btn">
+                       <button class="btn btn-light h-btn1">Add to cart</button>
+                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                     </div>
                      </div>
                      <div class="card-body d-flex flex-column">
                        <h5 class="card-title">Lorem Ipsum</h5>
@@ -553,10 +606,10 @@
                        <p class="card-price">$ 675.00</p>
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                        <div class="card-hover d-flex align-items-center justify-content-center">
-                         <div class="hover-btn">
-                           <button class="h-btn1">Add to cart</button>
-                           <button class="h-btn2">Rent Now</button>
-                         </div>
+                          <div class="hover-btn">
+                       <button class="btn btn-light h-btn1">Add to cart</button>
+                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                     </div>
                        </div>
                      </div>
                    </div>
@@ -572,10 +625,10 @@
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                      </div>
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                       <div class="hover-btn">
-                         <button class="h-btn1">Add to cart</button>
-                         <button class="h-btn2">Rent Now</button>
-                       </div>
+                      <div class="hover-btn">
+                       <button class="btn btn-light h-btn1">Add to cart</button>
+                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                     </div>
                      </div>
                    </div>
                  </div>
@@ -590,10 +643,10 @@
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                      </div>
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                       <div class="hover-btn">
-                         <button class="h-btn1">Add to cart</button>
-                         <button class="h-btn2">Rent Now</button>
-                       </div>
+                      <div class="hover-btn">
+                       <button class="btn btn-light h-btn1">Add to cart</button>
+                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                     </div>
                      </div>
                    </div>
                  </div>
@@ -625,10 +678,10 @@
                    <div class="card h-100 shadow-sm border-0">
                      <img src="assets/images/product1.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                       <div class="hover-btn">
-                         <button class="h-btn1">Add to cart</button>
-                         <button class="h-btn2">Rent Now</button>
-                       </div>
+                      <div class="hover-btn">
+                       <button class="btn btn-light h-btn1">Add to cart</button>
+                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                     </div>
                      </div>
                      <div class="card-body d-flex flex-column">
                        <h5 class="card-title">Lorem Ipsum</h5>
@@ -648,10 +701,10 @@
                        <p class="card-price">$ 675.00</p>
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                        <div class="card-hover d-flex align-items-center justify-content-center">
-                         <div class="hover-btn">
-                           <button class="h-btn1">Add to cart</button>
-                           <button class="h-btn2">Rent Now</button>
-                         </div>
+                          <div class="hover-btn">
+                       <button class="btn btn-light h-btn1">Add to cart</button>
+                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                     </div>
                        </div>
                      </div>
                    </div>
@@ -667,10 +720,10 @@
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                      </div>
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                       <div class="hover-btn">
-                         <button class="h-btn1">Add to cart</button>
-                         <button class="h-btn2">Rent Now</button>
-                       </div>
+                      <div class="hover-btn">
+                       <button class="btn btn-light h-btn1">Add to cart</button>
+                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                     </div>
                      </div>
                    </div>
                  </div>
@@ -685,10 +738,10 @@
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                      </div>
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                       <div class="hover-btn">
-                         <button class="h-btn1">Add to cart</button>
-                         <button class="h-btn2">Rent Now</button>
-                       </div>
+                      <div class="hover-btn">
+                       <button class="btn btn-light h-btn1">Add to cart</button>
+                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                     </div>
                      </div>
                    </div>
                  </div>
@@ -703,20 +756,20 @@
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                      </div>
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                       <div class="hover-btn">
-                         <button class="h-btn1">Add to cart</button>
-                         <button class="h-btn2">Rent Now</button>
-                       </div>
+                      <div class="hover-btn">
+                       <button class="btn btn-light h-btn1">Add to cart</button>
+                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                     </div>
                      </div>
                    </div>
                  </div>
               </div>
             </div>
           </div>
-      
+    
           <div class="btn1 mt-4 text-center">
             <a href="our-product.html">
-              <button class="btn">Discover More</button>
+              <button class="btn btn-outline-primary">Discover More</button>
             </a>
           </div>
         </div>
@@ -724,12 +777,12 @@
 <!--products end-->
 
 <!--Subscription plan section start-->
-      <section class="Subscription section-wapper">
-        <div class="container section-wapper">
+      <section class="Subscription-section section-wapper">
+        <div class="container-xl">
           <div class="sub-title text-center">
-            <h2 class="title">Fisunic Subscription</h2>
-            <p>Cutting-edge physiotherapy equipment: Empowering recovery and enhancing mobility for optimal rehabilitation.
-              <span> How It Works</span>
+            <h2 class="title mb-3">Fisunic Subscription</h2>
+            <p class="Subscription-description text-center">Cutting-edge physiotherapy equipment: Empowering recovery and enhancing mobility for optimal rehabilitation.
+              <a href="#"> How It Works</a>
             </p>
           </div>
 
@@ -751,15 +804,15 @@
               <div class="row sub-row justify-content-center g-4">
                 <div class="col-lg-3">
                   <div class="left-card card shadow-sm p-4">
-                    <h3>Silver</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <h3 class="card-title">Silver</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     <h2>$12<span> /mo</span></h2>
-                    <div class="btn1">
-                      <button class="btn">Rent Now</button>
+                    <div class="">
+                      <button class="btn fill-btn btn-primary w-100">Rent Now</button>
                     </div>
                     <hr>
                     <h6>What's included</h6>
-                    <ul class="sub-list">
+                    <ul class="sub-list list-unstyled p-0 mt-3 ">
                       <li><i class="fa-solid fa-check"></i> Features Name</li>
                       <li><i class="fa-solid fa-check"></i> Features Name</li>
                       <li><i class="fa-solid fa-check"></i> Features Name</li>
@@ -848,16 +901,16 @@
             <div class="tab-pane fade" id="gold" role="tabpanel" aria-labelledby="gold-tab">
               <div class="row justify-content-center">
                 <div class="col-lg-3">
-                  <div class="left-card card shadow-sm border-0 p-4">
-                    <h3>Gold</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  <div class="left-card card shadow-sm p-4">
+                    <h3 class="card-title">Gold</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     <h2>$12<span> /mo</span></h2>
-                    <div class="btn1">
-                      <button class="btn">Rent Now</button>
+                    <div class="">
+                      <button class="btn btn-primary w-100">Rent Now</button>
                     </div>
                     <hr>
                     <h6>What's included</h6>
-                    <ul class="sub-list">
+                    <ul class="sub-list list-unstyled p-0 mt-3 ">
                       <li><i class="fa-solid fa-check"></i> Features Name</li>
                       <li><i class="fa-solid fa-check"></i> Features Name</li>
                       <li><i class="fa-solid fa-check"></i> Features Name</li>
@@ -945,24 +998,24 @@
             <!-- platinum tabs cards -->
             <div class="tab-pane fade" id="platinum" role="tabpanel" aria-labelledby="platinum-tab">
             <div class="row justify-content-center">
-                <div class="col-lg-3">
-                  <div class="left-card card shadow-sm border-0 p-4">
-                    <h3>platinum</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    <h2>$12<span> /mo</span></h2>
-                    <div class="btn1">
-                      <button class="btn">Rent Now</button>
-                    </div>
-                    <hr>
-                    <h6>What's included</h6>
-                    <ul class="sub-list">
-                      <li><i class="fa-solid fa-check"></i> Features Name</li>
-                      <li><i class="fa-solid fa-check"></i> Features Name</li>
-                      <li><i class="fa-solid fa-check"></i> Features Name</li>
-                      <li><i class="fa-solid fa-check"></i> Features Name</li>
-                    </ul>
+              <div class="col-lg-3">
+                <div class="left-card card shadow-sm p-4">
+                  <h3 class="card-title">Platinum</h3>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  <h2>$12<span> /mo</span></h2>
+                  <div class="">
+                    <button class="btn btn-primary w-100">Rent Now</button>
                   </div>
+                  <hr>
+                  <h6>What's included</h6>
+                  <ul class="sub-list list-unstyled p-0 mt-3 ">
+                    <li><i class="fa-solid fa-check"></i> Features Name</li>
+                    <li><i class="fa-solid fa-check"></i> Features Name</li>
+                    <li><i class="fa-solid fa-check"></i> Features Name</li>
+                    <li><i class="fa-solid fa-check"></i> Features Name</li>
+                  </ul>
                 </div>
+              </div>
                 <div class="right-col col-lg-8">
                   <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
                     <div class="col">
@@ -1046,9 +1099,9 @@
       <!--Subscription plan section end-->
 
       <!--company start-->
-      <section class="categories">
-        <div class="container section-wapper">
-          <div class="cate-heading d-flex justify-content-between flex-wrap align-items-center gap-3">
+      <section class="categories-slider-section section-wapper">
+        <div class="container-xl">
+          <div class="cate-heading d-flex justify-content-between flex-wrap align-items-center gap-3 section-wapper pt-0">
             <div class="c-heading-left d-flex align-items-center gap-2 text-primary">
               <img src="assets/images/category.svg" alt="Category Icon">
               <h5 class="mb-0">Browse By Brands</h5>
@@ -1095,6 +1148,18 @@
               <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
                 <img src="assets/images/brands-2.svg">
               </div>
+
+              <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
+                <img src="assets/images/brands1.svg">
+              </div>
+
+              <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
+                <img src="assets/images/brands1.svg">
+              </div>
+
+              <div class="swiper-slide d-flex flex-column justify-content-center align-items-center text-center">
+                <img src="assets/images/brands1.svg">
+              </div>
             </div>
           </div>        
         </div>
@@ -1104,10 +1169,10 @@
       <!--deals section start-->
       <section class="deal">
           <div class="row deal-row d-flex flex-wrap justify-content-center align-items-center">
-            <div class="deal-left col-md-6">
-              <p><img src="assets/images/deal-line.jpg"> deal of the week <img src="assets/images/deal-line.jpg"></p>
-               <h2>10% off<span> on machines</span></h2>
-               <button class="btn">Discover Now</button>
+            <div class="deal-left col-md-6 text-center text-white">
+              <p class="deal-title"><img src="assets/images/deal-line.jpg"> deal of the week <img src="assets/images/deal-line.jpg"></p>
+               <h2 class="offers">10% off<span> on machines</span></h2>
+               <button class="btn btn-outline-primary deal-btn">Discover Now</button>
             </div>
             <div class="deal-right col-md-6">
                <img src="assets/images/deal-image.svg" alt="hero-image" class="img-fluid hero-img">
@@ -1117,9 +1182,9 @@
       <!--deals section end-->
 
       <!--client section start-->
-      <section class="client">
-        <div class="container">
-          <h2 class="title section-wapper">What Our Client Says</h2>
+      <section class="client section-wapper">
+        <div class="container-xl">
+          <h2 class="title section-wapper pt-0">What Our Client Says</h2>
           <div class="swiper clientSwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -1128,9 +1193,9 @@
                 </div>
                 <div class="swiper-right">
                   <img src="assets/images/c-quotes.svg" alt="quotes" width="27px" height="20px" class="quotes-img">
-                  <p>Aut nihil mollitia deserunt quia sed rem. Quibusdam amet veniam rerum id rerum beatae. Quas rerum iste necessitatibus. At voluptates ad magnam blanditiis excepturi expedita aut. Aut repellat inventore qui minima illum est.</p>
-                  <h5>Joanna Prohaska</h5>
-                  <span>Lead Product Manager</span>
+                  <p class="client-review">Aut nihil mollitia deserunt quia sed rem. Quibusdam amet veniam rerum id rerum beatae. Quas rerum iste necessitatibus. At voluptates ad magnam blanditiis excepturi expedita aut. Aut repellat inventore qui minima illum est.</p>
+                  <h5 class="client-name">Joanna Prohaska</h5>
+                  <span class="client-post">Lead Product Manager</span>
                 </div>
               </div>
         
@@ -1140,9 +1205,9 @@
                 </div>
                 <div class="swiper-right">
                   <img src="assets/images/c-quotes.svg" alt="quotes" width="27px" height="20px" class="quotes-img">
-                  <p>Aut nihil mollitia deserunt quia sed rem. Quibusdam amet veniam rerum id rerum beatae. Quas rerum iste necessitatibus. At voluptates ad magnam blanditiis excepturi expedita aut. Aut repellat inventore qui minima illum est.</p>
-                  <h5>Joanna Prohaska</h5>
-                  <span>Lead Product Manager</span>
+                  <p class="client-review">Aut nihil mollitia deserunt quia sed rem. Quibusdam amet veniam rerum id rerum beatae. Quas rerum iste necessitatibus. At voluptates ad magnam blanditiis excepturi expedita aut. Aut repellat inventore qui minima illum est.</p>
+                  <h5 class="client-name">Joanna Prohaska</h5>
+                  <span class="client-post">Lead Product Manager</span>
                 </div>
               </div>
         
@@ -1152,9 +1217,9 @@
                 </div>
                 <div class="swiper-right">
                   <img src="assets/images/c-quotes.svg" alt="quotes" width="27px" height="20px" class="quotes-img">
-                  <p>Aut nihil mollitia deserunt quia sed rem. Quibusdam amet veniam rerum id rerum beatae. Quas rerum iste necessitatibus. At voluptates ad magnam blanditiis excepturi expedita aut. Aut repellat inventore qui minima illum est.</p>
-                  <h5>Joanna Prohaska</h5>
-                  <span>Lead Product Manager</span>
+                  <p class="client-review">Aut nihil mollitia deserunt quia sed rem. Quibusdam amet veniam rerum id rerum beatae. Quas rerum iste necessitatibus. At voluptates ad magnam blanditiis excepturi expedita aut. Aut repellat inventore qui minima illum est.</p>
+                  <h5 class="client-name">Joanna Prohaska</h5>
+                  <span class="client-post">Lead Product Manager</span>
                 </div>
               </div>
         
@@ -1164,9 +1229,9 @@
                 </div>
                 <div class="swiper-right">
                   <img src="assets/images/c-quotes.svg" alt="quotes" width="27px" height="20px" class="quotes-img">
-                  <p>Aut nihil mollitia deserunt quia sed rem. Quibusdam amet veniam rerum id rerum beatae. Quas rerum iste necessitatibus. At voluptates ad magnam blanditiis excepturi expedita aut. Aut repellat inventore qui minima illum est.</p>
-                  <h5>Joanna Prohaska</h5>
-                  <span>Lead Product Manager</span>
+                  <p class="client-review">Aut nihil mollitia deserunt quia sed rem. Quibusdam amet veniam rerum id rerum beatae. Quas rerum iste necessitatibus. At voluptates ad magnam blanditiis excepturi expedita aut. Aut repellat inventore qui minima illum est.</p>
+                  <h5 class="client-name">Joanna Prohaska</h5>
+                  <span class="client-post">Lead Product Manager</span>
                 </div>
               </div>
         
@@ -1176,27 +1241,27 @@
                 </div>
                 <div class="swiper-right">
                   <img src="assets/images/c-quotes.svg" alt="quotes" width="27px" height="20px" class="quotes-img">
-                  <p>Aut nihil mollitia deserunt quia sed rem. Quibusdam amet veniam rerum id rerum beatae. Quas rerum iste necessitatibus. At voluptates ad magnam blanditiis excepturi expedita aut. Aut repellat inventore qui minima illum est.</p>
-                  <h5>Joanna Prohaska</h5>
-                  <span>Lead Product Manager</span>
+                  <p class="client-review">Aut nihil mollitia deserunt quia sed rem. Quibusdam amet veniam rerum id rerum beatae. Quas rerum iste necessitatibus. At voluptates ad magnam blanditiis excepturi expedita aut. Aut repellat inventore qui minima illum est.</p>
+                  <h5 class="client-name">Joanna Prohaska</h5>
+                  <span class="client-post">Lead Product Manager</span>
                 </div>
               </div>
             </div>
-            <div class="swiper-nav-wrapper">
-              <div class="swiper-button-prev client-prev"></div>
-              <div class="swiper-pagination client-pagination"></div>
+            <div class="swiper-nav-wrapper d-flex justify-content-center align-items-center">
+              <div class="swiper-button-prev client-prev d-flex justify-content-center align-items-center"></div>
+              <div class="swiper-pagination client-pagination d-flex justify-content-center align-items-center"></div>
               <div class="swiper-button-next client-next"></div>
             </div>
           </div>
         </div>
       </section>
       <!--client section end-->
-
+    
       <!--company section start-->
-      <section class="company-section">
-        <div class="container section-wapper">
+      <section class="company-section section-wapper pt-0">
+        <div class="container-xl">
           <div class="company d-flex flex-column flex-md-row justify-content-between align-items-center gap-4">
-            <div class="company-col1 text-center text-md-start d-flex gap-3">
+            <div class="company-col1 text-center text-md-start d-flex gap-3 text-center">
               <img src="assets/images/category.svg" alt="Category Icon">
               <p class="text-dark">Our Partners</p>
             </div>
@@ -1208,18 +1273,20 @@
                 <div class="swiper-slide"><a href="#"><img src="assets/images/company4.svg" alt="Company 4"></a></div>
                 <div class="swiper-slide"><a href="#"><img src="assets/images/company5.svg" alt="Company 5"></a></div>
                 <div class="swiper-slide"><a href="#"><img src="assets/images/company6.svg" alt="Company 6"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="assets/images/company1.svg" alt="Company 1"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="assets/images/company2.svg" alt="Company 2"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="assets/images/company3.svg" alt="Company 3"></a></div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      
       <!--company section end-->
 
       <!--footer start-->
       <footer>
-        <div class="container">
-          <div class="footer-upper row justify-content-center align-items-center">
+        <div class="container-xl">
+          <div class="footer-upper row justify-content-center align-items-center d-flex flex-wrap">
             <div class="footer-upper-left col-12 col-md-6 mb-3 mb-md-0">
               <h3>NewsLetter</h3>
               <p>Be the first one to know about discounts, offers and events</p>
@@ -1231,8 +1298,7 @@
               </div>
             </div>
           </div>
-          
-
+        
           <div class="footer-lower row row-cols-1 row-cols-sm-2 row-cols-md-4">
             <div class="f-col-1 col">
               <img src="assets/images/logo.svg" width="165px" height="45px">

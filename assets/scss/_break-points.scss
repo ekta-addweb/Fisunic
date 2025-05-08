@@ -4,13 +4,18 @@
 
 $brkmx1400: '(max-width: 1399.98px)';
 $brkmx1200: '(max-width: 1199.98px)';
+$brkmx1024: '(max-width: 1024px)';
 $brkmx992: '(max-width: 991.98px)';
+$brkmx970: '(max-width: 970px)';
+$brkmx816: '(max-width: 816px)';
 $brkmx768: '(max-width: 767.98px)';
 $brkmx576: '(max-width: 575.98px)';
+$brkmx426: '(max-width: 426px)';
 
 //self created
 
 $brkmx672: '(max-width : 672px)';
+$brkmx900: '(max-width : 900px)';
 
 @mixin respond-to($media) {
     @media only screen and #{$media} {

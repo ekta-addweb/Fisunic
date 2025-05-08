@@ -1,12 +1,12 @@
 /*footer*/
 footer {
-    margin-top: 115px;
     background-color: $bg-color;
+    margin-top: 64px;
   
     @media #{$brkmx768}{
-      margin-top: 60px;
+      margin-top: 20px;
     }
-    .container {
+    .container-xl {
       position: relative;
   
       .footer-upper {
@@ -14,16 +14,17 @@ footer {
         background-color: $main-color;
         color: $white;
         @include rounded(10px);
-        padding: 28px 20px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
+        padding: 28px 150px;
         position: absolute;
         top: -50px;
         left: 0;
+
+        @media #{$brkmx1200}
+        {
+          padding: 28px 28px;
+        }
   
-        @media (max-width: 900px)
+        @media #{$brkmx900}
         {
           position: static;
           top: auto;
@@ -60,7 +61,7 @@ footer {
             position: absolute;
             width: 100%;
             max-width: 135px;
-            top: -18%;
+            top: -17%;
             right: 30px;
             transform: translateY(-50%);
             height: 48px;
@@ -71,7 +72,7 @@ footer {
             border: 2px solid $bg-color;
           }
   
-          @media (max-width: 900px) {
+          @media #{$brkmx900} {
             input {
               width: 100%;
               padding-right: 0;
@@ -131,8 +132,8 @@ footer {
         }
         .f-col-2{
           h5{
-              @include text-style(700,16px,20px,0%);
-              color: $main-color;
+            @include text-style(700,16px,20px,0%);
+            color: $main-color;
           }
           .nav{
             margin-top: 24px;
@@ -152,7 +153,7 @@ footer {
               width: 48px;
               height: 48px;
               border-radius: 50%;
-              background-color: white;
+              background-color: $white;
               color: $main-color;
               line-height: 48px;
               text-align: center;

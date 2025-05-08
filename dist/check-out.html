@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <title>Fisunic</title>
+        <!-- Favicons -->
+        <link rel="icon" href="assets/images/Favicons.svg">
+        <link rel="stylesheet" href="assets/css/app.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--font-awesome-->
+        <!-- Swiper CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+       
+     </head>
+<body>
+    <!--header start-->
+    <header class="border-bottom header">
+        <div class="container">
+          <div class="header-row row align-items-center g-3">
+            <!-- Logo -->
+            <div class="header-col col-6 col-md-2">
+              <a href="/">
+                <img src="assets/images/logo.svg" alt="LOGO" class="logo-img">
+              </a>
+            </div>
+      
+            <!-- Search -->
+            <div class="header-col col-md-6">
+              <form role="search">
+                <div class="search-wrapper d-flex align-items-center px-3">
+                  <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                </div>
+              </form>   
+            </div>
+            <div class="header-col col-12 col-md-4 d-flex justify-content-center gap-5">
+              <div class="dropdown">
+                <a href="#" class="text-decoration-none dropdown-toggle text-dark" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span>$ USD</span>
+                </a>
+                <ul class="dropdown-menu text-small">
+                  <li><a class="dropdown-item" href="#">USD1</a></li>
+                  <li><a class="dropdown-item" href="#">USD2</a></li>
+                  <li><a class="dropdown-item" href="#">USD3</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <a href="#" class="text-decoration-none dropdown-toggle text-dark" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span><i class="fa-solid fa-globe me-1"></i> English</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end text-small my-2">
+                  <li><a class="dropdown-item" href="#">English1</a></li>
+                  <li><a class="dropdown-item" href="#">English2</a></li>
+                  <li><a class="dropdown-item" href="#">English3</a></li>
+                </ul>
+              </div>
+              <i class="fa-regular fa-user text-primary"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--header end-->
+     <!--nav start-->
+     <section class="nav">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse my-3" id="mainNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">All Categories</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Return and Payment</a>
+                  </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                  <img src="assets/images/delete-Buttons.svg" alt="delete-btn" style="cursor: pointer;">
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+     <!--nav end-->
+         <!--title start-->
+    <section class="pro-title">
+        <div class="container">
+            <h2>Checkout</h2>
+            <img src="assets/images/our-product-images/title-line.svg" alt="line image">
+            <div class="direction d-flex justify-content-center">
+                <a href="index.html">Home</a>
+                <img src="assets/images/our-product-images/title-Vector.svg" alt="image">
+                <a href="product-details.html">Product</a>
+                <img src="assets/images/our-product-images/title-Vector.svg" alt="image">
+                <a href="cart.html">Cart</a>
+                <img src="assets/images/our-product-images/title-Vector.svg" alt="image">
+                <a href="check-out.html" class="active">Checkout</a>
+            </div>
+        </div>
+    </section>
+    <!--title end-->
+
+    <!--check-out main start-->
+    <div class="check-out">
+        <div class="container section-wapper">
+            <div class="checkout-row d-flex flex-wrap">
+                <div class="checkout-left">
+                    <div class="status d-flex flex-wrap align-items-center gap-4">
+                        <p class="check-title text-primary">Account</p>
+                        <img class="check-title" src="assets/images/check-out-image/check-line.svg" alt="status img">
+                        <p class="check-title">Shipping</p>
+                        <img class="check-title" src="assets/images/check-out-image/check-line.svg" alt="status img">
+                        <p class="check-title">Payment</p>
+                    </div>
+                    <p class="check-title">Account details</p>
+
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control mb-2" placeholder="Enter Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+
+                    <label class="form-label">Password</label>
+                    <div class="position-relative mb-2">
+                      <input type="password" class="form-control password-field" id="password" placeholder="Enter Password" required>
+                      <i class="fa-solid fa-eye position-absolute end-0 top-50 translate-middle-y me-3" data-target="#password" style="cursor:pointer;"></i>
+                    </div>
+
+                    <button type="submit" class="bg-btn w-100 mb-3">Login</button>
+                </div>
+                <div class="checkout-right"></div>
+            </div>
+        </div>
+    </div>
+    <!--check-out main end-->
+
+</body>
+</html>

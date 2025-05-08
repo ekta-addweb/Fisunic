@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <title>Fisunic</title>
+        <!-- Favicons -->
+        <link rel="icon" href="assets/images/Favicons.svg">
+        <link rel="stylesheet" href="assets/css/app.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--font-awesome-->
+        <!-- Swiper CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+       
+     </head>
+<body>
+      <!--header start-->
+      <header class="border-bottom header">
+        <div class="container-xl">
+          <div class="header-row row align-items-center g-3">
+            <!-- Logo -->
+            <div class="header-col col-6 col-md-2">
+              <a href="/">
+                <img src="assets/images/logo.svg" alt="LOGO" class="logo-img">
+              </a>
+            </div>
+      
+            <!-- Search -->
+            <div class="header-col col-md-6">
+              <form role="search">
+                <div class="search-wrapper d-flex align-items-center px-3">
+                  <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                </div>
+              </form>   
+            </div>
+            <div class="header-col col-12 col-md-4 d-flex justify-content-center gap-5">
+              <div class="dropdown">
+                <a href="#" class="text-decoration-none dropdown-toggle text-dark" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span>$ USD</span>
+                </a>
+                <ul class="dropdown-menu text-small">
+                  <li><a class="dropdown-item" href="#">USD1</a></li>
+                  <li><a class="dropdown-item" href="#">USD2</a></li>
+                  <li><a class="dropdown-item" href="#">USD3</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <a href="#" class="text-decoration-none dropdown-toggle text-dark" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span><i class="fa-solid fa-globe me-1"></i> English</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end text-small my-2">
+                  <li><a class="dropdown-item" href="#">English1</a></li>
+                  <li><a class="dropdown-item" href="#">English2</a></li>
+                  <li><a class="dropdown-item" href="#">English3</a></li>
+                </ul>
+              </div>
+              <i class="fa-regular fa-user text-primary"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--header end-->
+      <!--nav start-->
+      <section class="nav">
+        <div class="container-xl">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-xl">
+              <button class="navbar-toggler d-block d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse my-3" id="mainNavbar">
+                <ul class="navbar-nav me-auto mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">All Categories</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Return and Payment</a>
+                  </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                  <img src="assets/images/delete-Buttons.svg" alt="delete-btn" style="cursor: pointer;">
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+     <!--nav end-->
+    <!--title start-->
+    <section class="pro-title">
+        <div class="container-xl text-center">
+            <h2>Lorem Ipsum</h2>
+            <img src="assets/images/our-product-images/title-line.svg" alt="line image">
+            <div class="direction d-flex justify-content-center">
+                <a href="index.html">Home</a>
+                <img src="assets/images/our-product-images/title-Vector.svg" alt="image">
+                <a href="our-product.html">Product Category</a>
+                <img src="assets/images/our-product-images/title-Vector.svg" alt="image">
+                <a href="product-details.html" class="active">Product name</a>
+            </div>
+        </div>
+    </section>
+    <!--title end-->
+
+    <!--main section start-->
+    <div class="product-details-section section-wapper">
+      <div class="container-xl">
+        <div class="row d-flex justify-content-between">
+          
+          <!-- Left Column -->
+          <div class="col-12 col-lg-6 product-details-left">
+              <img class="d-left-img" src="assets/images/product1.svg" alt="product image">
+              <div class="swiper-container-wrapper d-flex justify-content-center align-items-center">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="assets/images/product-details-image/d-slider-1.svg" alt="Image 1">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/images/product-details-image/d-slider2.svg" alt="Image 2">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/images/product-details-image/d-slider3.svg" alt="Image 3">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/images/product-details-image/d-slider4.svg" alt="Image 4">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/images/product-details-image/d-slider-1.svg" alt="Image 5">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/images/product-details-image/d-slider2.svg" alt="Image 6">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+      
+          <!-- Right Column -->
+          <div class="col-12 col-lg-6 product-details-right">
+              <p class="stock mb-3">in Stock</p>
+              <p class="pro-info">Brand: Lorem Ipsum</p>
+              <p class="pro-info">Model: OLED42C2PSA</p>
+              <p class="pro-info mb-4">Dimension:</p>
+              <h3 class="name-of-product mb-3">Lorem Ipsum</h3>
+              <p class="pro-info">Lorem Ipsum</p>
+              <div class="d-review d-flex flex-wrap align-items-center mb-4">
+                <img class="d-star-img" src="assets/images/product-details-image/d-star.jpg" alt="star">
+                <p class="pro-info2 text-warning">9.3</p>
+                <img src="assets/images/product-details-image/d-Dot.svg" alt="dot" width="6px" height="6px">
+                <img src="assets/images/product-details-image/d-msg-box.svg" alt="msg-box" width="17px" height="17px">
+                <p class="pro-info2">32 reviews</p>
+              </div>
+              <p class="pro-info2 pro-note">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="pro-info2 pro-note">Lorem ipsum dolor sit amet, consectetur adipiscing elit elit..sit ame</p>
+              <p class="pro-info2 pro-note mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      
+              <div class="product-info d-flex justify-content-between flex-wrap gap-3">
+                <div class="price-section">
+                  <p class="price-label pro-info2">USD (incl. of all taxes)</p>
+                  <div class="prices">
+                    <span class="current-price">$675</span>
+                    <span class="original-price"><strike>$800</strike></span>
+                  </div>
+                </div>
+      
+                <div class="controls d-flex gap-3 flex-wrap">
+                  <div class="quantity">
+                    <label class="price-label pro-info2">Quantity</label>
+                    <div class="quantity-selector">
+                      <button class="qty-btn">−</button>
+                      <span class="qty-value pro-info2">2</span>
+                      <button class="qty-btn">+</button>
+                    </div>
+                  </div>
+      
+                  <div class="size">
+                    <label class="d-flex price-label pro-info2">Size</label>
+                    <select class="size-select">
+                      <option>106 cm</option>
+                      <option>108 cm</option>
+                      <option>110 cm</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="d-btn d-flex flex-wrap gap-3 mt-5">
+                <a href="cart.html" class="btn btn-outline-primary flex-fill text-center">Add to Cart</a>
+                <a href="cart.html" class="btn btn-outline-primary flex-fill text-center">Rent now</a>
+              </div>              
+              <button type="button" class="btn btn-primary buy-btn mt-3">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--main section end-->
+
+    <!--product description start-->
+    <div class="pro-description section-wapper">
+      <div class="container-xl">
+
+        <div class="tabs-container">
+          <!-- Nav Tabs Scrollable -->
+          <div class="tabs-scroll">
+            <ul class="nav nav-tabs flex-nowrap mb-4" id="productTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="desc-tab" data-bs-toggle="tab" data-bs-target="#desc" type="button" role="tab">Description</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="spec-tab" data-bs-toggle="tab" data-bs-target="#spec" type="button" role="tab">Specification</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="review-tab" data-bs-toggle="tab" data-bs-target="#review" type="button" role="tab">Reviews</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="care-tab" data-bs-toggle="tab" data-bs-target="#care" type="button" role="tab">Care Instructions</button>
+              </li>
+            </ul>
+          </div>          
+          <!-- Tab Content -->
+          <div class="tab-content" id="productTabContent">
+          <!--description-->
+          <div class="tab-pane fade show active" id="desc" role="tabpanel">
+            <p class="pro-info2 pb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque varius, odio a mollis porta, neque ipsum scelerisque leo, varius vestibulum risus mi non justo. Aliquam et magna sapien.</p>
+            <p class="pro-info2">*Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque varius, odio a mollis porta.</p>
+            <p class="pro-info2">**Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            <p class="pro-info2">***Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque varius, odio a mollis porta, neque ipsum scelerisque leo.</p>
+            <p class="pro-info2">****Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque varius, odio a mollis porta, neque ipsum scelerisque leo, varius vestibulum risus mi non justo. Aliquam et magna sapien.<a href="#">More..</a></p>
+          </div>
+
+          <!--Specification-->
+          <div class="tab-pane fade" id="spec" role="tabpanel">
+            <p class="pro-info2 pb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque varius, odio a mollis porta, neque ipsum scelerisque leo, varius vestibulum risus mi non justo. Aliquam et magna sapien.</p>
+            <p class="pro-info2">*Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque varius, odio a mollis porta.</p>
+            <p class="pro-info2">**Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            <p class="pro-info2">***Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque varius, odio a mollis porta, neque ipsum scelerisque leo.</p>
+            <p class="pro-info2">****Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque varius, odio a mollis porta, neque ipsum scelerisque leo, varius vestibulum risus mi non justo. Aliquam et magna sapien.<a href="#">More..</a></p>
+          </div>
+
+          <!--Reviews-->
+          <div class="tab-pane fade" id="review" role="tabpanel">
+            <p class="pro-info2 pb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque varius, odio a mollis porta, neque ipsum scelerisque leo, varius vestibulum risus mi non justo. Aliquam et magna sapien.</p>
+            <p class="pro-info2">*Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque varius, odio a mollis porta.</p>
+            <p class="pro-info2">**Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            <p class="pro-info2">***Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque varius, odio a mollis porta, neque ipsum scelerisque leo.</p>
+            <p class="pro-info2">****Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque varius, odio a mollis porta, neque ipsum scelerisque leo, varius vestibulum risus mi non justo. Aliquam et magna sapien.<a href="#">More..</a></p>
+          </div>
+
+          <!--Care Instructions-->
+          <div class="tab-pane fade" id="care" role="tabpanel">
+            <p class="pro-info2 pb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque varius, odio a mollis porta, neque ipsum scelerisque leo, varius vestibulum risus mi non justo. Aliquam et magna sapien.</p>
+            <p class="pro-info2">*Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque varius, odio a mollis porta.</p>
+            <p class="pro-info2">**Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            <p class="pro-info2">***Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque varius, odio a mollis porta, neque ipsum scelerisque leo.</p>
+            <p class="pro-info2">****Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque varius, odio a mollis porta, neque ipsum scelerisque leo, varius vestibulum risus mi non justo. Aliquam et magna sapien.<a href="#">More..</a></p>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+    <!--product description end-->
+
+    <!--related products start-->
+    <div class="related-pro section-wapper">
+      <div class="container-xl">
+        <h2>Related Products</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4" id="all">
+              <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                  <img src="assets/images/product3.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
+                  <div class="card-hover d-flex align-items-center justify-content-center">
+                   <div class="hover-btn">
+                    <button class="btn btn-light h-btn1">Add to cart</button>
+                    <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                   </div>
+                 </div>
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Lorem Ipsum</h5>
+                    <p class="card-text">Lorem Ipsum</p>
+                    <p class="card-price">$ 675.00</p>
+                    <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
+                  </div>
+                </div>
+              </div>
+               <!--card 2-->
+              <div class="col">
+                 <div class="card h-100 shadow-sm border-0">
+                   <img src="assets/images/product1.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
+                   <div class="card-hover d-flex align-items-center justify-content-center">
+                     <div class="hover-btn">
+                      <button class="btn btn-light h-btn1">Add to cart</button>
+                      <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                     </div>
+                   </div>
+                   <div class="card-body d-flex flex-column">
+                     <h5 class="card-title">Lorem Ipsum</h5>
+                     <p class="card-text">Lorem Ipsum</p>
+                     <p class="card-price">$ 675.00</p>
+                     <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
+                   </div>
+                 </div>
+               </div>
+            <!--card 3-->
+               <div class="col">
+                 <div class="card h-100 shadow-sm border-0">
+                   <img src="assets/images/product5.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
+                   <div class="card-body d-flex flex-column">
+                     <h5 class="card-title">Lorem Ipsum</h5>
+                     <p class="card-text">Lorem Ipsum</p>
+                     <p class="card-price">$ 675.00</p>
+                     <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
+                     <div class="card-hover d-flex align-items-center justify-content-center">
+                       <div class="hover-btn">
+                        <button class="btn btn-light h-btn1">Add to cart</button>
+                        <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+            <!--card 4-->
+               <div class="col">
+                 <div class="card h-100 shadow-sm border-0">
+                   <img src="assets/images/product6.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
+                   <div class="card-body d-flex flex-column">
+                     <h5 class="card-title">Lorem Ipsum</h5>
+                     <p class="card-text">Lorem Ipsum</p>
+                     <p class="card-price">$ 675.00</p>
+                     <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
+                   </div>
+                   <div class="card-hover d-flex align-items-center justify-content-center">
+                     <div class="hover-btn">
+                      <button class="btn btn-light h-btn1">Add to cart</button>
+                      <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+            </div>
+      </div>
+    </div>
+    <!--related products start-->
+
+
+        <!--footer start-->
+        <footer>
+          <div class="container-xl">
+            <div class="footer-upper row justify-content-center align-items-center">
+              <div class="footer-upper-left col-12 col-md-6 mb-3 mb-md-0">
+                <h3>NewsLetter</h3>
+                <p>Be the first one to know about discounts, offers and events</p>
+              </div>
+              <div class="footer-upper-right col-12 col-md-6">
+                <div class="input-wrapper position-relative">
+                  <input type="email" class="form-control" placeholder="Enter Your Work Email">
+                  <button class="btn btn-primary submit-btn">Submit</button>
+                </div>
+              </div>
+            </div>
+            
+  
+            <div class="footer-lower row row-cols-1 row-cols-sm-2 row-cols-md-4">
+              <div class="f-col-1 col">
+                <img src="assets/images/logo.svg" width="165px" height="45px">
+                <ul class="ul d-flex gap-3">
+                  <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                  <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                  <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+              </div>
+            
+              <div class="f-col-2 col">
+                <h5>Quick Links</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link">About Us</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link">Contact Us</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link">Payment Card Options</a></li>
+                </ul>
+              </div>
+            
+              <div class="f-col-2 col">
+                <h5>Help And Information</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link">Privacy Policy</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link">Terms & Conditions</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link">Disclamers</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link">FAQs</a></li>
+                </ul>
+              </div>
+            
+              <div class="f-col-4 col">
+                <div class="f-last-row d-flex align-items-center gap-3">
+                  <div class="f-last-left"><i class="fa-solid fa-phone-volume"></i></div>
+                  <div class="f-last-right">
+                    <h6>Contact Number</h6>
+                    <p>0000-111-2222</p>
+                  </div>
+                </div>
+  
+                <div class="f-last-row d-flex align-items-center gap-3">
+                  <div class="f-last-left"><i class="fa-solid fa-envelope"></i></div>
+                  <div class="f-last-right">
+                    <h6>Email Address</h6>
+                    <p>demo@gamil.com</p>
+                  </div>
+                </div>
+  
+                <div class="f-last-row d-flex align-items-center gap-3">
+                  <div class="f-last-left"><i class="fa-solid fa-location-dot"></i></div>
+                  <div class="f-last-right">
+                    <h6>Office Address</h6>
+                    <p>31 Turtle Creek Road, Pickens,sc, 29631  United States</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!--footer end-->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 0,
+      slidesPerView: 4,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 2,
+        },
+        480: {
+          slidesPerView: 3,
+        },
+        768: {
+          slidesPerView: 4,
+        }
+      }
+    });
+    </script>
+     <script src="assets/vendor/BS5/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/js/*.js"></script>
+</body>
+</html>
+
+
