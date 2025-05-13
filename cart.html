@@ -65,43 +65,41 @@
       <!--nav start-->
       <section class="nav">
         <div class="container-xl">
-          <nav class="navbar navbar-expand-lg">
-            <div class="container-xl">
-              <button class="navbar-toggler d-block d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-
-              <div class="collapse navbar-collapse my-3" id="mainNavbar">
-                <ul class="navbar-nav me-auto mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">All Categories</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Return and Payment</a>
-                  </li>
-                </ul>
-                <div class="d-flex align-items-center">
-                  <img src="assets/images/delete-Buttons.svg" alt="delete-btn" style="cursor: pointer;">
-                </div>
-              </div>
+        <nav class="navbar navbar-expand-lg">
+          <button class="navbar-toggler d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse my-3" id="mainNavbar">
+            <ul class="navbar-nav me-auto mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">All Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Return and Payment</a>
+              </li>
+            </ul>
+            <div class="d-flex align-items-center">
+              <img src="assets/images/delete-Buttons.svg" alt="delete-btn" style="cursor: pointer;">
             </div>
-          </nav>
+          </div>
+        </nav>
         </div>
       </section>
      <!--nav end-->
     <!--title start-->
     <section class="pro-title">
         <div class="container-xl text-center">
-            <h2>Cart</h2>
+            <h2 class="page-title">Cart</h2>
             <img src="assets/images/our-product-images/title-line.svg" alt="line image">
             <div class="direction d-flex justify-content-center">
                 <a href="index.html">Home</a>
@@ -138,11 +136,11 @@
                             <p class="c-left-text-small">Size - 106 cm</p>
                         </div>
                         </div>
-                        <div class="quantity-selector Qty col-3 d-flex align-items-center">
-                          <button class="qty-btn">−</button>
-                          <span class="qty-value pro-info2">1</span>
-                          <button class="qty-btn">+</button>
-                      </div>
+                        <div class="quantity-selector Qty col-3 d-flex align-items-center text-center">
+                          <button class="btn1 btn-outline-secondary minus-btn" type="button">−</button>
+                            <input type="text" class="form-control text-center quantity-input border-0" value="1">
+                            <button class="btn1 btn-outline-secondary plus-btn" type="button">+</button>
+                        </div>
                         <p class="col-3 c-price">$675.00</p>
                     </div>
 
@@ -157,10 +155,10 @@
                             <p class="c-left-text-small">Size - 106 cm</p>
                         </div>
                         </div>
-                        <div class="quantity-selector Qty col-3 d-flex align-items-center">
-                            <button class="qty-btn">−</button>
-                            <span class="qty-value pro-info2">1</span>
-                            <button class="qty-btn">+</button>
+                        <div class="quantity-selector Qty col-3 d-flex align-items-center text-center">
+                          <button class="btn1 btn-outline-secondary minus-btn" type="button">−</button>
+                            <input type="text" class="form-control text-center quantity-input border-0" value="1">
+                          <button class="btn1 btn-outline-secondary plus-btn" type="button">+</button>
                         </div>
                         <p class="col-3 c-price">$675.00</p>
                     </div>
@@ -168,7 +166,7 @@
                 <div class="cart-right">
                   <p class="summary">Summary</p>
                   <!--input dropdwon-->
-                  <div class="dropdown">
+                  <div class="dropdown apply-dropdown">
                     <button class="dropdown-toggle d-flex justify-content-between text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Apply Discount Code
                       <i class="fa-solid fa-angle-down"></i>
@@ -183,8 +181,8 @@
                     </div>
                   </div>
                   <!-- Textbox dropdown -->
-                  <div class="dropdown text-box">
-                    <button class="dropdown-toggle d-flex justify-content-between text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <div class="dropdown text-box apply-dropdown">
+                    <button class="dropdown-toggle d-flex justify-content-between" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Add a Note
                       <i class="fa-solid fa-angle-down"></i>
                     </button>
@@ -196,7 +194,7 @@
 
                   <div class="Subtotal d-flex justify-content-between">
                     <p class="cart-text">Subtotal</p>
-                    <p class="cart-text">$675.00S</p>
+                    <p class="cart-text">$675.00</p>
                   </div>
                   <div class="shipping d-flex justify-content-between">
                     <p class="cart-text cart-text1">Shipping</p>
@@ -305,7 +303,7 @@
 
       <div class="modal-header border-0 justify-content-center position-relative">
         <h5 class="modal-title text-center w-100" id="registerModalLabel">Create your account</h5>
-        <button type="button" class="btn-close text-light custom-close position-absolute end-0 me-3" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close text-light custom-close position-absolute end-0 me-3 rounded-circle p-2" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
 
       <div class="modal-body">
@@ -339,7 +337,7 @@
             </label>
           </div>
 
-          <button type="submit" class="bg-btn w-100 mb-3">Register</button>
+          <button type="submit" class="btn btn-primary w-100 mb-3 fill-btn">Register</button>
 
           <p class="text-center form-label">
             Already have an account?
@@ -349,7 +347,7 @@
           <hr>
           <p class="text-center form-label reg-line">or continue with</p>
 
-          <div class="d-flex justify-content-center gap-3 mt-2 reg-icon">
+          <div class="d-flex justify-content-center gap-3 mt-3 reg-icon">
             <div class="social-icon">
               <img src="assets/images/cart-image/google-img.jpeg" alt="Google" width="24px">
             </div>
@@ -370,7 +368,7 @@
 
       <div class="modal-header border-0 justify-content-center position-relative">
         <h5 class="modal-title text-center w-100" id="loginModalLabel">Login your Account</h5>
-        <button type="button" class="btn-close text-light custom-close position-absolute end-0 me-3" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close text-light custom-close position-absolute end-0 me-3 rounded-circle" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
 
       <div class="modal-body">
@@ -394,7 +392,7 @@
             <a href="#" class="text-primary small form-check-label" data-bs-toggle="modal" data-bs-target="#forgotpasswordModal" data-bs-dismiss="modal">Forgot Password?</a>
           </div>
 
-          <button type="submit" class="bg-btn w-100 mb-3">Login</button>
+          <button type="submit" class="btn btn-primary w-100 mb-3">Login</button>
 
           <p class="text-center form-label">
             Don't have an account?
@@ -426,7 +424,7 @@
 
       <div class="modal-header border-0 justify-content-center position-relative">
         <h5 class="modal-title text-center w-100" id="forgotpasswordModalLabel">Forgot Password</h5>
-        <button type="button" class="btn-close text-light custom-close position-absolute end-0 me-3" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close text-light custom-close position-absolute end-0 me-3 rounded-circle" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
 
       <div class="modal-body">
@@ -436,7 +434,7 @@
           <input type="email" class="form-control mb-2" placeholder="Enter Email" required
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
 
-          <button type="submit" class="bg-btn w-100 mb-3">continue</button>
+          <button type="submit" class="btn btn-primary w-100 mb-3">continue</button>
         </form>
       </div>
     </div>

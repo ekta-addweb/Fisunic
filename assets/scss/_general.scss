@@ -79,8 +79,6 @@ img {
 	  margin-bottom: 24px;
 	}
   }
-  
-
 /*button style*/
 
 .btn-outline-primary
@@ -98,7 +96,7 @@ img {
 	color: $white;
 }
 @media #{$brkmx768}{
-	.btn, .bg-btn {
+	.btn {
 	  padding: 10px 24px;
 	  font-size: 14px;
 	  margin-top: 24px;
@@ -124,7 +122,7 @@ img {
 
 		.card-text{
 		  @include text-style(500, 16px,20px,0%);
-		  color: #898989;
+		  color: $card-color;
 		  margin-bottom: 8px
 		}
 		.card-price{
@@ -171,6 +169,10 @@ img {
       .h-btn2 {
         border: 1px solid $white;
         margin-top: 13px;
+
+		&:hover{
+			border: none;
+		  }
       }
     }
   }
@@ -186,6 +188,7 @@ img {
   
 	  .page-title{
 		  @include text-style(700,32px,40px,0%);
+		  color: $small-font-text;
 	  }
   
 	  .direction{
@@ -214,5 +217,209 @@ img {
 	  }
 	}
   }
+
+/*summary title */
+.summary{
+	@include text-style(700,24px,20px,0%);
+	color: $main-color;
+	margin-bottom: 32px;
+  }
+
+
+/*item in cart details*/
+.left-lower-part {
+  
+	margin-bottom: 30px;
+
+	  .cart-img {
+		position: relative;
+  
+		&::after {
+		  content: "";
+		  position: absolute;
+		  top: -10px;
+		  right: -10px;
+		  background: url('../../../assets/images/cart-image/c-delete-icon.svg') no-repeat;
+		  width: 34px;
+		  height: 32px;
+		  border-radius: 50%;
+		  z-index: 1111;
+		}
+	  }
+
+	  .c-left-text{
+		@include text-style(500,20px,20px,0%);
+		color: $heading-color;
+		margin-bottom: 8px;
+
+		@media #{$brkmx426}
+		{
+		  @include text-style(500,15px,15px,0%);
+		}
+	  }
+
+	  .c-left-text-small
+		{
+		@include text-style(400,16px,20px,0%);
+		color: $small-font-text;
+		margin-bottom: 8px;
+		@media #{$brkmx426}
+		{
+		  @include text-style(400,10px,10px,0%);
+		}
+	  }
+	}
+
+	.Qty{
+	  width: 101px;
+	  height: 40px;
+
+	  @media #{$brkmx426}
+	  {
+		width: 75px;
+		height: 30px;
+	  }
+	  .quantity-selector
+	  {
+		padding: 8px 16px;
+		justify-content: space-between;
+	  }
+	}
+
+	.quantity-selector .btn1 {
+		width: 32px;
+		font-size: 23px;
+		line-height: 1;
+		border: none;
+		background-color: transparent;
+		color: $small-font-text;
+		opacity: 50%;
+	  }
+	  
+	  .quantity-selector .quantity-input {
+		// width: 40px;
+		border: none;
+		font-size: 16px;
+		padding: 0;
+	  }
+	  
+	  .quantity-selector .quantity-input:focus {
+		box-shadow: none;
+	  }
+	.c-price{
+	  text-align: center;
+	  @include text-style(700,16px,20px,0%);
+	  color: $heading-color;
+	  margin-top: 15px;
+
+	  @media #{$brkmx426}
+	  {
+		@include text-style(700,14px,20px,0%);
+	  }
+  }
+
+//cart Discount apply dropdown 
+
+.apply-dropdown {
+	margin-bottom: 70px; 
+
+  .dropdown-toggle{
+	background-color: transparent;
+	border: none;
+	width: 100%;
+	max-width: 100%;
+	@include text-style(400,20px,20px,0);
+	vertical-align: middle;
+	color: $heading-color;
+	padding-bottom: 15px;
+  }
+  .dropdown-toggle::after {
+	display: none;
+  }
+  .fa-angle-down{
+	color: $small-font-text;
+  }
+
+  .dropdown-menu 
+  {
+	width: 100%;
+	max-width: 100%;
+	border: 1px solid $heading-color;
+  }
+  input{
+   outline: none;
+
+	&::placeholder{
+	  @include text-style(400,16px,20px,0%);
+	  color: $small-font-text;
+	}
+  }
+
+  input.form-control:focus {
+	outline: none;
+	box-shadow: none !important;
+  }
+} 
+
+
+//cart text style
+.cart-text{
+	@include text-style(700,16px,20px,0%);
+	color: $heading-color;
+	margin-bottom: 24px;
+}
+.cart-text1{
+	@include text-style(700,14px,20px,0%);
+}
+
+//check-out right col style
+//Order Summary style 
+.checkout-right{
+	position: relative;
+	&::after {
+        @include msg-logo($top: 200px, $right: -60px);
+    }
+	.left-lower-part
+	{
+	  gap: 30px;
+
+	  .c-price{
+		text-align: center;
+		@include text-style(500,20px,30px,0%);
+		color: $heading-color;
+	
+		@media #{$brkmx426}
+		{
+			@include text-style(500,14px,20px,0%);
+		}
+	
+	  }
+	  .quantity-selector {
+		width: 104px;
+		height: 40px;
+		border-radius: 10px;
+		overflow: hidden;
+		border: 1px solid #ccc;
+	  }
+	}
+  }
+
+//form label style
+.form-label {
+	@include text-style(500, 14px, 100%, 0%);
+	color: $heading-color;
+	margin-top: 16px;
+}
+.form-select
+{
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	color: $heading-color;
+	opacity: 75%;
+	height: 44px;
+	border-radius: 8px;
+}
   
 

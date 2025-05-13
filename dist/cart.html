@@ -136,10 +136,10 @@
                             <p class="c-left-text-small">Size - 106 cm</p>
                         </div>
                         </div>
-                        <div class="quantity-selector Qty col-3">
-                            <button class="qty-btn">−</button>
-                            <span class="qty-value pro-info2">1</span>
-                            <button class="qty-btn">+</button>
+                        <div class="quantity-selector Qty col-3 d-flex align-items-center text-center">
+                          <button class="btn1 btn-outline-secondary minus-btn" type="button">−</button>
+                            <input type="text" class="form-control text-center quantity-input border-0" value="1">
+                            <button class="btn1 btn-outline-secondary plus-btn" type="button">+</button>
                         </div>
                         <p class="col-3 c-price">$675.00</p>
                     </div>
@@ -155,10 +155,10 @@
                             <p class="c-left-text-small">Size - 106 cm</p>
                         </div>
                         </div>
-                        <div class="quantity-selector Qty col-3">
-                            <button class="qty-btn">−</button>
-                            <span class="qty-value pro-info2">1</span>
-                            <button class="qty-btn">+</button>
+                        <div class="quantity-selector Qty col-3 d-flex align-items-center text-center">
+                          <button class="btn1 btn-outline-secondary minus-btn" type="button">−</button>
+                            <input type="text" class="form-control text-center quantity-input border-0" value="1">
+                          <button class="btn1 btn-outline-secondary plus-btn" type="button">+</button>
                         </div>
                         <p class="col-3 c-price">$675.00</p>
                     </div>
@@ -166,7 +166,7 @@
                 <div class="cart-right">
                   <p class="summary">Summary</p>
                   <!--input dropdwon-->
-                  <div class="dropdown">
+                  <div class="dropdown apply-dropdown">
                     <button class="dropdown-toggle d-flex justify-content-between text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Apply Discount Code
                       <i class="fa-solid fa-angle-down"></i>
@@ -181,8 +181,8 @@
                     </div>
                   </div>
                   <!-- Textbox dropdown -->
-                  <div class="dropdown text-box">
-                    <button class="dropdown-toggle d-flex justify-content-between text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <div class="dropdown text-box apply-dropdown">
+                    <button class="dropdown-toggle d-flex justify-content-between" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Add a Note
                       <i class="fa-solid fa-angle-down"></i>
                     </button>
@@ -194,7 +194,7 @@
 
                   <div class="Subtotal d-flex justify-content-between">
                     <p class="cart-text">Subtotal</p>
-                    <p class="cart-text">$675.00S</p>
+                    <p class="cart-text">$675.00</p>
                   </div>
                   <div class="shipping d-flex justify-content-between">
                     <p class="cart-text cart-text1">Shipping</p>
@@ -209,7 +209,7 @@
                     <p class="cart-text text-primary">$678.00</p>
                   </div>
 
-                  <button class="btn w-100 btn-primary border-0" data-bs-toggle="modal" data-bs-target="#registerModal">
+                  <button class="btn w-100 btn-primary fill-btn" data-bs-toggle="modal" data-bs-target="#registerModal">
                     Proceed to checkout
                   </button>
                 </div>
@@ -303,7 +303,7 @@
 
       <div class="modal-header border-0 justify-content-center position-relative">
         <h5 class="modal-title text-center w-100" id="registerModalLabel">Create your account</h5>
-        <button type="button" class="btn-close text-light custom-close position-absolute end-0 me-3" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close text-light custom-close position-absolute end-0 me-3 rounded-circle p-2" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
 
       <div class="modal-body">
@@ -337,7 +337,7 @@
             </label>
           </div>
 
-          <button type="submit" class="bg-btn w-100 mb-3">Register</button>
+          <button type="submit" class="btn btn-primary w-100 mb-3 fill-btn">Register</button>
 
           <p class="text-center form-label">
             Already have an account?
@@ -347,7 +347,7 @@
           <hr>
           <p class="text-center form-label reg-line">or continue with</p>
 
-          <div class="d-flex justify-content-center gap-3 mt-2 reg-icon">
+          <div class="d-flex justify-content-center gap-3 mt-3 reg-icon">
             <div class="social-icon">
               <img src="assets/images/cart-image/google-img.jpeg" alt="Google" width="24px">
             </div>
@@ -368,7 +368,7 @@
 
       <div class="modal-header border-0 justify-content-center position-relative">
         <h5 class="modal-title text-center w-100" id="loginModalLabel">Login your Account</h5>
-        <button type="button" class="btn-close text-light custom-close position-absolute end-0 me-3" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close text-light custom-close position-absolute end-0 me-3 rounded-circle" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
 
       <div class="modal-body">
@@ -392,7 +392,7 @@
             <a href="#" class="text-primary small form-check-label" data-bs-toggle="modal" data-bs-target="#forgotpasswordModal" data-bs-dismiss="modal">Forgot Password?</a>
           </div>
 
-          <button type="submit" class="bg-btn w-100 mb-3">Login</button>
+          <button type="submit" class="btn btn-primary w-100 mb-3">Login</button>
 
           <p class="text-center form-label">
             Don't have an account?
@@ -424,7 +424,7 @@
 
       <div class="modal-header border-0 justify-content-center position-relative">
         <h5 class="modal-title text-center w-100" id="forgotpasswordModalLabel">Forgot Password</h5>
-        <button type="button" class="btn-close text-light custom-close position-absolute end-0 me-3" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close text-light custom-close position-absolute end-0 me-3 rounded-circle" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
 
       <div class="modal-body">
@@ -434,7 +434,7 @@
           <input type="email" class="form-control mb-2" placeholder="Enter Email" required
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
 
-          <button type="submit" class="bg-btn w-100 mb-3">continue</button>
+          <button type="submit" class="btn btn-primary w-100 mb-3">continue</button>
         </form>
       </div>
     </div>

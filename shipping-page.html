@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <title>Fisunic</title>
+        <!-- Favicons -->
+        <link rel="icon" href="assets/images/Favicons.svg">
+        <!-- build:css -->
+        <link href="dist/assets/css/app.min.css" rel="stylesheet" type="text/css">
+        <!-- endbuild -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--font-awesome-->
+        <!-- Swiper CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+       
+     </head>
+<body>
+    <!--header start-->
+    <header class="border-bottom">
+      <div class="container-xl">
+        <div class="header-row row align-items-center g-3">
+          <!-- Logo -->
+          <div class="header-col col-6 col-md-2">
+            <a href="/">
+              <img src="assets/images/logo.svg" alt="LOGO" class="logo-img">
+            </a>
+          </div>
+    
+          <!-- Search -->
+          <div class="header-col col-md-6">
+            <form role="search">
+              <div class="search-wrapper d-flex align-items-center px-1">
+                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+              </div>
+            </form>   
+          </div>
+          <div class="header-col col-12 col-md-4 d-flex justify-content-center gap-5 align-items-center">
+            <div class="dropdown text-center position-relative">
+              <a href="#" class="text-decoration-none dropdown-toggle text-dark" data-bs-toggle="dropdown" aria-expanded="false">
+                <span>$ USD</span>
+              </a>
+              <ul class="dropdown-menu text-small">
+                <li><a class="dropdown-item" href="#">USD1</a></li>
+                <li><a class="dropdown-item" href="#">USD2</a></li>
+                <li><a class="dropdown-item" href="#">USD3</a></li>
+              </ul>
+            </div>
+            <div class="dropdown text-center position-relative">
+              <a href="#" class="text-decoration-none dropdown-toggle text-dark" data-bs-toggle="dropdown" aria-expanded="false">
+                <span><i class="fa-solid fa-globe me-1"></i> English</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end text-small my-2">
+                <li><a class="dropdown-item" href="#">English1</a></li>
+                <li><a class="dropdown-item" href="#">English2</a></li>
+                <li><a class="dropdown-item" href="#">English3</a></li>
+              </ul>
+            </div>
+            <i class="fa-regular fa-user text-primary"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+      <!--header end-->
+     <!--nav start-->
+     <section class="nav">
+      <div class="container-xl">
+      <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse my-3" id="mainNavbar">
+          <ul class="navbar-nav me-auto mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">All Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Return and Payment</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center">
+            <img src="assets/images/delete-Buttons.svg" alt="delete-btn" style="cursor: pointer;">
+          </div>
+        </div>
+      </nav>
+      </div>
+    </section>
+     <!--nav end-->
+         <!--title start-->
+    <section class="pro-title">
+        <div class="container-xl text-center">
+            <h2 class="page-title">Checkout</h2>
+            <img src="assets/images/our-product-images/title-line.svg" alt="line image">
+            <div class="direction d-flex justify-content-center">
+                <a href="index.html">Home</a>
+                <img src="assets/images/our-product-images/title-Vector.svg" alt="image">
+                <a href="product-details.html">Product</a>
+                <img src="assets/images/our-product-images/title-Vector.svg" alt="image">
+                <a href="cart.html">Cart</a>
+                <img src="assets/images/our-product-images/title-Vector.svg" alt="image">
+                <a href="check-out.html" class="active">Checkout</a>
+            </div>
+        </div>
+    </section>
+    <!--title end-->
+
+    <!--check-out main start-->
+    <div class="shipping-section check-out section-wapper">
+      <div class="container-xl">
+        <div class="checkout-row row d-flex flex-wrap justify-content-between">
+          <!--left col-->
+          <div class="checkout-left col-lg-7">
+              <div class="status d-flex flex-wrap align-items-center text-center">
+                <a href="check-out.html">
+                    <p class="check-title text-primary">Account</p>
+                </a>
+                <img class="check-title status-image" src="assets/images/check-out-image/check-line.svg" alt="status img">
+                <p class="check-title text-primary">Shipping</p>
+                <img class="check-title status-image" src="assets/images/check-out-image/check-line.svg" alt="status img">
+                <p class="check-title">Payment</p>
+              </div> 
+              <p class="check-title">Shipping details</p>
+
+              <!--check-out form-->
+              <div class="address d-flex justify-content-between align-items-center">
+                  <label class="form-label m-0 text-primary">Use saved address</label>
+                  <input type="email" class="form-control" placeholder="123 , Electric avenue" required>      
+              </div>      
+              <label class="form-label mt-4 mt-2">Shipping Address</label>
+              <input type="text" class="form-control" placeholder="Enter Address" required>      
+
+              <label class="form-label mt-4 mt-2">Street Name</label>
+              <input type="text" class="form-control" placeholder="Enter Street Name" required>   
+              
+              <!---->
+              <div class="row g-3">
+                <div class="col-md-4">
+                  <label for="city form-label" class="form-label">City</label>
+                  <select id="city" class="form-select">
+                    <option selected disabled>City</option>
+                    <option>Ahmedabad</option>
+                    <option>London</option>
+                    <option>Tokyo</option>
+                  </select>
+                </div>
+            
+                <div class="col-md-4">
+                  <label for="country" class="form-label">Country</label>
+                  <select id="country" class="form-select">
+                    <option selected disabled>Country</option>
+                    <option>India</option>
+                    <option>Canada</option>
+                    <option>USA</option>
+                  </select>
+                </div>
+            
+                <div class="col-md-4">
+                  <label for="postcode" class="form-label">Post Code</label>
+                  <select id="postcode" class="form-select">
+                    <option selected disabled>Post Code</option>
+                    <option>10001</option>
+                    <option>10002</option>
+                    <option>10003</option>
+                  </select>
+                </div>
+              </div>
+              <hr class="mt-5">
+
+              <!--Billing details-->
+              <div class="billing-title d-flex justify-content-between align-items-center mb-4">
+                <p class="check-title mb-0">Billing details</p>
+                
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="bikeCheck">
+                  <label class="form-check-label" for="bikeCheck">
+                    Same as Shipping Address
+                  </label>
+                </div>
+              </div>
+              
+            <div class="address d-flex justify-content-between align-items-center">
+              <label class="form-label m-0 text-primary">Use saved address</label>
+              <input type="email" class="form-control" placeholder="123 , Electric avenue" required>      
+            </div>      
+            <label class="form-label mt-4 mt-2">Shipping Address</label>
+            <input type="text" class="form-control" placeholder="Enter Address" required>      
+
+            <label class="form-label mt-4 mt-2">Street Name</label>
+            <input type="text" class="form-control" placeholder="Enter Street Name" required>   
+            
+            <!---->
+            <div class="row g-3">
+              <div class="col-md-4">
+                <label for="city form-label" class="form-label">City</label>
+                <select id="city" class="form-select">
+                  <option selected disabled>City</option>
+                  <option>Ahmedabad</option>
+                  <option>London</option>
+                  <option>Tokyo</option>
+                </select>
+              </div>
+          
+              <div class="col-md-4">
+                <label for="country" class="form-label">Country</label>
+                <select id="country" class="form-select">
+                  <option selected disabled>Country</option>
+                  <option>India</option>
+                  <option>Canada</option>
+                  <option>USA</option>
+                </select>
+              </div>
+          
+              <div class="col-md-4">
+                <label for="postcode" class="form-label">Post Code</label>
+                <select id="postcode" class="form-select">
+                  <option selected disabled>Post Code</option>
+                  <option>10001</option>
+                  <option>10002</option>
+                  <option>10003</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary fill-btn w-100 mb-3">Continue to Payment</button>
+          </div>
+
+
+          <!--right col-->
+          <div class="checkout-right left-lower-part col-lg-5">
+            <p class="summary fw-bold fs-5 mb-4">Order Summary</p>
+          
+            <!-- Cart Item 1 -->
+            <div class="left-lower-part d-flex flex-wrap align-items-start mb-5">
+              <div class="cart-image">
+                <img src="assets/images/check-out-image/checkout-img.svg" alt="cart-img" width="100%" height="100%">
+              </div>
+              <div class="img-detail flex-grow-1">
+                <p class="c-left-text fw-semibold">Lorem Ipsum</p>
+                <p class="c-left-text-small text-muted">Lorem Ipsum</p>
+                <p class="c-left-text-small text-muted">Size - 106 cm</p>
+                <div class="price-qty-group d-flex justify-content-between align-items-center">
+                  <p class="c-price fw-semibold">$675.00</p>
+                  <div class="input-group quantity-selector">
+                    <button class="btn1 btn-outline-secondary minus-btn" type="button">−</button>
+                    <input type="text" class="form-control text-center quantity-input" value="1">
+                    <button class="btn1 btn-outline-secondary plus-btn" type="button">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Cart Item 2 -->
+            <div class="left-lower-part d-flex flex-wrap align-items-start">
+              <div class="cart-image">
+                <img src="assets/images/check-out-image/checkout-img.svg" alt="cart-img" width="100%" height="100%">
+              </div>
+              <div class="img-detail flex-grow-1">
+                <p class="c-left-text fw-semibold">Lorem Ipsum</p>
+                <p class="c-left-text-small text-muted">Lorem Ipsum</p>
+                <p class="c-left-text-small text-muted">Size - 106 cm</p>
+                <div class="price-qty-group d-flex justify-content-between align-items-center">
+                  <p class="c-price fw-semibold">$675.00</p>
+                  <div class="input-group quantity-selector">
+                    <button class="btn1 btn-outline-secondary minus-btn" type="button">−</button>
+                    <input type="text" class="form-control text-center quantity-input" value="1">
+                    <button class="btn1 btn-outline-secondary plus-btn" type="button">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--billing part-->
+            <div class="dropdown mb-4 apply-dropdown">
+              <button class="dropdown-toggle d-flex justify-content-between" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Apply Discount Code
+                <i class="fa-solid fa-angle-down"></i>
+              </button>
+              <div class="dropdown-menu pe-2 show">
+                <div class="position-relative">
+                  <input type="text" class="pe-5 form-control border-0" placeholder="Enter Discount Code">
+                  <button class="position-absolute fw-bold fs-6 top-50 end-0 translate-middle-y p-0 bg-transparent border-0 text-primary" type="button">
+                    Apply
+                  </button>
+                </div>
+              </div>
+            </div>
+            <hr>
+
+            <div class="Subtotal d-flex justify-content-between mt-5">
+              <p class="cart-text">Subtotal</p>
+              <p class="cart-text">$675.00</p>
+            </div>
+            <div class="shipping d-flex justify-content-between">
+              <p class="cart-text cart-text1">Shipping</p>
+              <p class="cart-text cart-text1">$2.00</p>
+            </div>
+            <div class="Tax d-flex justify-content-between">
+              <p class="cart-text cart-text1">Tax</p>
+              <p class="cart-text cart-text1">$1.91</p>
+            </div>
+            <div class="total d-flex justify-content-between mb-0">
+              <p class="cart-text cart-text1">Order total</p>
+              <p class="cart-text text-primary">$678.00</p>
+            </div>
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!--check-out main end-->
+
+    <!--footer start-->
+    <footer>
+      <div class="container-xl">
+        <div class="footer-upper row justify-content-center align-items-center d-flex flex-wrap">
+          <div class="footer-upper-left col-12 col-md-6 mb-3 mb-md-0">
+            <h3>NewsLetter</h3>
+            <p>Be the first one to know about discounts, offers and events</p>
+          </div>
+          <div class="footer-upper-right col-12 col-md-6">
+            <div class="input-wrapper position-relative">
+              <input type="email" class="form-control" placeholder="Enter Your Work Email">
+              <a href="account-page.html">
+                <button class="btn btn-primary submit-btn">Submit</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="footer-lower row row-cols-1 row-cols-sm-2 row-cols-md-4">
+          <div class="f-col-1 col">
+            <img src="assets/images/logo.svg" width="165px" height="45px">
+            <ul class="ul d-flex gap-3">
+              <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+          </div>
+        
+          <div class="f-col-2 col">
+            <h5>Quick Links</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link">About Us</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link">Contact Us</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link">Payment Card Options</a></li>
+            </ul>
+          </div>
+        
+          <div class="f-col-2 col">
+            <h5>Help And Information</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link">Privacy Policy</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link">Terms & Conditions</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link">Disclamers</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link">FAQs</a></li>
+            </ul>
+          </div>
+        
+          <div class="f-col-4 col">
+            <div class="f-last-row d-flex align-items-center gap-3">
+              <div class="f-last-left"><i class="fa-solid fa-phone-volume"></i></div>
+              <div class="f-last-right">
+                <h6>Contact Number</h6>
+                <p>0000-111-2222</p>
+              </div>
+            </div>
+
+            <div class="f-last-row d-flex align-items-center gap-3">
+              <div class="f-last-left"><i class="fa-solid fa-envelope"></i></div>
+              <div class="f-last-right">
+                <h6>Email Address</h6>
+                <p>demo@gamil.com</p>
+              </div>
+            </div>
+
+            <div class="f-last-row d-flex align-items-center gap-3">
+              <div class="f-last-left"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="f-last-right">
+                <h6>Office Address</h6>
+                <p>31 Turtle Creek Road, Pickens,sc, 29631  United States</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--footer end-->
+    <script src="assets/vendor/BS5/js/bootstrap.bundle.min.js"></script>
+    <!-- build:js -->
+    <script src="dist/assets/js/custom.min.js"></script>
+    <!-- endbuild -->
+</body>
+</html>
