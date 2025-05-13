@@ -150,10 +150,6 @@
 
 .product-card-section{
     .container-xl{
-        .title
-        {
-          margin-bottom: 32px;
-        }
         .tab-wrapper {
            -webkit-overflow-scrolling: touch;
            overflow-x: auto;
@@ -332,20 +328,15 @@
             }
           }
       }
-
-      .deal-btn{
-        border-color: $white;
-        color: $white;
-      }
-      .deal-btn:hover{
-        background-color: $white;
-        color: $main-color;
-      }
-
-      @media #{$brkmx768}
+      .btn-outline-light
       {
-        .deal-btn{
-          margin-bottom: 10px;
+        &:hover{
+          background-color: $white;
+          color: $main-color;
+        }
+
+        @media #{$brkmx768} {
+          margin-bottom: 30px;
         }
       }
     }
@@ -374,8 +365,8 @@
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
-      max-width: 560px;
       width: 100%;
+      max-width: 560px;
       padding: 20px;  
       border-radius: 20px;
       box-sizing: border-box;
@@ -1149,7 +1140,7 @@ form {
   }
 }
 
-/*Acoount 
+/*Account 
 
           page 
           
@@ -1158,24 +1149,7 @@ form {
 .account-page-section
 {
   .container-xl{
-    .nav-item
-    {
-      padding: 10px 0px;
-      @include text-style(500,16px,100%,0%);
-      text-align: left;
-
-      &:hover
-      {
-        background-color: $bg-color;
-        border-radius: 10px;
-      }
-    }
-    .nav-link
-    {
-      color: $small-font-text;
-      padding-left: 5px;
-    }
-
+  
     .account-right{
       padding: 24px 69px;
       background-color: $bg-color;
@@ -1201,6 +1175,31 @@ form {
           border-radius: 50%;
           border: transparent;
         }
+      }
+    }
+  }
+}
+
+/*order history 
+
+          page 
+          
+                style*/
+
+.order-history-section
+{
+  .container-xl{
+    .order-history-right{
+      padding: 40px 68px;
+      background-color: $bg-color;
+      border-radius: 10px;
+
+      .order-history-title
+      {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: 0%;
       }
     }
   }
