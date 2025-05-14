@@ -1183,6 +1183,16 @@ form {
         font-weight: 400;
         color: $small-font-text;
       }
+
+      .delivered-col
+      {
+
+        opacity: 75%;
+        .cart-text
+        {
+          font-weight: 500;
+        }
+      }
     }
   }
 }

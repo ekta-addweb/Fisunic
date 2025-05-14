@@ -12712,3 +12712,9 @@ form {
   font-weight: 400;
   color: #4A4A4A;
 }
+.order-history-section .container-xl .order-history-right .delivered-col {
+  opacity: 75%;
+}
+.order-history-section .container-xl .order-history-right .delivered-col .cart-text {
+  font-weight: 500;
+}
