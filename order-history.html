@@ -62,40 +62,40 @@
       </div>
     </header>
     <!--header end-->
-    <!--nav start-->
-    <section class="nav">
+       <!--nav start-->
+       <section class="nav">
         <div class="container-xl">
-        <nav class="navbar navbar-expand-lg">
-          <button class="navbar-toggler d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <nav class="navbar navbar-expand-lg my-3">
       
-          <div class="collapse navbar-collapse my-3" id="mainNavbar">
-            <ul class="navbar-nav me-auto mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">All Categories</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Return and Payment</a>
-              </li>
-            </ul>
-            <div class="d-flex align-items-center">
-              <img src="assets/images/delete-Buttons.svg" alt="delete-btn" style="cursor: pointer;">
+            <!-- Desktop -->
+            <div class="d-none d-lg-flex align-items-center text-primary" data-bs-toggle="collapse" data-bs-target="" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" style="cursor: pointer;">
+              <span class="navbar-toggler-icon me-2"></span>
+              <span class="nav-link m-0 p-0 text-primary">All Categories</span>
             </div>
-          </div>
-        </nav>
+      
+            <!-- Mobile -->
+            <div class="d-flex d-lg-none align-items-center text-primary" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" style="cursor: pointer;">
+              <span class="navbar-toggler-icon me-2"></span>
+              <span class="nav-link m-0 p-0 text-primary">All Categories</span>
+            </div>
+      
+            <div class="collapse navbar-collapse" id="mainNavbar">
+              <ul class="navbar-nav me-auto ms-lg-4 ms-0 mt-4 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Return and Payment</a></li>
+              </ul>
+              <div class="d-flex align-items-center mt-lg-0 mt-4 mt-lg-0">
+                <img src="assets/images/delete-Buttons.svg" alt="delete-btn" style="cursor: pointer;">
+              </div>
+            </div>
+      
+          </nav>
         </div>
-    </section>  
-    <!--nav end-->
+      </section>
+       <!--nav end-->
+  
     <!--title start-->
     <section class="pro-title">
         <div class="container-xl text-center">
@@ -113,7 +113,7 @@
     <!--title end-->
 
     <!--main-->
-    <section class="order-history-section section-wapper">
+    <section class="order-history-section section-wrapper">
         <div class="container-xl">
             <div class="row g-4 d-flex justify-content-between">
 
@@ -139,48 +139,91 @@
                 <!-- Profile Form -->
                 <div class="col-lg-8 order-history-right">
                     <p class="mb-4 order-history-title">My Orders</p>
-                    <div class="border rounded p-3 bg-white shadow-sm">
+                   <div class="">
                         <div class="row g-3 align-items-start">
                           <!-- Product Image -->
                           <div class="col-auto">
-                            <img src="assets/images/check-out-image/checkout-img.svg" alt="Product Image" class="img-fluid rounded" style="width: 97px; height: auto;">
+                            <img src="assets/images/check-out-image/checkout-img.svg" alt="Product Image" class="img-fluid rounded" style="width: 110px; height: 110px;">
                           </div>
                     
                           <!-- Product Info -->
                           <div class="col">
-                            <h6 class="mb-2 fw-semibold">Lorem Ipsum</h6>
-                            <p class="mb-2 text-muted small">Lorem Ipsum</p>
-                            <p class="mb-2 text-muted small">Size – 106 cm &nbsp; Qty – 1</p>
-                            <p class="mb-0 fw-semibold">$675.00</p>
+                            <h6 class="mb-2 cart-text">Lorem Ipsum</h6>
+                            <p class="mb-2 cart-text1">Lorem Ipsum</p>
+                            <p class="mb-2 cart-text1 size">Size – 106 cm &nbsp; Qty – 1</p>
+                            <p class="mb-0 cart-text1">$675.00</p>
                           </div>
                     
                           <!-- Order Info -->
                           <div class="col text-end">
-                            <p class="mb-1 small">Order # <strong>123456678889</strong></p>
-                            <a href="#" class="d-block mb-1 small text-decoration-none text-primary">Download Invoice <i class="fa fa-download ms-1"></i></a>
-                            <div class="mb-1 small">Rate Product:
-                              <span class="text-warning">
-                                ★★★★★
+                            <p class="cart-text1 mb-2">Order # 123456678889</p>
+                            <a href="#" class="cart-text1 d-block mb-2 text-decoration-none text-primary">Download Invoice <i class="fa fa-download ms-1"></i></a>
+                            <div class="mb-2 cart-text1">Rate Product
+                              <span class="ms-2">
+                                <img src="assets/images/our-product-images/pro-stars.svg" alt="stars" width="98px" height="20px">
                               </span>
                             </div>
-                            <p class="mb-0 small">Paid Via – <strong>Cash On Delivery</strong></p>
+                            <p class="mb-0 cart-text1">Paid Via – Cash On Delivery</p>
                           </div>
                         </div>
                     
                         <!-- Action Buttons -->
-                        <div class="row mt-3 text-center">
+                        <div class="row text-center">
                           <div class="col">
-                            <button class="btn btn-outline-primary w-100">Track Order</button>
+                            <button class="btn btn-light mt-4">Track Order</button>
                           </div>
                           <div class="col">
-                            <button class="btn btn-outline-primary w-100">Order Details</button>
+                            <button class="btn btn-light mt-4">Order Details</button>
                           </div>
                           <div class="col">
-                            <button class="btn btn-outline-danger w-100">Cancel Order</button>
+                            <button class="btn btn-light mt-4">Cancel Order</button>
                           </div>
                         </div>
                       </div>
                 </div>
+
+                <div class="">
+                  <div class="row g-3 align-items-start">
+                    <!-- Product Image -->
+                    <div class="col-auto">
+                      <img src="assets/images/check-out-image/checkout-img.svg" alt="Product Image" class="img-fluid rounded" style="width: 110px; height: 110px;">
+                    </div>
+              
+                    <!-- Product Info -->
+                    <div class="col">
+                      <h6 class="mb-2 cart-text">Lorem Ipsum</h6>
+                      <p class="mb-2 cart-text1">Lorem Ipsum</p>
+                      <p class="mb-2 cart-text1 size">Size – 106 cm &nbsp; Qty – 1</p>
+                      <p class="mb-0 cart-text1">$675.00</p>
+                    </div>
+              
+                    <!-- Order Info -->
+                    <div class="col text-end">
+                      <p class="cart-text1 mb-2">Order # 123456678889</p>
+                      <a href="#" class="cart-text1 d-block mb-2 text-decoration-none text-primary">Download Invoice <i class="fa fa-download ms-1"></i></a>
+                      <div class="mb-2 cart-text1">Rate Product
+                        <span class="ms-2">
+                          <img src="assets/images/our-product-images/pro-stars.svg" alt="stars" width="98px" height="20px">
+                        </span>
+                      </div>
+                      <p class="mb-0 cart-text1">Paid Via – Cash On Delivery</p>
+                    </div>
+                  </div>
+              
+                  <!-- Action Buttons -->
+                  <div class="row text-center">
+                    <div class="col">
+                      <button class="btn btn-light mt-4">Track Order</button>
+                    </div>
+                    <div class="col">
+                      <button class="btn btn-light mt-4">Order Details</button>
+                    </div>
+                    <div class="col">
+                      <button class="btn btn-light mt-4">Cancel Order</button>
+                    </div>
+                  </div>
+                </di v>
+          </div>
             </div>
         </div>
     </section>

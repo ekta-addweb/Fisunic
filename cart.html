@@ -65,37 +65,36 @@
       <!--nav start-->
       <section class="nav">
         <div class="container-xl">
-        <nav class="navbar navbar-expand-lg">
-          <button class="navbar-toggler d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <nav class="navbar navbar-expand-lg my-3">
       
-          <div class="collapse navbar-collapse my-3" id="mainNavbar">
-            <ul class="navbar-nav me-auto mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">All Categories</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Return and Payment</a>
-              </li>
-            </ul>
-            <div class="d-flex align-items-center">
-              <img src="assets/images/delete-Buttons.svg" alt="delete-btn" style="cursor: pointer;">
+            <!-- Desktop -->
+            <div class="d-none d-lg-flex align-items-center text-primary" data-bs-toggle="collapse" data-bs-target="" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" style="cursor: pointer;">
+              <span class="navbar-toggler-icon me-2"></span>
+              <span class="nav-link m-0 p-0 text-primary">All Categories</span>
             </div>
-          </div>
-        </nav>
+      
+            <!-- Mobile -->
+            <div class="d-flex d-lg-none align-items-center text-primary" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" style="cursor: pointer;">
+              <span class="navbar-toggler-icon me-2"></span>
+              <span class="nav-link m-0 p-0 text-primary">All Categories</span>
+            </div>
+      
+            <div class="collapse navbar-collapse" id="mainNavbar">
+              <ul class="navbar-nav me-auto ms-lg-4 ms-0 mt-4 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Return and Payment</a></li>
+              </ul>
+              <div class="d-flex align-items-center mt-lg-0 mt-4 mt-lg-0">
+                <img src="assets/images/delete-Buttons.svg" alt="delete-btn" style="cursor: pointer;">
+              </div>
+            </div>
+      
+          </nav>
         </div>
       </section>
-     <!--nav end-->
+       <!--nav end-->
     <!--title start-->
     <section class="pro-title">
         <div class="container-xl text-center">
@@ -113,7 +112,7 @@
     <!--title end-->
 
     <!--main section start-->
-    <div class="cart-section section-wapper">
+    <div class="cart-section section-wrapper">
         <div class="container-xl">
             <div class="cart-row d-flex flex-wrap">
                 <div class="cart-left">
@@ -127,9 +126,12 @@
 
                     <div class="left-lower-part d-flex row">
                         <div class="img-info col-6 d-flex gap-4 align-items-center">
-                        <div class="img cart-img">
-                            <img class="cart-img" src="assets/images/cart-image/cart-img.svg" alt="cart-img" width="100px" height="100px">
-                        </div>
+                          <div class="image-in-cart">
+                            <img  class="cart-img"  src="assets/images/cart-image/cart-img.svg"  alt="cart-img"  width="100"  height="100">
+                            <button class="delete-btn" aria-label="Remove item">
+                              <img src="assets/images/cart-image/c-delete-icon.svg" alt="delete-btn">
+                            </button>
+                          </div> 
                         <div class="img-detail">
                             <p class="c-left-text">Lorem Ipsum</p>
                             <p class="c-left-text-small">Lorem Ipsum</p>
@@ -146,10 +148,13 @@
 
                     <div class="left-lower-part d-flex row">
                         <div class="img-info col-6 d-flex gap-4 align-items-center">
-                        <div class="img cart-img">
-                            <img class="cart-img" src="assets/images/cart-image/cart-img.svg" alt="cart-img" width="100px" height="100px">
-                        </div>
-                        <div class="img-detail">
+                          <div class="image-in-cart">
+                            <img  class="cart-img"  src="assets/images/cart-image/cart-img.svg"  alt="cart-img"  width="100"  height="100">
+                            <button class="delete-btn" aria-label="Remove item">
+                              <img src="assets/images/cart-image/c-delete-icon.svg" alt="delete-btn">
+                            </button>
+                          </div>
+                          <div class="img-detail">
                             <p class="c-left-text">Lorem Ipsum</p>
                             <p class="c-left-text-small">Lorem Ipsum</p>
                             <p class="c-left-text-small">Size - 106 cm</p>
@@ -292,9 +297,22 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </footer>
-            <!--footer end-->
+             <!--copy right-->
+              <div class="copy-right text-center pb-4">
+                <hr class="text-primary mb-4">
+                <p>© 2023 All rights reserved</p>
+             </div>
+            </div>
+          
+            <!--msg icon-->
+            <div class="msg-icon d-none d-lg-block">
+              <button class="msg-button">
+                <img src="assets/images/msg-logo.svg" alt="msg-icon" class="img-fluid">
+              </button>
+            </div>
+      </footer>
+      <!--footer end-->
+          
 
 <!-- Register Section -->
 <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">

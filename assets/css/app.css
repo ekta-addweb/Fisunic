@@ -10836,7 +10836,7 @@ ol li {
   padding-top: 64px;
   padding-bottom: 64px;
 }
-@media (max-width: 426px) {
+@media (max-width: 767.98px) {
   .section-wrapper {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -10846,9 +10846,9 @@ ol li {
 .title-wrapper {
   padding-bottom: 64px;
 }
-@media (max-width: 426px) {
+@media (max-width: 767.98px) {
   .title-wrapper {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
 }
 
@@ -10884,7 +10884,7 @@ img {
 .btn {
   border-radius: 10px;
   padding: 14px 32px;
-  border: 2px solid;
+  border: 2px solid #1379FF;
   margin-top: 32px;
 }
 
@@ -10900,8 +10900,20 @@ img {
     margin-top: 24px;
   }
 }
+.btn-primary {
+  background-color: #1379FF;
+}
 .btn-primary:hover {
   background-color: transparent;
+  color: #1379FF;
+  border: 2px solid #1379FF;
+}
+
+.btn-light {
+  background-color: #fff;
+  padding: 4px 48px;
+  border: none;
+  border-radius: 4px;
   color: #1379FF;
 }
 
@@ -11044,19 +11056,24 @@ img {
 .left-lower-part {
   margin-bottom: 30px;
 }
-.left-lower-part .cart-img {
+.left-lower-part .image-in-cart {
   position: relative;
+  display: inline-block;
 }
-.left-lower-part .cart-img::after {
-  content: "";
+.left-lower-part .image-in-cart .delete-btn {
   position: absolute;
   top: -10px;
   right: -10px;
-  background: url("../../../assets/images/cart-image/c-delete-icon.svg") no-repeat;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 2;
+}
+.left-lower-part .image-in-cart .delete-btn img {
+  display: block;
   width: 34px;
-  height: 32px;
-  border-radius: 50%;
-  z-index: 1111;
+  height: 34px;
 }
 .left-lower-part .c-left-text {
   font-weight: 500;
@@ -11203,26 +11220,12 @@ img {
 }
 
 .cart-text1 {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0%;
 }
 
-.checkout-right {
-  position: relative;
-}
-.checkout-right::after {
-  content: "";
-  position: absolute;
-  top: 200px;
-  right: -60px;
-  bottom: auto;
-  left: auto;
-  background: url("../../../assets/images/msg-logo.svg") no-repeat;
-  width: 62px;
-  height: 60px;
-}
 .checkout-right .left-lower-part {
   gap: 30px;
 }
@@ -11248,6 +11251,17 @@ img {
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid #ccc;
+}
+
+.checkout-right {
+  flex-basis: 457px;
+}
+@media (max-width: 1097px) {
+  .checkout-right {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .form-label {
@@ -11528,6 +11542,11 @@ footer .container-xl .footer-lower .f-last-row .f-last-left .fa-phone-volume, fo
   color: #1379FF;
   line-height: 48px;
   text-align: center;
+  cursor: pointer;
+}
+footer .container-xl .footer-lower .f-last-row .f-last-left .fa-phone-volume:hover, footer .container-xl .footer-lower .f-last-row .f-last-left .fa-envelope:hover, footer .container-xl .footer-lower .f-last-row .f-last-left .fa-location-dot:hover {
+  background-color: #1379FF;
+  color: #fff;
 }
 footer .container-xl .footer-lower .f-last-row .f-last-right h6, footer .container-xl .footer-lower .f-last-row .f-last-right .h6 {
   font-weight: 400;
@@ -11544,20 +11563,25 @@ footer .container-xl .footer-lower .f-last-row .f-last-right p {
   letter-spacing: 0;
   color: #4A4A4A;
 }
+footer .container-xl .copy-right {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #4A4A4A;
+}
+footer .msg-icon {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+footer .msg-button {
+  border: none;
+  background-color: transparent;
+}
 
 .hero-section {
   position: relative;
-}
-.hero-section::after {
-  content: "";
-  position: absolute;
-  top: auto;
-  right: 0px;
-  bottom: 50px;
-  left: auto;
-  background: url("../../../assets/images/msg-logo.svg") no-repeat;
-  width: 62px;
-  height: 60px;
 }
 .hero-section .hero-row {
   background: #F1F7FF;
@@ -11602,6 +11626,10 @@ footer .container-xl .footer-lower .f-last-row .f-last-right p {
   opacity: 80%;
 }
 @media (max-width: 767.98px) {
+  .hero-section .hero-row .hero-left {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
   .hero-section .hero-row .hero-left .hero-title {
     font-weight: 500;
     font-size: 25px;
@@ -12110,7 +12138,7 @@ footer .container-xl .footer-lower .f-last-row .f-last-right p {
   display: inline;
   margin-top: 10px;
 }
-.pro-main .container-xl .pro-left-upper-card .Clear-btn {
+.pro-main .container-xl .pro-left-upper-card .btn-outline-secondary {
   padding: 8px 24px;
   border-radius: 4px;
   border: 1px solid rgba(137, 137, 137, 0.3);
@@ -12120,7 +12148,7 @@ footer .container-xl .footer-lower .f-last-row .f-last-right p {
   letter-spacing: 0%;
   color: #3A3A3A;
 }
-.pro-main .container-xl .pro-left-upper-card .Clear-btn:hover {
+.pro-main .container-xl .pro-left-upper-card .btn-outline-secondary:hover {
   background-color: #1379FF;
   color: #fff;
 }
@@ -12156,20 +12184,6 @@ footer .container-xl .footer-lower .f-last-row .f-last-right p {
   color: #1379FF;
   margin-top: 16px;
   margin-bottom: 15px;
-}
-.pro-main .container-xl .pro-right-card {
-  position: relative;
-}
-.pro-main .container-xl .pro-right-card::after {
-  content: "";
-  position: absolute;
-  top: 200px;
-  right: -60px;
-  bottom: auto;
-  left: auto;
-  background: url("../../../assets/images/msg-logo.svg") no-repeat;
-  width: 62px;
-  height: 60px;
 }
 .pro-main .container-xl .pro-right-card .pro-right-text {
   font-weight: 500;
@@ -12271,20 +12285,6 @@ footer .container-xl .footer-lower .f-last-row .f-last-right p {
   .product-details-section .container-xl .product-details-left .mySwiper .swiper-button-prev::after {
     font-size: 12px;
   }
-}
-.product-details-section .container-xl .product-details-right {
-  position: relative;
-}
-.product-details-section .container-xl .product-details-right::after {
-  content: "";
-  position: absolute;
-  top: 150px;
-  right: 0px;
-  bottom: auto;
-  left: auto;
-  background: url("../../../assets/images/msg-logo.svg") no-repeat;
-  width: 62px;
-  height: 60px;
 }
 .product-details-section .container-xl .product-details-right .stock {
   font-weight: 400;
@@ -12394,7 +12394,7 @@ footer .container-xl .footer-lower .f-last-row .f-last-right p {
 .pro-info2 {
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 30px;
   letter-spacing: 0;
   color: #4A4A4A;
 }
@@ -12438,21 +12438,6 @@ footer .container-xl .footer-lower .f-last-row .f-last-right p {
   font-weight: 600;
 }
 
-.related-pro .container-xl h2, .related-pro .container-xl .h2 {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 20px;
-  letter-spacing: 0%;
-  color: #4A4A4A;
-  text-align: center;
-  margin-bottom: 64px;
-}
-@media (max-width: 425px) {
-  .related-pro .container-xl h2, .related-pro .container-xl .h2 {
-    margin-bottom: 30px;
-  }
-}
-
 /*cart  
 
       style start
@@ -12478,18 +12463,6 @@ footer .container-xl .footer-lower .f-last-row .f-last-right p {
   background-color: #F1F7FF;
   border-radius: 10px;
   margin: auto;
-  position: relative;
-}
-.cart-section .container-xl .cart-row .cart-right::after {
-  content: "";
-  position: absolute;
-  top: 150px;
-  right: -100px;
-  bottom: auto;
-  left: auto;
-  background: url("../../../assets/images/msg-logo.svg") no-repeat;
-  width: 62px;
-  height: 60px;
 }
 @media (max-width: 1024px) {
   .cart-section .container-xl .cart-row .cart-right {
@@ -12675,16 +12648,16 @@ form {
           page 
 
                 style*/
-.shipping-section .checkout-left {
+.shipping-section .container-xl .checkout-row .checkout-left {
   height: auto !important;
 }
-.shipping-section .checkout-left .address .form-label {
+.shipping-section .container-xl .checkout-row .checkout-left .address .form-label {
   font-weight: 500;
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
 }
-.shipping-section .checkout-left .address .form-control {
+.shipping-section .container-xl .checkout-row .checkout-left .address .form-control {
   width: 100%;
   max-width: 335px;
   border-radius: 8px;
@@ -12734,4 +12707,8 @@ form {
   font-size: 20px;
   line-height: 100%;
   letter-spacing: 0%;
+}
+.order-history-section .container-xl .order-history-right .size {
+  font-weight: 400;
+  color: #4A4A4A;
 }

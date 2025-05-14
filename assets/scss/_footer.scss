@@ -175,6 +175,13 @@ footer {
               color: $main-color;
               line-height: 48px;
               text-align: center;
+              cursor: pointer;
+
+              &:hover
+              {
+                background-color: $main-color;
+                color: $white;
+              }
             }
           }
           .f-last-right{
@@ -190,5 +197,23 @@ footer {
           }
         }
       }
+      .copy-right
+      {
+        @include text-style(400,16px,100%,0);
+        color: $small-font-text;
+      }
+    }
+
+
+    .msg-icon
+    {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+    }
+    .msg-button
+    {
+      border: none;
+      background-color: transparent;
     }
   }

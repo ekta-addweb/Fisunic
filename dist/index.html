@@ -59,41 +59,39 @@
           </div>
         </div>
       </header>
-      <!--header end-->
+    <!--header end-->
     <!--nav start-->
     <section class="nav">
       <div class="container-xl">
-      <nav class="navbar navbar-expand-lg">
-        <button class="navbar-toggler d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <nav class="navbar navbar-expand-lg my-3">
     
-        <div class="collapse navbar-collapse my-3" id="mainNavbar">
-          <ul class="navbar-nav me-auto mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">All Categories</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Return and Payment</a>
-            </li>
-          </ul>
-          <div class="d-flex align-items-center">
-            <img src="assets/images/delete-Buttons.svg" alt="delete-btn" style="cursor: pointer;">
+          <!-- Desktop -->
+          <div class="d-none d-lg-flex align-items-center text-primary" data-bs-toggle="collapse" data-bs-target="" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" style="cursor: pointer;">
+            <span class="navbar-toggler-icon me-2"></span>
+            <span class="nav-link m-0 p-0 text-primary">All Categories</span>
           </div>
-        </div>
-      </nav>
+    
+          <!-- Mobile -->
+          <div class="d-flex d-lg-none align-items-center text-primary" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" style="cursor: pointer;">
+            <span class="navbar-toggler-icon me-2"></span>
+            <span class="nav-link m-0 p-0 text-primary">All Categories</span>
+          </div>
+    
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav me-auto ms-lg-4 ms-0 mt-4 mt-lg-0">
+              <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Return and Payment</a></li>
+            </ul>
+            <div class="d-flex align-items-center mt-lg-0 mt-4 mt-lg-0">
+              <img src="assets/images/delete-Buttons.svg" alt="delete-btn" style="cursor: pointer;">
+            </div>
+          </div>
+    
+        </nav>
       </div>
     </section>
-    
      <!--nav end-->
 
       <!--hero-section start-->
@@ -155,9 +153,9 @@
       <!--hero-section end-->
 
       <!--Category start-->
-      <section class="categories-slider-section section-wapper">
+      <section class="categories-slider-section section-wrapper">
         <div class="container-xl">
-          <div class="cate-heading d-flex justify-content-between flex-wrap align-items-center gap-3 section-wapper pt-0">
+          <div class="cate-heading d-flex justify-content-between flex-wrap align-items-center gap-3 title-wrapper">
             <div class="c-heading-left d-flex align-items-center gap-2 text-primary">
               <img src="assets/images/category.svg" alt="Category Icon">
               <h5 class="mb-0">Browse By Category</h5>
@@ -235,9 +233,9 @@
       <!--Category end-->
 
       <!--products start-->
-      <section class="product-card-section section-wapper">
+      <section class="product-card-section section-wrapper">
         <div class="container-xl">
-          <h2 class="title text-center">Our Products</h2>
+          <h2 class="title text-center title-wrapper">Our Products</h2>
           <!--Tabs-->
           <div class="tab-wrapper">
             <ul class="nav nav-tabs tab-scroll d-flex justify-content-center" id="productTabs" role="tablist">
@@ -775,7 +773,7 @@
 <!--products end-->
 
 <!--Subscription plan section start-->
-      <section class="Subscription-section section-wapper">
+      <section class="Subscription-section section-wrapper">
         <div class="container-xl">
           <div class="sub-title text-center">
             <h2 class="title mb-3">Fisunic Subscription</h2>
@@ -1097,9 +1095,9 @@
       <!--Subscription plan section end-->
 
       <!--company start-->
-      <section class="categories-slider-section section-wapper">
+      <section class="categories-slider-section section-wrapper">
         <div class="container-xl">
-          <div class="cate-heading d-flex justify-content-between flex-wrap align-items-center gap-3 section-wapper pt-0">
+          <div class="cate-heading d-flex justify-content-between flex-wrap align-items-center gap-3 title-wrapper pt-0">
             <div class="c-heading-left d-flex align-items-center gap-2 text-primary">
               <img src="assets/images/category.svg" alt="Category Icon">
               <h5 class="mb-0">Browse By Brands</h5>
@@ -1170,7 +1168,7 @@
             <div class="deal-left col-md-6 text-center text-white">
               <p class="deal-title"><img src="assets/images/deal-line.jpg"> deal of the week <img src="assets/images/deal-line.jpg"></p>
                <h2 class="offers">10% off<span> on machines</span></h2>
-               <button class="btn btn-outline-light">Discover Now</button>
+               <button class="btn btn-outline-light md-mb-5">Discover Now</button>
             </div>
             <div class="deal-right col-md-6">
                <img src="assets/images/deal-image.svg" alt="hero-image" class="img-fluid hero-img">
@@ -1180,9 +1178,9 @@
       <!--deals section end-->
 
       <!--client section start-->
-      <section class="client section-wapper">
+      <section class="client section-wrapper">
         <div class="container-xl">
-          <h2 class="title section-wapper pt-0">What Our Client Says</h2>
+          <h2 class="title title-wrapper">What Our Client Says</h2>
           <div class="swiper clientSwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -1256,7 +1254,7 @@
       <!--client section end-->
     
       <!--company section start-->
-      <section class="company-section section-wapper pt-0">
+      <section class="company-section section-wrapper pt-0">
         <div class="container-xl">
           <div class="company d-flex flex-column flex-md-row justify-content-between align-items-center gap-4">
             <div class="company-col1 text-center text-md-start d-flex gap-3 text-center">
@@ -1352,6 +1350,18 @@
               </div>
             </div>
           </div>
+          <!--copy right-->
+          <div class="copy-right text-center pb-4">
+            <hr class="text-primary mb-4">
+            <p>© 2023 All rights reserved</p>
+         </div>
+        </div>
+
+        <!--msg icon-->
+        <div class="msg-icon">
+          <button class="msg-button">
+            <img src="assets/images/msg-logo.svg" alt="msg-icon" class="img-fluid">
+          </button>
         </div>
       </footer>
       <!--footer end-->
@@ -1387,6 +1397,7 @@
     spaceBetween: 20,
     centeredSlides: true,
     loop: true,
+    
 
     navigation: {
       nextEl: ".client-next",
@@ -1402,10 +1413,10 @@
       576: { slidesPerView: 1.2 },
       768: { slidesPerView: 1.5 },
       992: { slidesPerView: 2 },
-      1200: { slidesPerView: 2.2 },
-      1400: { slidesPerView: 2.5 },
-      1600: { slidesPerView: 3.2 },
-      1920: { slidesPerView: 3.5 },
+      1200: { slidesPerView: 2},
+      1400: { slidesPerView: 2},
+      1600: { slidesPerView: 2},
+      1920: { slidesPerView: 2 },
     }
   });
 

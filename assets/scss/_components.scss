@@ -1,8 +1,5 @@
 .hero-section{
   position: relative;
-  &::after {
-    @include msg-logo($bottom: 50px, $right: 0px); //msg icon
-  }
   //hero-row
     .hero-row
     {
@@ -47,6 +44,8 @@
             .hero-text{
               @include text-style(500, 12px,15px,0%);
             }
+            margin-top: 30px;
+            margin-bottom: 30px;
           }
         }
         //hero-right-col
@@ -560,7 +559,7 @@
         display: inline;
         margin-top: 10px;
       }
-      .Clear-btn
+      .btn-outline-secondary
       {
         padding: 8px 24px;
         border-radius: 4px;
@@ -609,11 +608,6 @@
     }
 
     .pro-right-card{
-
-      position: relative;
-      &::after {
-        @include msg-logo($top: 200px, $right: -60px); //msg icon
-    }
       .pro-right-text{
         @include text-style(500,14px,20px,0%);
         color: $heading-color; 
@@ -731,10 +725,6 @@
     }
     //right side style start
     .product-details-right{
-      position: relative;
-      &::after {
-        @include msg-logo($top: 150px, $right: 0px); //msg icon
-      }
       .stock{
         @include text-style(400,16px,20px,-0.2px);
         color: $green-color;
@@ -828,7 +818,7 @@
 }
 
 .pro-info2{
-  @include text-style(400,16px,20px,0);
+  @include text-style(400,16px,30px,0);
   color: $small-font-text;
 }
 
@@ -873,21 +863,6 @@
     }
   }
 }
-
-.related-pro{
-  .container-xl{
-    h2{
-      @include text-style(700,32px,20px,0%);
-      color: $small-font-text;
-      text-align: center;
-      margin-bottom: 64px;
-
-      @media (max-width: 425px) {
-        margin-bottom: 30px;
-      }
-    }
-  }
-}
   
   /*cart  
         
@@ -918,10 +893,6 @@
         background-color: $bg-color;
         border-radius: 10px;
         margin: auto;
-        position: relative;
-        &::after {
-          @include msg-logo($top: 150px, $right: -100px); //msg icon
-        }
       
         @media #{$brkmx1024}
         {
@@ -1102,6 +1073,7 @@ form {
           }
         }
       }
+     
     }
   }
 }
@@ -1122,19 +1094,24 @@ form {
 
 .shipping-section
 {
-  .checkout-left
+  .container-xl
   {
-    height: auto !important;
-    .address{
-      .form-label{
-        @include text-style(500,16px,100%,0%);
-      }
-      .form-control
+    .checkout-row{
+      .checkout-left
       {
-        width: 100%;
-        max-width: 335px;
-        border-radius: 8px;
-        height: 44px;
+        height: auto !important;
+        .address{
+          .form-label{
+            @include text-style(500,16px,100%,0%);
+          }
+          .form-control
+          {
+            width: 100%;
+            max-width: 335px;
+            border-radius: 8px;
+            height: 44px;
+          }
+        }
       }
     }
   }
@@ -1200,6 +1177,11 @@ form {
         font-size: 20px;
         line-height: 100%;
         letter-spacing: 0%;
+      }
+      .size
+      {
+        font-weight: 400;
+        color: $small-font-text;
       }
     }
   }

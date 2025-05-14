@@ -16,6 +16,7 @@ $brkmx426: '(max-width: 426px)';
 
 $brkmx672: '(max-width : 672px)';
 $brkmx900: '(max-width : 900px)';
+$brkmx1097: '(max-width: 1097px)';
 
 @mixin respond-to($media) {
     @media only screen and #{$media} {

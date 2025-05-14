@@ -151,18 +151,4 @@
     letter-spacing: $letter-spacing;
 }
 
-//msg logo
-
-@mixin msg-logo($top: auto, $right: auto, $bottom: auto, $left: auto) {
-    content: "";
-    position: absolute;
-    top: $top;
-    right: $right;
-    bottom: $bottom;
-    left: $left;
-    background: url('../../../assets/images/msg-logo.svg') no-repeat;
-    width: 62px;
-    height: 60px;
-  }
-  
   

@@ -12,7 +12,6 @@
         <!--font-awesome-->
         <!-- Swiper CSS -->
         <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
-       
      </head>
 <body>
       <!--header start-->
@@ -61,40 +60,39 @@
         </div>
       </header>
       <!--header end-->
-      <!--nav start-->
-      <section class="nav">
-        <div class="container-xl">
-        <nav class="navbar navbar-expand-lg">
-          <button class="navbar-toggler d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      
-          <div class="collapse navbar-collapse my-3" id="mainNavbar">
-            <ul class="navbar-nav me-auto mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">All Categories</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Return and Payment</a>
-              </li>
+     <!--nav start-->
+     <section class="nav">
+      <div class="container-xl">
+        <nav class="navbar navbar-expand-lg my-3">
+    
+          <!-- Desktop -->
+          <div class="d-none d-lg-flex align-items-center text-primary" data-bs-toggle="collapse" data-bs-target="" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" style="cursor: pointer;">
+            <span class="navbar-toggler-icon me-2"></span>
+            <span class="nav-link m-0 p-0 text-primary">All Categories</span>
+          </div>
+    
+          <!-- Mobile -->
+          <div class="d-flex d-lg-none align-items-center text-primary" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" style="cursor: pointer;">
+            <span class="navbar-toggler-icon me-2"></span>
+            <span class="nav-link m-0 p-0 text-primary">All Categories</span>
+          </div>
+    
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav me-auto ms-lg-4 ms-0 mt-4 mt-lg-0">
+              <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Return and Payment</a></li>
             </ul>
-            <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center mt-lg-0 mt-4 mt-lg-0">
               <img src="assets/images/delete-Buttons.svg" alt="delete-btn" style="cursor: pointer;">
             </div>
           </div>
         </nav>
-        </div>
-      </section>
+      </div>
+    </section>
      <!--nav end-->
+
     <!--title start-->
     <section class="pro-title">
         <div class="container-xl text-center">
@@ -112,9 +110,9 @@
     <!--title end-->
 
     <!--main section start-->
-    <div class="product-details-section section-wapper">
+    <div class="product-details-section section-wrapper">
       <div class="container-xl">
-        <div class="row d-flex justify-content-between">
+        <div class="row d-flex justify-content-between gap-5 gap-lg-0">
           
           <!-- Left Column -->
           <div class="col-12 col-lg-6 product-details-left">
@@ -124,7 +122,7 @@
                 <div class="swiper mySwiper">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <img src="assets/images/product-details-image/d-slider-1.svg" alt="Image 1">
+                      <img src="assets/images/product-details-image/d-slider4.svg" alt="Image 1">
                     </div>
                     <div class="swiper-slide">
                       <img src="assets/images/product-details-image/d-slider2.svg" alt="Image 2">
@@ -136,7 +134,7 @@
                       <img src="assets/images/product-details-image/d-slider4.svg" alt="Image 4">
                     </div>
                     <div class="swiper-slide">
-                      <img src="assets/images/product-details-image/d-slider-1.svg" alt="Image 5">
+                      <img src="assets/images/product-details-image/d-slider3.svg" alt="Image 5">
                     </div>
                     <div class="swiper-slide">
                       <img src="assets/images/product-details-image/d-slider2.svg" alt="Image 6">
@@ -145,7 +143,7 @@
                 </div>
                 <div class="swiper-button-next"></div>
               </div>
-            </div>
+          </div>
       
           <!-- Right Column -->
           <div class="col-12 col-lg-6 product-details-right">
@@ -176,9 +174,9 @@
                 </div>
       
                 <div class="controls d-flex gap-3 flex-wrap">
-                  <div class="quantity">
+                  <div class="quantity mt-1">
                     <label class="price-label pro-info2">Quantity</label>
-                    <div class="quantity-selector d-flex align-items-center text-center style" style="width: 122px; height: 44px;">
+                    <div class="quantity-selector d-flex align-items-center text-center style" style="width: 122px; height: 45px;">
                       <button class="btn1 btn-outline-secondary minus-btn" type="button">−</button>
                         <input type="text" class="form-control text-center quantity-input border-0" value="2">
                       <button class="btn1 btn-outline-secondary plus-btn" type="button">+</button>
@@ -208,7 +206,7 @@
     <!--main section end-->
 
     <!--product description start-->
-    <div class="pro-description section-wapper">
+    <div class="pro-description section-wrapper">
       <div class="container-xl">
 
         <div class="tabs-container">
@@ -274,9 +272,9 @@
     <!--product description end-->
 
     <!--related products start-->
-    <div class="related-pro section-wapper">
+    <div class="related-pro section-wrapper">
       <div class="container-xl">
-        <h2>Related Products</h2>
+        <h2 class="title text-center title-wrapper">Related Products</h2>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4" id="all">
               <div class="col">
                 <div class="card h-100 shadow-sm border-0">
@@ -353,9 +351,7 @@
       </div>
     </div>
     <!--related products start-->
-
-
-        <!--footer start-->
+      <!--footer start-->
         <footer>
           <div class="container-xl">
             <div class="footer-upper row justify-content-center align-items-center">
@@ -370,8 +366,7 @@
                 </div>
               </div>
             </div>
-            
-  
+          
             <div class="footer-lower row row-cols-1 row-cols-sm-2 row-cols-md-4">
               <div class="f-col-1 col">
                 <img src="assets/images/logo.svg" width="165px" height="45px">
@@ -427,32 +422,53 @@
                 </div>
               </div>
             </div>
-          </div>
+           <!--copy right-->
+           <div class="copy-right text-center pb-4">
+            <hr class="text-primary mb-4">
+            <p>© 2023 All rights reserved</p>
+         </div>
+        </div>
+
+        <!--msg icon-->
+        <div class="msg-icon">
+          <button class="msg-button">
+            <img src="assets/images/msg-logo.svg" alt="msg-icon" class="img-fluid">
+          </button>
+        </div>
+      </footer>
+      <!--footer end-->
         </footer>
         <!--footer end-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 0,
+            slidesPerView: 4,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+              0:   { slidesPerView: 2 },
+              480: { slidesPerView: 3 },
+              768: { slidesPerView: 4 }
+            }
+          });
+        
+          const mainImage = document.querySelector(".d-left-img");
+          const thumbs = document.querySelectorAll(".mySwiper .swiper-slide img");
 
-    <script>
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 0,
-      slidesPerView: 4,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-        0: {
-          slidesPerView: 2,
-        },
-        480: {
-          slidesPerView: 3,
-        },
-        768: {
-          slidesPerView: 4,
-        }
-      }
-    });
+          thumbs.forEach(thumb => {
+            thumb.style.cursor = "pointer";
+            
+            thumb.addEventListener("click", () => {
+              mainImage.src = thumb.src;
+              mainImage.alt = thumb.alt || "";
+            });
+          });
+        </script>
+        
     </script>
      <script src="assets/vendor/BS5/js/bootstrap.bundle.min.js"></script>
       <script src="assets/js/*.js"></script>
