@@ -64,34 +64,33 @@
      <!--nav start-->
      <section class="nav">
       <div class="container-xl">
-      <nav class="navbar navbar-expand-lg">
-        <button class="navbar-toggler d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <nav class="navbar navbar-expand-lg my-3">
     
-        <div class="collapse navbar-collapse my-3" id="mainNavbar">
-          <ul class="navbar-nav me-auto mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">All Categories</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Return and Payment</a>
-            </li>
-          </ul>
-          <div class="d-flex align-items-center">
-            <img src="assets/images/delete-Buttons.svg" alt="delete-btn" style="cursor: pointer;">
+          <!-- Desktop -->
+          <div class="d-none d-lg-flex align-items-center text-primary" data-bs-toggle="collapse" data-bs-target="" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" style="cursor: pointer;">
+            <span class="navbar-toggler-icon me-2"></span>
+            <span class="nav-link m-0 p-0 text-primary">All Categories</span>
           </div>
-        </div>
-      </nav>
+    
+          <!-- Mobile -->
+          <div class="d-flex d-lg-none align-items-center text-primary" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" style="cursor: pointer;">
+            <span class="navbar-toggler-icon me-2"></span>
+            <span class="nav-link m-0 p-0 text-primary">All Categories</span>
+          </div>
+    
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav me-auto ms-lg-4 ms-0 mt-4 mt-lg-0">
+              <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Return and Payment</a></li>
+            </ul>
+            <div class="d-flex align-items-center mt-lg-0 mt-4 mt-lg-0">
+              <img src="assets/images/delete-Buttons.svg" alt="delete-btn" style="cursor: pointer;">
+            </div>
+          </div>
+    
+        </nav>
       </div>
     </section>
      <!--nav end-->
@@ -114,9 +113,9 @@
     <!--title end-->
 
     <!--check-out main start-->
-    <div class="shipping-section check-out section-wapper">
+    <div class="shipping-section check-out section-wrapper">
       <div class="container-xl">
-        <div class="checkout-row row d-flex flex-wrap justify-content-between">
+        <div class="checkout-row row d-flex flex-wrap justify-content-between gap-4 gap-lg-0">
           <!--left col-->
           <div class="checkout-left col-lg-7">
               <div class="status d-flex flex-wrap align-items-center text-center">
@@ -234,7 +233,7 @@
 
 
           <!--right col-->
-          <div class="checkout-right left-lower-part col-lg-5">
+          <div class="checkout-right left-lower-part">
             <p class="summary fw-bold fs-5 mb-4">Order Summary</p>
           
             <!-- Cart Item 1 -->
@@ -294,9 +293,9 @@
             </div>
             <hr>
 
-            <div class="Subtotal d-flex justify-content-between mt-5">
+            <div class="subtotal d-flex justify-content-between mt-5">
               <p class="cart-text">Subtotal</p>
-              <p class="cart-text">$675.00</p>
+              <p class="cart-text">$675.00  </p>
             </div>
             <div class="shipping d-flex justify-content-between">
               <p class="cart-text cart-text1">Shipping</p>
@@ -391,7 +390,19 @@
             </div>
           </div>
         </div>
-      </div>
+       <!--copy right-->
+       <div class="copy-right text-center pb-4">
+        <hr class="text-primary mb-4">
+        <p>© 2023 All rights reserved</p>
+     </div>
+    </div>
+
+    <!--msg icon-->
+    <div class="msg-icon d-none d-lg-block">
+      <button class="msg-button">
+        <img src="assets/images/msg-logo.svg" alt="msg-icon" class="img-fluid" >
+      </button>
+    </div>
     </footer>
     <!--footer end-->
     <script src="assets/vendor/BS5/js/bootstrap.bundle.min.js"></script>

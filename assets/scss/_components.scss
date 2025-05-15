@@ -1171,6 +1171,10 @@ form {
       background-color: $bg-color;
       border-radius: 10px;
 
+      @media #{$brkmx576} {
+        padding: 20px 20px;
+      }
+
       .order-history-title
       {
         font-weight: 500;
@@ -1186,7 +1190,6 @@ form {
 
       .delivered-col
       {
-
         opacity: 75%;
         .cart-text
         {
@@ -1196,5 +1199,159 @@ form {
     }
   }
 }
-  
+
+
+/*Contact us  
+
+          page 
+          
+                style*/
+
+
+.contact-us-section
+{
+  .container-xl{
+
+    .contact-us-row
+    {
+      background-color: $bg-color;
+      box-shadow: 0px 5px 10px 0px #193A4B1A;
+      padding: 64px 98px;
+      border-radius: 10px;
+      gap: 30px;
+      position: relative;
+
+      @media #{$brkmx768} {
+        padding: 0px 0;
+      }
+      @media #{$brkmx1024} {
+        padding: 20px;
+      }
+      &::before
+      {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -10px;
+        background: url('../../../assets/images/contact-us-bg.svg') no-repeat;
+        background-size: cover;
+        width: 344px;
+        height: 100%;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+        @media #{$brkmx768} {
+          display: none;
+        }
+      }
+    }
+
+    //left col
+    .contact-left-col
+    {
+      .form-control
+      {
+        @include text-style(400,14px,100%,0);
+        color: $heading-color;
+        opacity: 75%;
+        padding: 13px 10px;
+      }
+      .get-in-touch
+      {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: $heading-color;
+      }
+      .get-in-touch-text
+      {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: $small-font-text;
+
+      }
+      .contact-wrapper{
+        margin-top: 40px;
+        .fa-envelope-open-text
+        {
+          font-size: 24px;
+          color: $main-color;
+        }
+      }
+    }
+    //right col
+    .contact-right-col
+    {
+      z-index: 11;
+    }
+ 
+  }
+}
+
+/*order id
+
+          page 
+          
+                style*/
+
+.order-id-section
+{
+  .container-xl
+  {
+    .order-id-right
+    {
+      background-color: $bg-color;
+      border-radius: 10px;
+      padding: 40px 68px;
+    }
+    .order-id
+    {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-transform: capitalize;
+      color: $heading-color;
+    }
+    .order-place
+    {
+      font-size: 16px;
+    }
+    .order-price
+    {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: $heading-color;
+    }
+    .selected-order
+    {
+      padding: 16px 28px;
+      background-color: $white;
+      border-radius: 10px;
+      margin-top: 33px;
+    }
+
+    .delivery-payment-row
+    {
+      margin-top: 51px;
+
+      .delivery-details
+      {
+        .order-place
+        {
+          font-size: 14px;
+        }
+      }
+     
+    }
+  }
+}
+
+
   

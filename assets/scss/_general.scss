@@ -395,7 +395,6 @@ img {
   }
 } 
 
-
 //cart text style
 .cart-text{
 	@include text-style(700,16px,20px,0%);
@@ -404,6 +403,8 @@ img {
 }
 .cart-text1{
 	@include text-style(500,14px,20px,0%);
+	color: $heading-color;
+
 }
 
 //check-out right col style
@@ -466,7 +467,7 @@ img {
 
 //my account side bar
 
-.account-page-section, .order-history-section{
+.account-page-section, .order-history-section , .order-id-section{
 	.nav-item
     {
       padding: 10px 0px;

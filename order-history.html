@@ -117,171 +117,179 @@
         <div class="container-xl">
             <div class="row g-4 d-flex justify-content-between">
 
-                <!-- Sidebar -->
-                <div class="col-lg-3">
-                    <ul class="nav flex-column">
-                      <li class="nav-item"><a href="#" class="nav-link">Manage Profile</a></li></li>
-                      <hr class="mt-2">
-                      <li class="nav-item fs-5 check-title mb-0 ps-4"><a href="order-history.html" class="nav-link">Order History</a></li>
-                      <li class="nav-item"><a href="#" class="nav-link">Rented Order History</a></li>
-                      <li class="nav-item"><a href="#" class="nav-link">Subscribed Plan</a></li>
-                      <li class="nav-item"><a href="#" class="nav-link">Manage Cards</a></li>
-                      <hr class="mb-3">
-                      <li class="nav-item"><a href="#" class="nav-link">Sell My Product</a></li>
-                      <li class="nav-item"><a href="#" class="nav-link">Shipping Address</a></li>
-                      <li class="nav-item mb-0"><a href="#" class="nav-link">Reviews & Ratings</a></li>
-                    </ul>
-                    <div class="mt-2">
-                      <button class="btn btn-outline-primary w-100">Logout</button>
-                    </div>
+             <!-- Sidebar Toggle Button: Visible only on small screens -->
+              <button class="btn btn-outline-primary d-lg-none w-25" type="button" data-bs-toggle="collapse" data-bs-target="#accountSidebar" aria-expanded="false" aria-controls="accountSidebar">
+                <i class="fa fa-bars me-1"></i> Menu
+              </button>
+              <!-- Sidebar -->
+              <div class="collapse d-lg-block col-lg-3" id="accountSidebar">
+                <ul class="nav flex-column">
+                  <li class="nav-item"><a href="#" class="nav-link">Manage Profile</a></li>
+                  <hr class="mt-2">
+                  <li class="nav-item fs-5 check-title mb-0 ps-4"><a href="order-history.html" class="nav-link">Order History</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Rented Order History</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Subscribed Plan</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Manage Cards</a></li>
+                  <hr class="mb-3">
+                  <li class="nav-item"><a href="#" class="nav-link">Sell My Product</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Shipping Address</a></li>
+                  <li class="nav-item mb-0"><a href="#" class="nav-link">Reviews & Ratings</a></li>
+                </ul>
+                <div class="mt-2">
+                  <button class="btn btn-outline-primary w-100">Logout</button>
                 </div>
+              </div>
+
             
                 <!-- Profile Form -->
                 <div class="col-lg-8 order-history-right">
                     <p class="mb-4 order-history-title">My Orders</p>
 
                     <!--row 1-->
-                   <div class="mb-5">
-                        <div class="row g-3 align-items-start">
-                          <!-- Product Image -->
-                          <div class="col-auto">
-                            <img src="assets/images/check-out-image/checkout-img.svg" alt="Product Image" class="img-fluid rounded" style="width: 110px; height: 110px;">
-                          </div>
-                    
-                          <!-- Product Info -->
-                          <div class="col">
-                            <h6 class="mb-2 cart-text">Lorem Ipsum</h6>
-                            <p class="mb-2 cart-text1">Lorem Ipsum</p>
-                            <p class="mb-2 cart-text1 size">Size – 106 cm &nbsp; Qty – 1</p>
-                            <p class="mb-0 cart-text1">$675.00</p>
-                          </div>
-                    
-                          <!-- Order Info -->
-                          <div class="col text-end">
-                            <p class="cart-text1 mb-2">Order # 123456678889</p>
-                            <a href="#" class="cart-text1 d-block mb-2 text-decoration-none text-primary">Download Invoice <i class="fa fa-download ms-1"></i></a>
-                            <div class="mb-2 cart-text1">Rate Product
-                              <span class="ms-2">
-                                <img src="assets/images/our-product-images/pro-stars.svg" alt="stars" width="98px" height="20px">
-                              </span>
-                            </div>
-                            <p class="mb-0 cart-text1">Paid Via – Cash On Delivery</p>
-                          </div>
+                    <div class="mb-5">
+                      <div class="row g-3 align-items-start">
+                        <!-- Product Image -->
+                        <div class="col-3 col-sm-2">
+                          <img src="assets/images/check-out-image/checkout-img.svg" alt="Product Image" class="img-fluid rounded" style="width: 110px; height: 110px;">
                         </div>
                     
-                        <!-- Action Buttons -->
-                        <div class="row text-center">
-                          <div class="col">
-                            <button class="btn btn-light mt-4">Track Order</button>
+                        <!-- Product Info -->
+                        <div class="col-9 col-sm-6">
+                          <h6 class="mb-2 cart-text">Lorem Ipsum</h6>
+                          <p class="mb-2 cart-text1">Lorem Ipsum</p>
+                          <p class="mb-2 cart-text1 size">Size – 106 cm &nbsp; Qty – 1</p>
+                          <p class="mb-0 cart-text1">$675.00</p>
+                        </div>
+                    
+                        <!-- Order Info -->
+                        <div class="col-12 col-sm-4 text-sm-center text-lg-end">
+                          <p class="cart-text1 mb-2">Order # 123456678889</p>
+                          <a href="#" class="cart-text1 d-block mb-2 text-decoration-none text-primary">Download Invoice <i class="fa fa-download ms-1"></i></a>
+                          <div class="mb-2 cart-text1">Rate Product
+                            <span class="ms-2">
+                              <img src="assets/images/our-product-images/pro-stars.svg" alt="stars" width="98px" height="20px">
+                            </span>
                           </div>
-                          <div class="col">
-                            <button class="btn btn-light mt-4">Order Details</button>
-                          </div>
-                          <div class="col">
-                            <button class="btn btn-light mt-4">Cancel Order</button>
-                          </div>
+                          <p class="mb-0 cart-text1">Paid Via – Cash On Delivery</p>
                         </div>
                       </div>
-
+                    
+                      <!-- Action Buttons -->
+                      <div class="row text-center">
+                        <div class="col">
+                          <button class="btn btn-light mt-4">Track Order</button>
+                        </div>
+                        <div class="col">
+                          <button class="btn btn-light mt-4">Order Details</button>
+                        </div>
+                        <div class="col">
+                          <button class="btn btn-light mt-4">Cancel Order</button>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
                       <!--row 2-->
-                      <div class="mb-5 delivered-col">
-                        <p class="cart-text mb-0">Delivered </p>
-                        <p class="cart-text mb-2">on Mon, 18 May</p>
-                        <div class="row g-3 align-items-start">
-                        
-                          <!-- Product Image -->
-                          <div class="col-auto">
-                            <img src="assets/images/check-out-image/checkout-img.svg" alt="Product Image" class="img-fluid rounded" style="width: 110px; height: 110px;">
-                          </div>
-                    
-                          <!-- Product Info -->
-                          <div class="col">
-                            <h6 class="mb-2 cart-text">Lorem Ipsum</h6>
-                            <p class="mb-2 cart-text1">Lorem Ipsum</p>
-                            <p class="mb-2 cart-text1 size">Size – 106 cm &nbsp; Qty – 1</p>
-                            <p class="mb-0 cart-text1">$675.00</p>
-                          </div>
-                    
-                          <!-- Order Info -->
-                          <div class="col text-end">
-                            <p class="cart-text1 mb-2">Order # 123456678889</p>
-                            <a href="#" class="cart-text1 d-block mb-2 text-decoration-none text-primary">Download Invoice <i class="fa fa-download ms-1"></i></a>
-                            <div class="mb-2 cart-text1">Rate Product
-                              <span class="ms-2">
-                                <img src="assets/images/our-product-images/pro-stars.svg" alt="stars" width="98px" height="20px">
-                              </span>
+                        <div class="mb-5 delivered-col">
+                          <p class="cart-text mb-0">Delivered</p>
+                          <p class="cart-text mb-2">on Mon, 18 May</p>
+
+                          <div class="row g-3 align-items-start">
+                            <!-- Product Image -->
+                            <div class="col-3 col-sm-2">
+                              <img src="assets/images/check-out-image/checkout-img.svg" alt="Product Image" class="img-fluid rounded" style="width: 110px; height: 110px;">
                             </div>
-                            <p class="mb-0 cart-text1">Paid Via 
-                              <span class="ms-2">
-                                <img src="assets/images/visa-card-image.svg" alt="visa-card" width="38px" height="24px">
-                              </span>
-                            </p>
+
+                            <!-- Product Info -->
+                            <div class="col-9 col-sm-6">
+                              <h6 class="mb-2 cart-text">Lorem Ipsum</h6>
+                              <p class="mb-2 cart-text1">Lorem Ipsum</p>
+                              <p class="mb-2 cart-text1 size">Size – 106 cm &nbsp; Qty – 1</p>
+                              <p class="mb-0 cart-text1">$675.00</p>
+                            </div>
+
+                            <!-- Order Info -->
+                            <div class="col-12 col-sm-4 text-sm-center text-lg-end">
+                              <p class="cart-text1 mb-2">Order # 123456678889</p>
+                              <a href="#" class="cart-text1 d-block mb-2 text-decoration-none text-primary">Download Invoice <i class="fa fa-download ms-1"></i></a>
+                              <div class="mb-2 cart-text1">Rate Product
+                                <span class="ms-2">
+                                  <img src="assets/images/our-product-images/pro-stars.svg" alt="stars" width="98px" height="20px">
+                                </span>
+                              </div>
+                              <p class="mb-0 cart-text1">Paid Via 
+                                <span class="ms-2">
+                                  <img src="assets/images/visa-card-image.svg" alt="visa-card" width="38px" height="24px">
+                                </span>
+                              </p>
+                            </div>
+                          </div>
+
+                          <!-- Action Buttons -->
+                          <div class="row text-center">
+                            <div class="col">
+                              <button class="btn btn-light mt-4">Buy Again</button>
+                            </div>
+                            <div class="col">
+                              <button class="btn btn-light mt-4">Order Details</button>
+                            </div>
+                            <div class="col">
+                              <button class="btn btn-light mt-4">Write Review</button>
+                            </div>
                           </div>
                         </div>
-                    
-                        <!-- Action Buttons -->
-                        <div class="row text-center">
-                          <div class="col">
-                            <button class="btn btn-light mt-4">Buy Again</button>
-                          </div>
-                          <div class="col">
-                            <button class="btn btn-light mt-4">Order Details</button>
-                          </div>
-                          <div class="col">
-                            <button class="btn btn-light mt-4">Write Review</button>
-                          </div>
-                        </div>
-                      </div>
 
                        <!--row 3-->
-                       <div class="mb-5 delivered-col">
-                        <p class="cart-text mb-0">Delivered </p>
-                        <p class="cart-text mb-2">on Mon, 18 May</p>
-                        <div class="row g-3 align-items-start">
-                        
-                          <!-- Product Image -->
-                          <div class="col-auto">
-                            <img src="assets/images/check-out-image/checkout-img.svg" alt="Product Image" class="img-fluid rounded" style="width: 110px; height: 110px;">
-                          </div>
-                    
-                          <!-- Product Info -->
-                          <div class="col">
-                            <h6 class="mb-2 cart-text">Lorem Ipsum</h6>
-                            <p class="mb-2 cart-text1">Lorem Ipsum</p>
-                            <p class="mb-2 cart-text1 size">Size – 106 cm &nbsp; Qty – 1</p>
-                            <p class="mb-0 cart-text1">$675.00</p>
-                          </div>
-                    
-                          <!-- Order Info -->
-                          <div class="col text-end">
-                            <p class="cart-text1 mb-2">Order # 123456678889</p>
-                            <a href="#" class="cart-text1 d-block mb-2 text-decoration-none text-primary">Download Invoice <i class="fa fa-download ms-1"></i></a>
-                            <div class="mb-2 cart-text1">Rate Product
-                              <span class="ms-2">
-                                <img src="assets/images/our-product-images/pro-stars.svg" alt="stars" width="98px" height="20px">
-                              </span>
+                       <!-- Row 3 -->
+                        <div class="mb-5 delivered-col">
+                          <p class="cart-text mb-0">Delivered</p>
+                          <p class="cart-text mb-2">on Mon, 18 May</p>
+
+                          <div class="row g-3 align-items-start">
+                            <!-- Product Image -->
+                            <div class="col-3 col-sm-2">
+                              <img src="assets/images/check-out-image/checkout-img.svg" alt="Product Image" class="img-fluid rounded" style="width: 110px; height: 110px;">
                             </div>
-                            <p class="mb-0 cart-text1">Paid Via 
-                              <span class="ms-2">
-                                <img src="assets/images/upi-card-image.svg" alt="visa-card" width="38px" height="24px">
-                              </span>
-                            </p>
+
+                            <!-- Product Info -->
+                            <div class="col-9 col-sm-6">
+                              <h6 class="mb-2 cart-text">Lorem Ipsum</h6>
+                              <p class="mb-2 cart-text1">Lorem Ipsum</p>
+                              <p class="mb-2 cart-text1 size">Size – 106 cm &nbsp; Qty – 1</p>
+                              <p class="mb-0 cart-text1">$675.00</p>
+                            </div>
+
+                            <!-- Order Info -->
+                            <div class="col-12 col-sm-4 text-sm-center text-lg-end">
+                              <p class="cart-text1 mb-2">Order # 123456678889</p>
+                              <a href="#" class="cart-text1 d-block mb-2 text-decoration-none text-primary">Download Invoice <i class="fa fa-download ms-1"></i></a>
+                              <div class="mb-2 cart-text1">Rate Product
+                                <span class="ms-2">
+                                  <img src="assets/images/our-product-images/pro-stars.svg" alt="stars" width="98px" height="20px">
+                                </span>
+                              </div>
+                              <p class="mb-0 cart-text1">Paid Via 
+                                <span class="ms-2">
+                                  <img src="assets/images/upi-card-image.svg" alt="UPI" width="38px" height="24px">
+                                </span>
+                              </p>
+                            </div>
+                          </div>
+
+                          <!-- Action Buttons -->
+                          <div class="row text-center">
+                            <div class="col">
+                              <button class="btn btn-light mt-4">Buy Again</button>
+                            </div>
+                            <div class="col">
+                              <button class="btn btn-light mt-4">Order Details</button>
+                            </div>
+                            <div class="col">
+                              <button class="btn btn-light mt-4">Write Review</button>
+                            </div>
                           </div>
                         </div>
-                    
-                        <!-- Action Buttons -->
-                        <div class="row text-center">
-                          <div class="col">
-                            <button class="btn btn-light mt-4">Buy Again</button>
-                          </div>
-                          <div class="col">
-                            <button class="btn btn-light mt-4">Order Details</button>
-                          </div>
-                          <div class="col">
-                            <button class="btn btn-light mt-4">Write Review</button>
-                          </div>
-                        </div>
-                      </div>
+
                 </div>
           </div>
             </div>
@@ -298,7 +306,9 @@
             <div class="footer-upper-right col-12 col-md-6">
               <div class="input-wrapper position-relative">
                 <input type="email" class="form-control" placeholder="Enter Your Work Email">
-                <button class="btn btn-primary submit-btn">Submit</button>
+                <a href="contact-us-page.html">
+                  <button class="btn btn-primary submit-btn">Submit</button>
+                </a>
               </div>
             </div>
           </div>
