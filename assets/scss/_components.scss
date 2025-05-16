@@ -329,6 +329,7 @@
       }
       .btn-outline-light
       {
+        border: 2px solid $white;
         &:hover{
           background-color: $white;
           color: $main-color;
@@ -1308,6 +1309,10 @@ form {
       background-color: $bg-color;
       border-radius: 10px;
       padding: 40px 68px;
+
+      @media #{$brkmx672} {
+        padding: 20px 20px;
+      }
     }
     .order-id
     {
@@ -1335,6 +1340,10 @@ form {
       background-color: $white;
       border-radius: 10px;
       margin-top: 33px;
+
+      @media #{$brkmx672} {
+        padding: 5px 0px;
+      }
     }
 
     .delivery-payment-row
@@ -1353,5 +1362,66 @@ form {
   }
 }
 
+/*Subscription details
+
+          page 
+          
+                style*/
+
+.subscription-details
+{
+  .container-xl
+  {
+    .silver-plan
+    {
+      background-color: $bg-color;
+      padding: 16px 24px;
+      border-radius: 10px;
+      .sub-text
+      {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: $card-color;
+      }
+      .sub-price
+      {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 20px;
+        color: $heading-color;
+      }
+      .fa-check
+      {
+        background-color: $main-color;
+        height: 17px;
+        width: 17px;
+        border: 2px solid black;
+        font-size: 30px;
+      }  
+    }
+    .sub-fea-name
+    {
+      position: relative;
+
+      &::before
+      {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: -10px;
+        background: url('../../../assets/images/blue-check.svg') no-repeat;
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .daterangepicker {
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+      font-family: 'YourFont', sans-serif;
+    }
+    
+  }
+}
 
   

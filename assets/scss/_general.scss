@@ -487,6 +487,58 @@ img {
     }
 }
 
+//tab-wrapper
+
+.product-card-section, .subscription-products-section{
+    .container-xl{
+        .tab-wrapper {
+           -webkit-overflow-scrolling: touch;
+           overflow-x: auto;
+           width: 100%;
+         }
+        .nav-tabs{
+            gap: 32px;
+            margin-bottom: 32px;
+            border-bottom: none !important;
+
+            .nav-link.active {
+              color: $main-color !important; 
+              border-bottom: 1px solid $main-color; 
+            }
+        }
+        .nav-link{
+            color: $small-font-text;
+            @include text-style(500, 20px,20px,0%);
+            text-align: center;
+            border: none;
+
+            &:hover{
+                border-bottom: 1px solid $main-color;
+                color: $main-color;
+            }
+            @media #{$brkmx768}{
+              @include text-style(300, 13px,10px,0%);
+            }
+        }
+
+        @media (max-width: 768px) {
+          .tab-scroll {
+            display: flex;
+            flex-wrap: nowrap !important;
+            white-space: nowrap;
+            gap: 10px;
+          }
+        
+          .nav-item {
+            flex: 0 0 auto;
+          }
+        
+          .nav-link {
+            white-space: nowrap;
+          }
+        }
+    }
+}
 
   
 

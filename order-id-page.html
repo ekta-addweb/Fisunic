@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <title>Fisunic</title>
+        <!-- Favicons -->
+        <link rel="icon" href="assets/images/Favicons.svg">
+        <!-- build:css -->
+        <link href="dist/assets/css/app.min.css" rel="stylesheet" type="text/css">
+        <!-- endbuild -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--font-awesome-->
+        <!-- Swiper CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+     </head>
+<body>
+      <!--header start-->
+      <header class="border-bottom">
+        <div class="container-xl">
+          <div class="header-row row align-items-center g-3">
+            <!-- Logo -->
+            <div class="header-col col-6 col-md-2">
+              <a href="/">
+                <img src="assets/images/logo.svg" alt="LOGO" class="logo-img">
+              </a>
+            </div>
+      
+            <!-- Search -->
+            <div class="header-col col-md-6">
+              <form role="search">
+                <div class="search-wrapper d-flex align-items-center px-1">
+                  <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                </div>
+              </form>   
+            </div>
+            <div class="header-col col-12 col-md-4 d-flex justify-content-center gap-5 align-items-center">
+              <div class="dropdown text-center position-relative">
+                <a href="#" class="text-decoration-none dropdown-toggle text-dark" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span>$ USD</span>
+                </a>
+                <ul class="dropdown-menu text-small">
+                  <li><a class="dropdown-item" href="#">USD1</a></li>
+                  <li><a class="dropdown-item" href="#">USD2</a></li>
+                  <li><a class="dropdown-item" href="#">USD3</a></li>
+                </ul>
+              </div>
+              <div class="dropdown text-center position-relative">
+                <a href="#" class="text-decoration-none dropdown-toggle text-dark" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span><i class="fa-solid fa-globe me-1"></i> English</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end text-small my-2">
+                  <li><a class="dropdown-item" href="#">English1</a></li>
+                  <li><a class="dropdown-item" href="#">English2</a></li>
+                  <li><a class="dropdown-item" href="#">English3</a></li>
+                </ul>
+              </div>
+              <i class="fa-regular fa-user text-primary"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--header end-->
+   <!--nav start-->
+   <section class="nav">
+    <div class="container-xl">
+      <nav class="navbar navbar-expand-lg my-3">
+  
+        <!-- Desktop -->
+        <div class="d-none d-lg-flex align-items-center text-primary" data-bs-toggle="collapse" data-bs-target="" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" style="cursor: pointer;">
+          <span class="navbar-toggler-icon me-2"></span>
+          <span class="nav-link m-0 p-0 text-primary">All Categories</span>
+        </div>
+  
+        <!-- Mobile -->
+        <div class="d-flex d-lg-none align-items-center text-primary" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" style="cursor: pointer;">
+          <span class="navbar-toggler-icon me-2"></span>
+          <span class="nav-link m-0 p-0 text-primary">All Categories</span>
+        </div>
+  
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav me-auto ms-lg-4 ms-0 mt-4 mt-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Return and Payment</a></li>
+          </ul>
+          <div class="d-flex align-items-center mt-lg-0 mt-4 mt-lg-0">
+            <img src="assets/images/delete-Buttons.svg" alt="delete-btn" style="cursor: pointer;">
+          </div>
+        </div>
+      </nav>
+    </div>
+</section>
+<!--nav end-->
+
+
+    <!--title start-->
+    <section class="pro-title">
+        <div class="container-xl text-center">
+            <h2 class="page-title">My Account</h2>
+            <img src="assets/images/our-product-images/title-line.svg" alt="line image">
+            <div class="direction d-flex justify-content-center d-flex flex-wrap">
+                <a href="index.html">Home</a>
+                <img src="assets/images/our-product-images/title-Vector.svg" alt="image">
+                <a href="#" class="">My Account</a>
+                <img src="assets/images/our-product-images/title-Vector.svg" alt="image">
+                <a href="#" class="">Order History</a>
+                <img src="assets/images/our-product-images/title-Vector.svg" alt="image">
+                <a href="#" class="active">ID 1234566678889</a>
+            </div>
+        </div>
+    </section>
+    <!--title end-->
+
+    <!--main-->
+    <section class="order-id-section section-wrapper">
+        <div class="container-xl">
+         <div class="row g-4 d-flex justify-content-between">
+
+             <!-- Sidebar Toggle Button: Visible only on small screens -->
+              <button class="btn btn-outline-primary d-lg-none w-25 w-sm-100" type="button" data-bs-toggle="collapse" data-bs-target="#accountSidebar" aria-expanded="false" aria-controls="accountSidebar">
+                <i class="fa fa-bars me-1"></i> Menu
+              </button>
+              <!-- Sidebar -->
+              <div class="collapse d-lg-block col-lg-3" id="accountSidebar">
+                <ul class="nav flex-column">
+                  <li class="nav-item"><a href="#" class="nav-link">Manage Profile</a></li>
+                  <hr class="mt-2">
+                  <li class="nav-item fs-5 check-title mb-0 ps-4"><a href="order-history.html" class="nav-link">Order History</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Rented Order History</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Subscribed Plan</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Manage Cards</a></li>
+                  <hr class="mb-3">
+                  <li class="nav-item"><a href="#" class="nav-link">Sell My Product</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Shipping Address</a></li>
+                  <li class="nav-item mb-0"><a href="#" class="nav-link">Reviews & Ratings</a></li>
+                </ul>
+                <div class="mt-2">
+                  <button class="btn btn-outline-primary w-100">Logout</button>
+                </div>
+              </div>
+
+                <div class="col-lg-8 order-id-right">
+                    <div class="order-heading d-flex flex-wrap justify-content-between align-items-center gap-2">
+                        <div class="order-detalis">
+                            <p class="order-id mb-2">Order ID : 1234566678889 </p>
+                            <p class="order-id order-place">Order placed : June 2, 2023</p>
+                        </div>
+                        <div class="order-download">
+                            <a href="#" class="cart-text1 d-block mb-2 text-decoration-none text-primary">Download Invoice <i class="fa fa-download ms-1"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="row g-3 align-items-start selected-order">
+                        <!-- Product Image -->
+                        <div class="col-3 col-sm-2">
+                          <img src="assets/images/check-out-image/checkout-img.svg" alt="Product Image" class="img-fluid rounded" style="width: 97px; height: 86px;">
+                        </div>
+                    
+                        <!-- Product Info -->
+                        <div class="col-6 col-sm-6 ">
+                          <h6 class="mb-2 cart-text">Lorem Ipsum</h6>
+                          <p class="mb-2 cart-text1">Lorem Ipsum</p>
+                          <p class="order-price">Size – 106 cm</p>
+                        </div>
+                    
+                        <!-- Order Info -->
+                        <div class="col-12 col-sm-4 text-sm-center text-lg-end">
+                            <p class="order-id order-place pt-4 mb-2">$675.00</p>
+                            <p class="order-price">Qty - 1</p>
+                        </div>
+                    </div>
+
+                    <div class="row delivery-payment-row gap-3">
+                        <div class="delivery-details col-md-5">
+                            <h6 class="cart-text mb-3">Payment </h6>
+                            <p class="order-id order-place">Cash On Delivery</p>
+                            <hr>
+                            <h6  class="cart-text mb-3">Delivery</h6>
+                            <p class="order-id order-place mb-2">Address</p>
+                            <p class="order-id order-place mb-2">25 Ut 300, Mizpah,mn, 56660  United States</p>
+                            <p class="order-id order-place mb-2">123-456-7890</p>
+                        </div>
+
+                        <div class="bill-details col-md-6">
+                            <h6 class="cart-text mb-4">Order Summary</h6>
+
+                            <div class=" d-flex justify-content-between">
+                                <p class="order-id order-place mb-4">Subtotal</p>
+                                <p class="order-id order-place mb-4">$675.00</p>
+                              </div>
+                              <div class="d-flex justify-content-between">
+                                <p class="order-id order-place mb-4">Shipping</p>
+                                <p class="order-id order-place mb-4">$2.00</p>
+                              </div>
+                              <div class="d-flex justify-content-between">
+                                <p class="order-id order-place mb-4">Tax</p>
+                                <p class="order-id order-place mb-4">$1.91</p>
+                              </div>
+                              <hr>
+                              <div class="total d-flex justify-content-between mb-0">
+                                <p class="order-id order-place mb-4">Order total</p>
+                                <p class="ord-id order-place mb-4 text-primary">$678.00</p>
+                              </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+          </div>
+        </section>
+
+    <!--footer start-->
+      <footer>
+        <div class="container-xl">
+          <div class="footer-upper row justify-content-center align-items-center d-flex flex-wrap">
+            <div class="footer-upper-left col-12 col-md-6">
+              <h3>NewsLetter</h3>
+              <p>Be the first one to know about discounts, offers and events</p>
+            </div>
+            <div class="footer-upper-right col-12 col-md-6">
+              <div class="input-wrapper position-relative">
+                <input type="email" class="form-control" placeholder="Enter Your Work Email">
+                <a href="subscription-details.html">
+                  <button class="btn btn-primary submit-btn">Submit</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        
+          <div class="footer-lower row row-cols-1 row-cols-sm-2 row-cols-md-4">
+            <div class="f-col-1 col d-block">
+              <img src="assets/images/logo.svg" width="165px" height="45px">
+              <ul class="ul d-flex gap-3">
+                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+              </ul>
+            </div>
+          
+            <div class="f-col-2 col">
+              <h5>Quick Links</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link">About Us</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link">Contact Us</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link">Payment Card Options</a></li>
+              </ul>
+            </div>
+          
+            <div class="f-col-2 col">
+              <h5>Help And Information</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link">Privacy Policy</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link">Terms & Conditions</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link">Disclamers</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link">FAQs</a></li>
+              </ul>
+            </div>
+          
+            <div class="f-col-4 col">
+              <div class="f-last-row d-flex align-items-center gap-3">
+                <div class="f-last-left"><i class="fa-solid fa-phone-volume"></i></div>
+                <div class="f-last-right">
+                  <h6>Contact Number</h6>
+                  <p>0000-111-2222</p>
+                </div>
+              </div>
+
+              <div class="f-last-row d-flex align-items-center gap-3">
+                <div class="f-last-left"><i class="fa-solid fa-envelope"></i></div>
+                <div class="f-last-right">
+                  <h6>Email Address</h6>
+                  <p>demo@gamil.com</p>
+                </div>
+              </div>
+
+              <div class="f-last-row d-flex align-items-center gap-3">
+                <div class="f-last-left"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="f-last-right">
+                  <h6>Office Address</h6>
+                  <p>31 Turtle Creek Road, Pickens,sc, 29631  United States</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--copy right-->
+          <div class="copy-right text-center pb-4">
+            <hr class="text-primary mb-4">
+            <p>© 2023 All rights reserved</p>
+         </div>
+        </div>
+
+        <!--msg icon-->
+        <div class="msg-icon d-none d-lg-block">
+          <button class="msg-button">
+            <img src="assets/images/msg-logo.svg" alt="msg-icon" class="img-fluid" >
+          </button>
+        </div>
+      </footer>
+      <!--footer end-->
+<body>
+    <script src="assets/vendor/BS5/js/bootstrap.bundle.min.js"></script>
+    <!-- build:js -->
+    <script src="dist/assets/js/custom.min.js"></script>
+    <!-- endbuild -->
+</body>
+</html>
