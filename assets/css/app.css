@@ -11792,6 +11792,7 @@ footer .msg-button {
 }
 
 /*product-card-section start*/
+/*product-card-section end*/
 /*Subscription-section style start*/
 .Subscription-section {
   background: #F1F7FF;
@@ -12684,6 +12685,11 @@ form {
   padding: 24px 69px;
   background-color: #F1F7FF;
   border-radius: 10px;
+}
+@media (max-width: 426px) {
+  .account-page-section .container-xl .account-right {
+    padding: 24px 20px;
+  }
 }
 .account-page-section .container-xl .account-right .account-title {
   font-weight: 700;

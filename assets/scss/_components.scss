@@ -147,11 +147,10 @@
 
 /*product-card-section start*/
 
-.product-card-section{
-    .container-xl{
-        //code in general.scss
-    }
-}
+//code in general.scss
+
+/*product-card-section end*/
+
 
 /*Subscription-section style start*/
 
@@ -1087,6 +1086,10 @@ form {
       padding: 24px 69px;
       background-color: $bg-color;
       border-radius: 10px;
+
+      @media #{$brkmx426} {
+        padding: 24px 20px;
+      }
       .account-title
       {
         @include text-style(700,20px,100%,0%);
