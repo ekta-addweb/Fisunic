@@ -11303,52 +11303,59 @@ img {
 }
 
 .product-card-section .container-xl .tab-wrapper, .subscription-products-section .container-xl .tab-wrapper {
-  -webkit-overflow-scrolling: touch;
-  overflow-x: auto;
   width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
-.product-card-section .container-xl .nav-tabs, .subscription-products-section .container-xl .nav-tabs {
+.product-card-section .container-xl .tab-wrapper .nav-tabs, .subscription-products-section .container-xl .tab-wrapper .nav-tabs {
+  display: flex;
+  flex-wrap: nowrap;
   gap: 32px;
   margin-bottom: 32px;
+  border-bottom: 1px solid #4A4A4A;
+  scrollbar-width: none;
   border-bottom: none !important;
 }
-.product-card-section .container-xl .nav-tabs .nav-link.active, .subscription-products-section .container-xl .nav-tabs .nav-link.active {
-  color: #1379FF !important;
-  border-bottom: 1px solid #1379FF;
+@media (max-width: 575.98px) {
+  .product-card-section .container-xl .tab-wrapper .nav-tabs, .subscription-products-section .container-xl .tab-wrapper .nav-tabs {
+    gap: 20px;
+  }
 }
-.product-card-section .container-xl .nav-link, .subscription-products-section .container-xl .nav-link {
+.product-card-section .container-xl .tab-wrapper .nav-tabs::-webkit-scrollbar, .subscription-products-section .container-xl .tab-wrapper .nav-tabs::-webkit-scrollbar {
+  display: none;
+}
+.product-card-section .container-xl .tab-wrapper .nav-tabs .nav-item, .subscription-products-section .container-xl .tab-wrapper .nav-tabs .nav-item {
+  flex: 0 0 auto;
+}
+.product-card-section .container-xl .tab-wrapper .nav-tabs .nav-link, .subscription-products-section .container-xl .tab-wrapper .nav-tabs .nav-link {
+  white-space: nowrap;
   color: #4A4A4A;
+  font-weight: 500;
+  text-align: center;
+  border: none;
+  padding: 0;
+  padding-bottom: 10px;
+  background-color: transparent;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   letter-spacing: 0%;
-  text-align: center;
-  border: none;
+  color: #3A3A3A;
 }
-.product-card-section .container-xl .nav-link:hover, .subscription-products-section .container-xl .nav-link:hover {
-  border-bottom: 1px solid #1379FF;
+.product-card-section .container-xl .tab-wrapper .nav-tabs .nav-link:hover, .subscription-products-section .container-xl .tab-wrapper .nav-tabs .nav-link:hover {
+  border-bottom: 2px solid #1379FF;
   color: #1379FF;
 }
-@media (max-width: 767.98px) {
-  .product-card-section .container-xl .nav-link, .subscription-products-section .container-xl .nav-link {
+.product-card-section .container-xl .tab-wrapper .nav-tabs .nav-link.active, .subscription-products-section .container-xl .tab-wrapper .nav-tabs .nav-link.active {
+  border-bottom: 2px solid #1379FF;
+  color: #1379FF !important;
+}
+@media (max-width: 575.98px) {
+  .product-card-section .container-xl .tab-wrapper .nav-tabs .nav-link, .subscription-products-section .container-xl .tab-wrapper .nav-tabs .nav-link {
     font-weight: 300;
     font-size: 13px;
     line-height: 10px;
     letter-spacing: 0%;
-  }
-}
-@media (max-width: 768px) {
-  .product-card-section .container-xl .tab-scroll, .subscription-products-section .container-xl .tab-scroll {
-    display: flex;
-    flex-wrap: nowrap !important;
-    white-space: nowrap;
-    gap: 10px;
-  }
-  .product-card-section .container-xl .nav-item, .subscription-products-section .container-xl .nav-item {
-    flex: 0 0 auto;
-  }
-  .product-card-section .container-xl .nav-link, .subscription-products-section .container-xl .nav-link {
-    white-space: nowrap;
   }
 }
 
@@ -11785,56 +11792,6 @@ footer .msg-button {
 }
 
 /*product-card-section start*/
-.product-card-section .container-xl .tab-wrapper {
-  -webkit-overflow-scrolling: touch;
-  overflow-x: auto;
-  width: 100%;
-}
-.product-card-section .container-xl .nav-tabs {
-  gap: 32px;
-  margin-bottom: 32px;
-  border-bottom: none !important;
-}
-.product-card-section .container-xl .nav-tabs .nav-link.active {
-  color: #1379FF !important;
-  border-bottom: 1px solid #1379FF;
-}
-.product-card-section .container-xl .nav-link {
-  color: #4A4A4A;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-  letter-spacing: 0%;
-  text-align: center;
-  border: none;
-}
-.product-card-section .container-xl .nav-link:hover {
-  border-bottom: 1px solid #1379FF;
-  color: #1379FF;
-}
-@media (max-width: 767.98px) {
-  .product-card-section .container-xl .nav-link {
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 10px;
-    letter-spacing: 0%;
-  }
-}
-@media (max-width: 768px) {
-  .product-card-section .container-xl .tab-scroll {
-    display: flex;
-    flex-wrap: nowrap !important;
-    white-space: nowrap;
-    gap: 10px;
-  }
-  .product-card-section .container-xl .nav-item {
-    flex: 0 0 auto;
-  }
-  .product-card-section .container-xl .nav-link {
-    white-space: nowrap;
-  }
-}
-
 /*Subscription-section style start*/
 .Subscription-section {
   background: #F1F7FF;
@@ -12945,8 +12902,51 @@ form {
   width: 20px;
   height: 20px;
 }
-.subscription-details .container-xl .daterangepicker {
-  border-radius: 12px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-  font-family: "YourFont", sans-serif;
+
+/*Subscription details
+
+          page 
+
+                style*/
+.confirm-email-section {
+  background-color: #F1F7FF;
+}
+.confirm-email-section .container-xl {
+  margin: auto;
+  max-width: 650px;
+  width: 100%;
+}
+.confirm-email-section .container-xl .fisunic-logo {
+  padding: 43px 32px;
+}
+.confirm-email-section .container-xl .email-info {
+  padding: 40px 32px;
+  background-color: #fff;
+}
+.confirm-email-section .container-xl .email-info .email-title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  color: #3A3A3A;
+}
+.confirm-email-section .container-xl .email-info .pro-info2 {
+  line-height: 20px;
+  margin-bottom: 61px;
+}
+.confirm-email-section .container-xl .email-info .btn {
+  padding: 8px 24px;
+  margin-top: 0;
+  margin-bottom: 28px;
+}
+.confirm-email-section .container-xl .email-info .team-fisunic {
+  font-size: 20px;
+}
+.confirm-email-section .container-xl .office-address {
+  padding-top: 32px;
+  padding-bottom: 40px;
+}
+.confirm-email-section .container-xl .office-address .team-fisunic {
+  font-size: 14px;
+  line-height: 15px;
 }

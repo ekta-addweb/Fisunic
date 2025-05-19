@@ -149,52 +149,7 @@
 
 .product-card-section{
     .container-xl{
-        .tab-wrapper {
-           -webkit-overflow-scrolling: touch;
-           overflow-x: auto;
-           width: 100%;
-         }
-        .nav-tabs{
-            gap: 32px;
-            margin-bottom: 32px;
-            border-bottom: none !important;
-
-            .nav-link.active {
-              color: $main-color !important; 
-              border-bottom: 1px solid $main-color; 
-            }
-        }
-        .nav-link{
-            color: $small-font-text;
-            @include text-style(500, 20px,20px,0%);
-            text-align: center;
-            border: none;
-
-            &:hover{
-                border-bottom: 1px solid $main-color;
-                color: $main-color;
-            }
-            @media #{$brkmx768}{
-              @include text-style(300, 13px,10px,0%);
-            }
-        }
-
-        @media (max-width: 768px) {
-          .tab-scroll {
-            display: flex;
-            flex-wrap: nowrap !important;
-            white-space: nowrap;
-            gap: 10px;
-          }
-        
-          .nav-item {
-            flex: 0 0 auto;
-          }
-        
-          .nav-link {
-            white-space: nowrap;
-          }
-        }
+        //code in general.scss
     }
 }
 
@@ -1414,14 +1369,69 @@ form {
         width: 20px;
         height: 20px;
       }
-    }
-    .daterangepicker {
-      border-radius: 12px;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-      font-family: 'YourFont', sans-serif;
-    }
-    
+    }    
   }
 }
 
+
+
+/*Subscription details
+
+          page 
+          
+                style*/
+
+.confirm-email-section
+{
+  background-color: $bg-color;
+  .container-xl
+  {
+    margin: auto;
+    max-width: 650px;
+    width: 100%;
+    .fisunic-logo
+    {
+      padding: 43px 32px;
+    }
+    .email-info
+    {
+      padding: 40px 32px;
+      background-color: $white;
+
+      .email-title
+      {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: 0%;
+        color: $heading-color;
+      }
+      .pro-info2
+      {
+        line-height: 20px;
+        margin-bottom: 61px;
+      }
+      .btn
+      {
+        padding: 8px 24px;
+        margin-top: 0;
+        margin-bottom: 28px;
+      }
+      .team-fisunic
+      {
+        font-size: 20px;
+      }
+    }
+    .office-address
+    {
+      padding-top: 32px;
+      padding-bottom: 40px;
+      .team-fisunic
+      {
+        font-size: 14px;
+        line-height: 15px;
+      }
+    }
+  }
+}
   
