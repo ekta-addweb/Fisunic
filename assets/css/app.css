@@ -11360,20 +11360,40 @@ img {
 }
 
 .header-row {
-  margin-top: 16px;
-  margin-bottom: 12px;
+  padding-top: 20px;
+  padding-bottom: 16px;
+}
+.header-row .logo-img {
+  max-width: 210px;
+}
+@media (max-width: 426px) {
+  .header-row .logo-img {
+    max-width: 100px;
+  }
 }
 .header-row .search-wrapper {
   position: relative;
+  width: 100%;
+  max-width: 590px;
+  flex-grow: 1;
 }
 .header-row .search-wrapper input {
   width: 100%;
+  max-width: 590px;
   height: 48px;
   padding-left: 40px;
   background: #F1F7FF url("../../../assets/images/search-Icon.svg") no-repeat 12px center;
   background-size: 20px 20px;
   border: none;
   border-radius: 30px;
+}
+.header-row .menu-col {
+  gap: 40px;
+}
+@media (max-width: 575.98px) {
+  .header-row .menu-col {
+    gap: 15px;
+  }
 }
 .header-row .dropdown a.dropdown-toggle {
   font-weight: 400;
@@ -11389,6 +11409,14 @@ img {
   width: 20px;
   height: 20px;
   cursor: pointer;
+}
+@media (max-width: 991.98px) {
+  .header-row .header-row .search-wrapper {
+    max-width: 100%;
+  }
+  .header-row .header-row .search-wrapper input {
+    max-width: 100%;
+  }
 }
 
 .nav .navbar-toggler {

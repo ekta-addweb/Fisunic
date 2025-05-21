@@ -16,86 +16,99 @@
       <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
    </head>
    <body>
-      <!--header start-->
-      <header class="border-bottom">
-        <div class="container-xl">
-          <div class="header-row row align-items-center g-3">
-            <!-- Logo -->
-            <div class="header-col col-6 col-md-2">
-              <a href="/">
-                <img src="assets/images/logo.svg" alt="LOGO" class="logo-img">
-              </a>
-            </div>
-      
-            <!-- Search -->
-            <div class="header-col col-md-6">
-              <form role="search">
-                <div class="search-wrapper d-flex align-items-center px-1">
-                  <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-                </div>
-              </form>   
-            </div>
-            <div class="header-col col-12 col-md-4 d-flex justify-content-center gap-5 align-items-center">
-              <div class="dropdown text-center position-relative">
-                <a href="#" class="text-decoration-none dropdown-toggle text-dark" data-bs-toggle="dropdown" aria-expanded="false">
-                  <span>$ USD</span>
-                </a>
-                <ul class="dropdown-menu text-small">
-                  <li><a class="dropdown-item" href="#">USD1</a></li>
-                  <li><a class="dropdown-item" href="#">USD2</a></li>
-                  <li><a class="dropdown-item" href="#">USD3</a></li>
-                </ul>
-              </div>
-              <div class="dropdown text-center position-relative">
-                <a href="#" class="text-decoration-none dropdown-toggle text-dark" data-bs-toggle="dropdown" aria-expanded="false">
-                  <span><i class="fa-solid fa-globe me-1"></i> English</span>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-end text-small my-2">
-                  <li><a class="dropdown-item" href="#">English1</a></li>
-                  <li><a class="dropdown-item" href="#">English2</a></li>
-                  <li><a class="dropdown-item" href="#">English3</a></li>
-                </ul>
-              </div>
-              <i class="fa-regular fa-user text-primary"></i>
-            </div>
-          </div>
-        </div>
-      </header>
-    <!--header end-->
-    <!--nav start-->
-    <section class="nav">
+    <!--header start-->
+    <header>
+     <div class="upper-header border-bottom">
       <div class="container-xl">
-        <nav class="navbar navbar-expand-lg my-3">
-    
-          <!-- Desktop -->
-          <div class="d-none d-lg-flex align-items-center text-primary" data-bs-toggle="collapse" data-bs-target="" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" style="cursor: pointer;">
-            <span class="navbar-toggler-icon me-2"></span>
-            <span class="nav-link m-0 p-0 text-primary">All Categories</span>
+        <div class="header-row row align-items-center g-3 d-flex justify-content-between">
+          
+          <!-- Logo -->
+          <div class="header-col col-6 col-md-4 col-lg-3 pt-0">
+            <a href="/">
+              <img src="assets/images/logo.svg" alt="LOGO" class="logo-img img-fluid">
+            </a>
           </div>
-    
-          <!-- Mobile -->
-          <div class="d-flex d-lg-none align-items-center text-primary" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" style="cursor: pointer;">
-            <span class="navbar-toggler-icon me-2"></span>
-            <span class="nav-link m-0 p-0 text-primary">All Categories</span>
-          </div>
-    
-          <div class="collapse navbar-collapse" id="mainNavbar">
-            <ul class="navbar-nav me-auto ms-lg-4 ms-0 mt-4 mt-lg-0">
-              <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Return and Payment</a></li>
-            </ul>
-            <div class="d-flex align-items-center mt-lg-0 mt-4 mt-lg-0">
-              <img src="assets/images/delete-Buttons.svg" alt="delete-btn" style="cursor: pointer;">
-            </div>
-          </div>
-    
-        </nav>
-      </div>
-    </section>
-     <!--nav end-->
 
+          <!-- Search -->
+          <div class="header-col col-12 order-3 col-lg-6 order-lg-2">
+            <form role="search" class="w-100 p-0">
+              <div class="search-wrapper d-flex align-items-center mx-auto">
+                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+              </div>
+            </form>
+          </div>
+
+          <!-- Icons -->
+          <div class="menu-col header-col col-6 col-md-8 col-lg-3 d-flex justify-content-end align-items-center order-2 order-lg-3">
+            <!-- Currency Dropdown -->
+            <div class="dropdown text-center position-relative">
+              <a href="#" class="text-decoration-none dropdown-toggle text-dark" data-bs-toggle="dropdown" aria-expanded="false">
+                <span>$ USD</span>
+              </a>
+              <ul class="dropdown-menu text-small">
+                <li><a class="dropdown-item" href="#">USD1</a></li>
+                <li><a class="dropdown-item" href="#">USD2</a></li>
+                <li><a class="dropdown-item" href="#">USD3</a></li>
+              </ul>
+            </div>
+
+            <!-- Language Dropdown -->
+            <div class="dropdown text-center position-relative">
+              <a href="#" class="text-decoration-none dropdown-toggle text-dark" data-bs-toggle="dropdown" aria-expanded="false">
+                <span><i class="fa-solid fa-globe me-1"></i> English</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end text-small">
+                <li><a class="dropdown-item" href="#">English1</a></li>
+                <li><a class="dropdown-item" href="#">English2</a></li>
+                <li><a class="dropdown-item" href="#">English3</a></li>
+              </ul>
+            </div>
+
+            <!-- User Icon -->
+            <i class="fa-regular fa-user text-primary"></i>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+      <!--nav start-->
+      <div class="nav">
+        <div class="container-xl">
+          <nav class="navbar navbar-expand-lg p-0 py-3">
+          
+            <!-- Desktop -->
+            <div class="d-none d-lg-flex align-items-center text-primary" data-bs-toggle="collapse" data-bs-target="" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" style="cursor: pointer;">
+              <span class="navbar-toggler-icon me-2"></span>
+              <span class="nav-link m-0 p-0 text-primary">All Categories</span>
+            </div>
+          
+            <!-- Mobile -->
+            <div class="d-flex d-lg-none align-items-center text-primary" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" style="cursor: pointer;">
+              <span class="navbar-toggler-icon me-2"></span>
+              <span class="nav-link m-0 p-0 text-primary">All Categories</span>
+            </div>
+          
+            <div class="collapse navbar-collapse" id="mainNavbar">
+              <ul class="navbar-nav me-auto ms-lg-4 ms-0 mt-4 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Return and Payment</a></li>
+              </ul>
+              <div class="d-flex align-items-center mt-lg-0 mt-4 mt-lg-0">
+                <img src="assets/images/delete-Buttons.svg" alt="delete-btn" style="cursor: pointer;">
+              </div>
+            </div>
+          
+          </nav>
+        </div>
+      </div>
+       <!--nav end-->
+    </header>
+    <!--header end-->
+
+    <main>
       <!--hero-section start-->
       <section class="hero-section">
         <div class="container-xl">
@@ -115,7 +128,7 @@
                   <div class="hero-left col-md-6">
                     <h2 class="hero-title">Physiotherapy Equipements</h2>
                     <p class="hero-text">Cutting-edge physiotherapy equipment: Empowering recovery and enhancing mobility for optimal rehabilitation.</p>
-                    <button class="btn btn-outline-primary">Discover Now</button>
+                    <a href="#" class="btn btn-outline-primary">Discover Now</a>
                   </div>
                   <div class="hero-right text-center col-md-6">
                     <img src="assets/images/hero-image.svg" alt="hero-image" class="img-fluid hero-img">
@@ -128,7 +141,7 @@
                   <div class="hero-left col-md-6">
                     <h2 class="hero-title">Physiotherapy Equipements</h2>
                     <p class="hero-text">Cutting-edge physiotherapy equipment: Empowering recovery and enhancing mobility for optimal rehabilitation.</p>
-                    <button class="btn btn-outline-primary">Discover Now</button>
+                    <a href="#" class="btn btn-outline-primary">Discover Now</a>
                   </div>
                   <div class="hero-right text-center col-md-6">
                     <img src="assets/images/hero-image.svg" alt="hero-image" class="img-fluid hero-img">
@@ -141,7 +154,7 @@
                   <div class="hero-left col-md-6">
                     <h2 class="hero-title">Physiotherapy Equipements</h2>
                     <p class="hero-text">Cutting-edge physiotherapy equipment: Empowering recovery and enhancing mobility for optimal rehabilitation.</p>
-                    <button class="btn btn-outline-primary">Discover Now</button>
+                    <a href="#" class="btn btn-outline-primary">Discover Now</a>
                   </div>
                   <div class="hero-right text-center col-md-6">
                     <img src="assets/images/hero-image.svg" alt="hero-image" class="img-fluid hero-img">
@@ -266,8 +279,8 @@
                     <img src="assets/images/product1.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
                     <div class="card-hover d-flex align-items-center justify-content-center">
                      <div class="hover-btn">
-                       <button class="btn btn-light h-btn1">Add to cart</button>
-                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                      <a href="#" class="btn btn-light h-btn1">Add to cart</a>
+                      <a href="#" class="btn btn-outline-light h-btn2">Rent Now</a>
                      </div>
                    </div>
                     <div class="card-body d-flex flex-column">
@@ -283,9 +296,9 @@
                    <div class="card h-100 shadow-sm border-0">
                      <img src="assets/images/product1.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                      <div class="hover-btn">
-                       <button class="btn btn-light h-btn1">Add to cart</button>
-                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                       <div class="hover-btn">
+                      <a href="#" class="btn btn-light h-btn1">Add to cart</a>
+                      <a href="#" class="btn btn-outline-light h-btn2">Rent Now</a>
                      </div>
                      </div>
                      <div class="card-body d-flex flex-column">
@@ -306,9 +319,9 @@
                        <p class="card-price">$ 675.00</p>
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                        <div class="card-hover d-flex align-items-center justify-content-center">
-                      <div class="hover-btn">
-                       <button class="btn btn-light h-btn1">Add to cart</button>
-                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                       <div class="hover-btn">
+                      <a href="#" class="btn btn-light h-btn1">Add to cart</a>
+                      <a href="#" class="btn btn-outline-light h-btn2">Rent Now</a>
                      </div>
                        </div>
                      </div>
@@ -325,9 +338,9 @@
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                      </div>
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                      <div class="hover-btn">
-                       <button class="btn btn-light h-btn1">Add to cart</button>
-                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                       <div class="hover-btn">
+                      <a href="#" class="btn btn-light h-btn1">Add to cart</a>
+                      <a href="#" class="btn btn-outline-light h-btn2">Rent Now</a>
                      </div>
                      </div>
                    </div>
@@ -343,9 +356,9 @@
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                      </div>
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                      <div class="hover-btn">
-                       <button class="btn btn-light h-btn1">Add to cart</button>
-                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                       <div class="hover-btn">
+                      <a href="#" class="btn btn-light h-btn1">Add to cart</a>
+                      <a href="#" class="btn btn-outline-light h-btn2">Rent Now</a>
                      </div>
                      </div>
                    </div>
@@ -361,9 +374,9 @@
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                      </div>
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                      <div class="hover-btn">
-                       <button class="btn btn-light h-btn1">Add to cart</button>
-                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                       <div class="hover-btn">
+                      <a href="#" class="btn btn-light h-btn1">Add to cart</a>
+                      <a href="#" class="btn btn-outline-light h-btn2">Rent Now</a>
                      </div>
                      </div>
                    </div>
@@ -379,9 +392,9 @@
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                      </div>
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                      <div class="hover-btn">
-                       <button class="btn btn-light h-btn1">Add to cart</button>
-                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                       <div class="hover-btn">
+                      <a href="#" class="btn btn-light h-btn1">Add to cart</a>
+                      <a href="#" class="btn btn-outline-light h-btn2">Rent Now</a>
                      </div>
                      </div>
                    </div>
@@ -397,9 +410,9 @@
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                      </div>
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                      <div class="hover-btn">
-                       <button class="btn btn-light h-btn1">Add to cart</button>
-                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                       <div class="hover-btn">
+                      <a href="#" class="btn btn-light h-btn1">Add to cart</a>
+                      <a href="#" class="btn btn-outline-light h-btn2">Rent Now</a>
                      </div>
                      </div>
                    </div>
@@ -415,8 +428,8 @@
                     <img src="assets/images/product1.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
                     <div class="card-hover d-flex align-items-center justify-content-center">
                      <div class="hover-btn">
-                       <button class="h-btn1">Add to cart</button>
-                       <button class="h-btn2">Rent Now</button>
+                      <a href="#" class="btn btn-light h-btn1">Add to cart</a>
+                      <a href="#" class="btn btn-outline-light h-btn2">Rent Now</a>
                      </div>
                    </div>
                     <div class="card-body d-flex flex-column">
@@ -432,9 +445,9 @@
                    <div class="card h-100 shadow-sm border-0">
                      <img src="assets/images/product1.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                      <div class="hover-btn">
-                       <button class="btn btn-light h-btn1">Add to cart</button>
-                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                       <div class="hover-btn">
+                      <a href="#" class="btn btn-light h-btn1">Add to cart</a>
+                      <a href="#" class="btn btn-outline-light h-btn2">Rent Now</a>
                      </div>
                      </div>
                      <div class="card-body d-flex flex-column">
@@ -455,9 +468,9 @@
                        <p class="card-price">$ 675.00</p>
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                        <div class="card-hover d-flex align-items-center justify-content-center">
-                          <div class="hover-btn">
-                       <button class="btn btn-light h-btn1">Add to cart</button>
-                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                           <div class="hover-btn">
+                      <a href="#" class="btn btn-light h-btn1">Add to cart</a>
+                      <a href="#" class="btn btn-outline-light h-btn2">Rent Now</a>
                      </div>
                        </div>
                      </div>
@@ -474,9 +487,9 @@
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                      </div>
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                      <div class="hover-btn">
-                       <button class="btn btn-light h-btn1">Add to cart</button>
-                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                       <div class="hover-btn">
+                      <a href="#" class="btn btn-light h-btn1">Add to cart</a>
+                      <a href="#" class="btn btn-outline-light h-btn2">Rent Now</a>
                      </div>
                      </div>
                    </div>
@@ -492,9 +505,9 @@
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                      </div>
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                      <div class="hover-btn">
-                       <button class="btn btn-light h-btn1">Add to cart</button>
-                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                       <div class="hover-btn">
+                      <a href="#" class="btn btn-light h-btn1">Add to cart</a>
+                      <a href="#" class="btn btn-outline-light h-btn2">Rent Now</a>
                      </div>
                      </div>
                    </div>
@@ -510,9 +523,9 @@
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                      </div>
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                      <div class="hover-btn">
-                       <button class="btn btn-light h-btn1">Add to cart</button>
-                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                       <div class="hover-btn">
+                      <a href="#" class="btn btn-light h-btn1">Add to cart</a>
+                      <a href="#" class="btn btn-outline-light h-btn2">Rent Now</a>
                      </div>
                      </div>
                    </div>
@@ -528,9 +541,9 @@
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                      </div>
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                      <div class="hover-btn">
-                       <button class="btn btn-light h-btn1">Add to cart</button>
-                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                       <div class="hover-btn">
+                      <a href="#" class="btn btn-light h-btn1">Add to cart</a>
+                      <a href="#" class="btn btn-outline-light h-btn2">Rent Now</a>
                      </div>
                      </div>
                    </div>
@@ -546,9 +559,9 @@
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                      </div>
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                      <div class="hover-btn">
-                       <button class="btn btn-light h-btn1">Add to cart</button>
-                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                       <div class="hover-btn">
+                      <a href="#" class="btn btn-light h-btn1">Add to cart</a>
+                      <a href="#" class="btn btn-outline-light h-btn2">Rent Now</a>
                      </div>
                      </div>
                    </div>
@@ -564,8 +577,8 @@
                     <img src="assets/images/product1.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
                     <div class="card-hover d-flex align-items-center justify-content-center">
                      <div class="hover-btn">
-                       <button class="h-btn1">Add to cart</button>
-                       <button class="h-btn2">Rent Now</button>
+                      <a href="#" class="btn btn-light h-btn1">Add to cart</a>
+                      <a href="#" class="btn btn-outline-light h-btn2">Rent Now</a>
                      </div>
                    </div>
                     <div class="card-body d-flex flex-column">
@@ -581,9 +594,9 @@
                    <div class="card h-100 shadow-sm border-0">
                      <img src="assets/images/product1.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                      <div class="hover-btn">
-                       <button class="btn btn-light h-btn1">Add to cart</button>
-                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                       <div class="hover-btn">
+                      <a href="#" class="btn btn-light h-btn1">Add to cart</a>
+                      <a href="#" class="btn btn-outline-light h-btn2">Rent Now</a>
                      </div>
                      </div>
                      <div class="card-body d-flex flex-column">
@@ -604,9 +617,9 @@
                        <p class="card-price">$ 675.00</p>
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                        <div class="card-hover d-flex align-items-center justify-content-center">
-                          <div class="hover-btn">
-                       <button class="btn btn-light h-btn1">Add to cart</button>
-                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                           <div class="hover-btn">
+                      <a href="#" class="btn btn-light h-btn1">Add to cart</a>
+                      <a href="#" class="btn btn-outline-light h-btn2">Rent Now</a>
                      </div>
                        </div>
                      </div>
@@ -623,9 +636,9 @@
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                      </div>
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                      <div class="hover-btn">
-                       <button class="btn btn-light h-btn1">Add to cart</button>
-                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                       <div class="hover-btn">
+                      <a href="#" class="btn btn-light h-btn1">Add to cart</a>
+                      <a href="#" class="btn btn-outline-light h-btn2">Rent Now</a>
                      </div>
                      </div>
                    </div>
@@ -641,9 +654,9 @@
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                      </div>
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                      <div class="hover-btn">
-                       <button class="btn btn-light h-btn1">Add to cart</button>
-                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                       <div class="hover-btn">
+                      <a href="#" class="btn btn-light h-btn1">Add to cart</a>
+                      <a href="#" class="btn btn-outline-light h-btn2">Rent Now</a>
                      </div>
                      </div>
                    </div>
@@ -659,8 +672,8 @@
                     <img src="assets/images/product1.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
                     <div class="card-hover d-flex align-items-center justify-content-center">
                      <div class="hover-btn">
-                       <button class="h-btn1">Add to cart</button>
-                       <button class="h-btn2">Rent Now</button>
+                      <a href="#" class="btn btn-light h-btn1">Add to cart</a>
+                      <a href="#" class="btn btn-outline-light h-btn2">Rent Now</a>
                      </div>
                    </div>
                     <div class="card-body d-flex flex-column">
@@ -676,9 +689,9 @@
                    <div class="card h-100 shadow-sm border-0">
                      <img src="assets/images/product1.svg" class="card-img-top" alt="Top Image" width="262px" height="275px">
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                      <div class="hover-btn">
-                       <button class="btn btn-light h-btn1">Add to cart</button>
-                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                       <div class="hover-btn">
+                      <a href="#" class="btn btn-light h-btn1">Add to cart</a>
+                      <a href="#" class="btn btn-outline-light h-btn2">Rent Now</a>
                      </div>
                      </div>
                      <div class="card-body d-flex flex-column">
@@ -699,9 +712,9 @@
                        <p class="card-price">$ 675.00</p>
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                        <div class="card-hover d-flex align-items-center justify-content-center">
-                          <div class="hover-btn">
-                       <button class="btn btn-light h-btn1">Add to cart</button>
-                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                           <div class="hover-btn">
+                      <a href="#" class="btn btn-light h-btn1">Add to cart</a>
+                      <a href="#" class="btn btn-outline-light h-btn2">Rent Now</a>
                      </div>
                        </div>
                      </div>
@@ -718,9 +731,9 @@
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                      </div>
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                      <div class="hover-btn">
-                       <button class="btn btn-light h-btn1">Add to cart</button>
-                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                       <div class="hover-btn">
+                      <a href="#" class="btn btn-light h-btn1">Add to cart</a>
+                      <a href="#" class="btn btn-outline-light h-btn2">Rent Now</a>
                      </div>
                      </div>
                    </div>
@@ -736,9 +749,9 @@
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                      </div>
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                      <div class="hover-btn">
-                       <button class="btn btn-light h-btn1">Add to cart</button>
-                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                       <div class="hover-btn">
+                      <a href="#" class="btn btn-light h-btn1">Add to cart</a>
+                      <a href="#" class="btn btn-outline-light h-btn2">Rent Now</a>
                      </div>
                      </div>
                    </div>
@@ -754,9 +767,9 @@
                        <img src="assets/images/starts-number.svg" alt="Bottom Image" class="img-fluid" width="117px" height="17px">
                      </div>
                      <div class="card-hover d-flex align-items-center justify-content-center">
-                      <div class="hover-btn">
-                       <button class="btn btn-light h-btn1">Add to cart</button>
-                       <button class="btn btn-outline-light h-btn2">Rent Now</button>
+                       <div class="hover-btn">
+                      <a href="#" class="btn btn-light h-btn1">Add to cart</a>
+                      <a href="#" class="btn btn-outline-light h-btn2">Rent Now</a>
                      </div>
                      </div>
                    </div>
@@ -766,9 +779,7 @@
           </div>
     
           <div class="btn1 mt-4 text-center">
-            <a href="our-product.html">
-              <button class="btn btn-outline-primary">Discover More</button>
-            </a>
+            <a href="our-product.html" class="btn btn-outline-primary">Discover More</a>
           </div>
         </div>
       </section>
@@ -805,9 +816,7 @@
                     <h3 class="card-title">Silver</h3>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     <h2>$12<span> /mo</span></h2>
-                    <div class="">
-                      <button class="btn btn-primary w-100">Rent Now</button>
-                    </div>
+                      <a href="#" class="btn btn-primary w-100">Rent Now</a>
                     <hr>
                     <h6>What's included</h6>
                     <ul class="sub-list list-unstyled p-0 mt-3 ">
@@ -903,9 +912,7 @@
                     <h3 class="card-title">Gold</h3>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     <h2>$12<span> /mo</span></h2>
-                    <div class="">
-                      <button class="btn btn-primary w-100">Rent Now</button>
-                    </div>
+                    <a href="#" class="btn btn-primary w-100">Rent Now</a>
                     <hr>
                     <h6>What's included</h6>
                     <ul class="sub-list list-unstyled p-0 mt-3 ">
@@ -1001,9 +1008,7 @@
                   <h3 class="card-title">Platinum</h3>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                   <h2>$12<span> /mo</span></h2>
-                  <div class="">
-                    <button class="btn btn-primary w-100">Rent Now</button>
-                  </div>
+                  <a href="#" class="btn btn-primary w-100">Rent Now</a>
                   <hr>
                   <h6>What's included</h6>
                   <ul class="sub-list list-unstyled p-0 mt-3 ">
@@ -1170,7 +1175,7 @@
             <div class="deal-left col-md-6 text-center text-white">
               <p class="deal-title"><img src="assets/images/deal-line.jpg"> deal of the week <img src="assets/images/deal-line.jpg"></p>
                <h2 class="offers">10% off<span> on machines</span></h2>
-               <button class="btn btn-outline-light md-mb-5">Discover Now</button>
+               <a href="#" class="btn btn-outline-light md-mb-5">Discover Now</a>
             </div>
             <div class="deal-right col-md-6">
                <img src="assets/images/deal-image.svg" alt="hero-image" class="img-fluid hero-img">
@@ -1280,9 +1285,9 @@
         </div>
       </section>
       <!--company section end-->
-
+    </main>
       <!--footer start-->
-      <footer>
+    <footer>
         <div class="container-xl">
           <div class="footer-upper row justify-content-center align-items-center d-flex flex-wrap">
             <div class="footer-upper-left col-12 col-md-6">
@@ -1365,7 +1370,7 @@
             <img src="assets/images/msg-logo.svg" alt="msg-icon" class="img-fluid" >
           </button>
         </div>
-      </footer>
+    </footer>
       <!--footer end-->
 
 <!-- Swiper java-script -->
@@ -1412,13 +1417,13 @@
   },
     breakpoints: {
       320: { slidesPerView: 1 },
-      576: { slidesPerView: 1.2 },
-      768: { slidesPerView: 1.5 },
-      992: { slidesPerView: 2 },
+      576: { slidesPerView: 1 },
+      768: { slidesPerView:  1},
+      992: { slidesPerView: 2},
       1200: { slidesPerView: 2},
-      1400: { slidesPerView: 2},
-      1600: { slidesPerView: 2},
-      1920: { slidesPerView: 2 },
+      1400: { slidesPerView: 2.5},
+      1600: { slidesPerView: 2.5},
+      1920: { slidesPerView: 2.5},
     }
   });
 

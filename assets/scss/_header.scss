@@ -1,18 +1,40 @@
 .header-row {
-  margin-top: 16px;
-  margin-bottom: 12px;
+  padding-top: 20px;
+  padding-bottom: 16px;
 
+  .logo-img {
+    max-width: 210px;
+  @media #{$brkmx426}{
+    max-width: 100px;
+  }
+}
+
+  
   .search-wrapper {
     position: relative;
+    width: 100%;
+    max-width: 590px;
+    flex-grow: 1;
 
     input {
       width: 100%;
+      max-width: 590px;
       height: 48px;
       padding-left: 40px;
       background: $bg-color url('../../../assets/images/search-Icon.svg') no-repeat 12px center;
       background-size: 20px 20px;
       border: none;
       border-radius: 30px;
+    }
+  }
+
+  .menu-col
+  {
+    gap: 40px;
+
+    @media #{$brkmx576}
+     {
+      gap: 15px;
     }
   }
 
@@ -36,6 +58,19 @@
     height: 20px;
     cursor: pointer;
   }
+
+  @media (max-width: 991.98px) {
+  .header-row {
+    .search-wrapper {
+      max-width: 100%;
+
+      input {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
 }
 
 // NAVIGATION SECTION
