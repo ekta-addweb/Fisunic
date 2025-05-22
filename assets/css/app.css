@@ -10770,16 +10770,6 @@ textarea.form-control-lg {
   }
 }
 /* Media Query Break Point START */
-/* Media Query Break Point END */
-@media (max-width: 767.98px) {
-  .hero .container::before {
-    opacity: 0;
-  }
-  .hero .hero-left {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-}
 /* --------------------------------------------------
 	typography
 -------------------------------------------------- */
@@ -10832,6 +10822,10 @@ ol li {
 
 /* COMMON DESIGN END */
 /*new common style*/
+.container-xl {
+  padding-inline: 15px;
+}
+
 .section-wrapper {
   padding-top: 64px;
   padding-bottom: 64px;
@@ -10909,12 +10903,21 @@ img {
   border: 2px solid #1379FF;
 }
 
-.btn-light {
+.order-history-section .btn-light {
   background-color: #fff;
-  padding: 4px 48px;
+  padding: 4px 20px;
+  max-width: 165px;
+  width: 100%;
   border: none;
   border-radius: 4px;
   color: #1379FF;
+}
+@media (max-width: 767.98px) {
+  .order-history-section .btn-light {
+    padding: 4px 20px;
+    max-width: 130px;
+    width: 100%;
+  }
 }
 
 /*card style*/
@@ -10999,16 +11002,16 @@ img {
 }
 
 /*pro-title style*/
-.pro-title .container-xl {
-  background-color: #F1F7FF;
-  padding: 32px 0;
-}
 .pro-title .container-xl .page-title {
   font-weight: 700;
   font-size: 32px;
   line-height: 40px;
   letter-spacing: 0%;
   color: #4A4A4A;
+}
+.pro-title .container-xl .page-heading {
+  background-color: #F1F7FF;
+  padding: 32px 0;
 }
 .pro-title .container-xl .direction {
   gap: 15px;
@@ -11430,7 +11433,7 @@ img {
   background-image: url("../../../assets/images/menubar-icon.svg");
   border: none;
   outline: none;
-  padding-left: 20px;
+  margin-right: 14px;
 }
 .nav .navbar-nav {
   gap: 40px;
@@ -11527,11 +11530,11 @@ footer .container-xl .footer-upper .input-wrapper .submit-btn {
   right: 30px;
   transform: translateY(-50%);
   height: 48px;
-  padding: 0 16px;
+  padding: 10px 16px;
   font-size: 14px;
   border-radius: 10px;
   color: #F1F7FF;
-  border: 2px solid #F1F7FF;
+  border: 2px solid #fff;
 }
 footer .container-xl .footer-upper .input-wrapper .btn-primary:hover {
   background-color: #1379FF;
@@ -11668,12 +11671,10 @@ footer .msg-button {
 
 .hero-section {
   position: relative;
+  padding-top: 16px;
 }
 .hero-section .hero-row {
   background: #F1F7FF;
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
   position: relative;
 }
 .hero-section .hero-row::before {
@@ -11796,7 +11797,6 @@ footer .msg-button {
   height: 141px;
 }
 .categories-slider-section .container-xl .swiper-slide {
-  background: #F1F7FF;
   font-size: 24px;
   border: 3px solid transparent;
   transition: border 0.3s;
@@ -11816,6 +11816,7 @@ footer .msg-button {
 }
 .categories-slider-section .container-xl .swiper-slide-active {
   border: 2px solid #1379FF;
+  background: #F1F7FF;
   border-radius: 4px;
 }
 
@@ -12008,12 +12009,27 @@ footer .msg-button {
   transform: scale(0.85);
   opacity: 0.4;
 }
+@media (max-width: 991.98px) {
+  .client .container-xl .swiper-slide {
+    filter: none;
+    transform: 0;
+    transition: none;
+    opacity: 1;
+  }
+}
 .client .container-xl .swiper-slide-active,
 .client .container-xl .swiper-slide-duplicate-active {
   filter: none;
   transform: scale(1);
   opacity: 1;
   z-index: 2;
+}
+@media (max-width: 991.98px) {
+  .client .container-xl .swiper-slide-active,
+  .client .container-xl .swiper-slide-duplicate-active {
+    transform: 0;
+    opacity: 1;
+  }
 }
 .client .container-xl .swiper-left {
   margin-right: 20px;
@@ -12122,7 +12138,7 @@ footer .msg-button {
 @media (min-width: 768px) {
   .company .company-col1 {
     text-align: left;
-    border-right: 2px solid #1379FF;
+    border-right: 2px solid rgba(19, 121, 255, 0.5);
     padding-right: 20px;
   }
 }
@@ -12301,7 +12317,7 @@ footer .msg-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 13px;
+  border-radius: 10px;
   overflow: hidden;
 }
 .product-details-section .container-xl .product-details-left .swiper-slide img {
@@ -12310,7 +12326,7 @@ footer .msg-button {
   min-height: 109px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 13px;
+  border-radius: 10px;
 }
 .product-details-section .container-xl .product-details-left .swiper-slide img:hover {
   border: 2px solid #1379FF;

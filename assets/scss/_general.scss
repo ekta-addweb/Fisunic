@@ -50,7 +50,10 @@ ol {
 /*new common style*/
 
 //sections top bottom 
-
+.container-xl
+{
+	padding-inline: 15px;
+}
 .section-wrapper
 {
 	padding-top: 64px;
@@ -124,14 +127,26 @@ img {
 	}
 }
 //order hestory btn style
-.btn-light
+.order-history-section
+{
+	.btn-light
 {
 	background-color: $white;
-	padding: 4px 48px;
+	padding: 4px 20px;
+	max-width: 165px;
+	width: 100%;
 	border: none;
 	border-radius: 4px;
 	color: $main-color;
+
+	@media #{$brkmx768} {
+		padding: 4px 20px;
+		max-width: 130px;
+		width: 100%;
+	}
 }
+}
+
 
 /*card style*/
 .card{
@@ -211,12 +226,14 @@ img {
 /*pro-title style*/
 .pro-title{
 	.container-xl{
-	  background-color: $bg-color;
-	  padding: 32px 0;
-  
 	  .page-title{
 		  @include text-style(700,32px,40px,0%);
 		  color: $small-font-text;
+	  }
+	  .page-heading
+	  {
+		background-color: $bg-color;
+		padding: 32px 0;
 	  }
   
 	  .direction{

@@ -24,21 +24,3 @@ $brkmx1097: '(max-width: 1097px)';
     } 
 }
 
-/* Media Query Break Point END */
-
-@media #{$brkmx768} {
-    .hero{
-        .container{
-            &::before{
-                opacity: 0;
-            }
-        }
-    }
-  .hero{
-    .hero-left
-    {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-  }
-}
