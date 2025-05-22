@@ -11459,6 +11459,7 @@ img {
 footer {
   background-color: #F1F7FF;
   margin-top: 64px;
+  /*chat bot css*/
 }
 @media (max-width: 767.98px) {
   footer {
@@ -11669,6 +11670,200 @@ footer .msg-button {
   background-color: transparent;
 }
 
+/*chat-board css start*/
+#chatIcon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.rotated {
+  transform: rotate(-90deg);
+}
+
+.msg-chat-bg {
+  position: relative;
+}
+
+.msg-Vector-01 {
+  position: absolute;
+  top: 55px;
+  right: 35px;
+}
+
+.msg_Vector {
+  position: absolute;
+  top: 45px;
+  right: 40px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.chat-board {
+  position: fixed;
+  bottom: 130px;
+  right: 30px;
+  width: 100%;
+  max-width: 354px;
+  height: auto;
+  background: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 0 4px 12px #a79eb6;
+  overflow: hidden;
+  display: none;
+  flex-direction: column;
+  z-index: 9999;
+}
+
+.chat-header {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  padding: 15px;
+}
+
+.chat-bot-heading {
+  width: 200px;
+}
+
+.chat-bot-icon {
+  width: 55px;
+  height: 55px;
+  background-color: #CDCEFF;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  position: relative;
+}
+
+.status-online {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #87DB5C;
+  position: absolute;
+  top: 3px;
+  right: 7px;
+}
+
+.chat-bot-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31.2px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.chat-bot-status {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19.2px;
+  letter-spacing: 0%;
+  color: #5A5A5A;
+}
+
+.chat-btn-close {
+  cursor: pointer;
+}
+
+.chat-body {
+  background-color: #F3F3FF;
+  padding: 15px;
+}
+
+.msg-heading {
+  display: flex;
+  gap: 5px;
+}
+
+.msg-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22.4px;
+  letter-spacing: 0%;
+  color: #5A5A5A;
+}
+
+.bot-msg {
+  background-color: #FFFFFF;
+  width: 100%;
+  max-width: 231px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 5px 0;
+  padding-left: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22.4px;
+  letter-spacing: 0%;
+  margin-top: 10px;
+  color: #000000;
+}
+
+.user-chat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 10px 0;
+  margin-top: 15px;
+}
+
+.user-msg {
+  margin-top: 10px;
+  background-color: #6B1DFD;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 5px 0;
+  padding-right: 10px;
+  width: 100%;
+  max-width: 106px;
+  align-items: right;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22.4px;
+  letter-spacing: 0%;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+.msg-box {
+  height: 70px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22.4px;
+  letter-spacing: 0%;
+  color: #5A5A5A;
+}
+
+input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22.4px;
+  letter-spacing: 0%;
+  color: #5A5A5A;
+}
+
+.send-msg-icon {
+  cursor: pointer;
+}
+
+/*chat-board css end*/
 .hero-section {
   position: relative;
   padding-top: 16px;

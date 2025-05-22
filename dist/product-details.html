@@ -15,103 +15,112 @@
      </head>
 <body>
     <!--header start-->
-  <header>
-   <div class="upper-header border-bottom">
-    <div class="container-xl">
-      <div class="header-row row align-items-center g-3 d-flex justify-content-between">
-        
-        <!-- Logo -->
-        <div class="header-col col-6 col-md-4 col-lg-3 pt-0">
-          <a href="/">
-            <img src="assets/images/logo.svg" alt="LOGO" class="logo-img img-fluid">
-          </a>
-        </div>
-        <!-- Search -->
-        <div class="header-col col-12 order-3 col-lg-6 order-lg-2">
-          <form role="search" class="w-100 p-0">
-            <div class="search-wrapper d-flex align-items-center mx-auto">
-              <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+    <header>
+     <div class="upper-header border-bottom">
+      <div class="container-xl">
+        <div class="header-row row align-items-center g-3 d-flex justify-content-between">
+          
+          <!-- Logo -->
+          <div class="header-col col-6 col-md-4 col-lg-3 pt-0">
+            <a href="/">
+              <img src="assets/images/logo.svg" alt="LOGO" class="logo-img img-fluid">
+            </a>
+          </div>
+
+          <!-- Search -->
+          <div class="header-col col-12 order-3 col-lg-6 order-lg-2">
+            <form role="search" class="w-100 p-0">
+              <div class="search-wrapper d-flex align-items-center mx-auto">
+                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+              </div>
+            </form>
+          </div>
+
+          <!-- Icons -->
+          <div class="menu-col header-col col-6 col-md-8 col-lg-3 d-flex justify-content-end align-items-center order-2 order-lg-3">
+            <!-- Currency Dropdown -->
+            <div class="dropdown text-center position-relative">
+              <a href="#" class="text-decoration-none dropdown-toggle text-dark" data-bs-toggle="dropdown" aria-expanded="false">
+                <span>$ USD</span>
+              </a>
+              <ul class="dropdown-menu text-small">
+                <li><a class="dropdown-item" href="#">USD1</a></li>
+                <li><a class="dropdown-item" href="#">USD2</a></li>
+                <li><a class="dropdown-item" href="#">USD3</a></li>
+              </ul>
             </div>
-          </form>
-        </div>
-        <!-- Icons -->
-        <div class="menu-col header-col col-6 col-md-8 col-lg-3 d-flex justify-content-end align-items-center order-2 order-lg-3">
-          <!-- Currency Dropdown -->
-          <div class="dropdown text-center position-relative">
-            <a href="#" class="text-decoration-none dropdown-toggle text-dark" data-bs-toggle="dropdown" aria-expanded="false">
-              <span>$ USD</span>
-            </a>
-            <ul class="dropdown-menu text-small">
-              <li><a class="dropdown-item" href="#">USD1</a></li>
-              <li><a class="dropdown-item" href="#">USD2</a></li>
-              <li><a class="dropdown-item" href="#">USD3</a></li>
-            </ul>
+
+            <!-- Language Dropdown -->
+            <div class="dropdown text-center position-relative">
+              <a href="#" class="text-decoration-none dropdown-toggle text-dark" data-bs-toggle="dropdown" aria-expanded="false">
+                <span><i class="fa-solid fa-globe me-1"></i> English</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end text-small">
+                <li><a class="dropdown-item" href="#">English1</a></li>
+                <li><a class="dropdown-item" href="#">English2</a></li>
+                <li><a class="dropdown-item" href="#">English3</a></li>
+              </ul>
+            </div>
+
+            <!-- User Icon -->
+            <i class="fa-regular fa-user text-primary"></i>
           </div>
-          <!-- Language Dropdown -->
-          <div class="dropdown text-center position-relative">
-            <a href="#" class="text-decoration-none dropdown-toggle text-dark" data-bs-toggle="dropdown" aria-expanded="false">
-              <span><i class="fa-solid fa-globe me-1"></i> English</span>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end text-small">
-              <li><a class="dropdown-item" href="#">English1</a></li>
-              <li><a class="dropdown-item" href="#">English2</a></li>
-              <li><a class="dropdown-item" href="#">English3</a></li>
-            </ul>
-          </div>
-          <!-- User Icon -->
-          <i class="fa-regular fa-user text-primary"></i>
+
         </div>
       </div>
     </div>
-  </div>
-    <!--nav start-->
-    <div class="nav">
-      <div class="container-xl p-0">
-        <nav class="navbar navbar-expand-lg p-0 py-3">
-        
-          <!-- Desktop -->
-          <div class="d-none d-lg-flex align-items-center text-primary" data-bs-toggle="collapse" data-bs-target="" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" style="cursor: pointer;">
-            <span class="navbar-toggler-icon me-2"></span>
-            <span class="nav-link m-0 p-0 text-primary">All Categories</span>
-          </div>
-        
-          <!-- Mobile -->
-          <div class="d-flex d-lg-none align-items-center text-primary" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" style="cursor: pointer;">
-            <span class="navbar-toggler-icon me-2"></span>
-            <span class="nav-link m-0 p-0 text-primary">All Categories</span>
-          </div>
-        
-          <div class="collapse navbar-collapse" id="mainNavbar">
-            <ul class="navbar-nav me-auto ms-lg-4 ms-0 mt-4 mt-lg-0">
-              <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Return and Payment</a></li>
-            </ul>
-            <div class="d-flex align-items-center mt-lg-0 mt-4 mt-lg-0">
-              <img src="assets/images/delete-Buttons.svg" alt="delete-btn" style="cursor: pointer;">
+
+      <!--nav start-->
+      <div class="nav">
+        <div class="container-xl">
+          <nav class="navbar navbar-expand-lg p-0 py-3">
+          
+            <!-- Desktop -->
+            <div class="d-none d-lg-flex align-items-center text-primary" data-bs-toggle="collapse" data-bs-target="" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" style="cursor: pointer;">
+              <span class="navbar-toggler-icon"></span>
+              <span class="nav-link m-0 p-0 text-primary">All Categories</span>
             </div>
-          </div>
-        
-        </nav>
+          
+            <!-- Mobile -->
+            <div class="d-flex d-lg-none align-items-center text-primary" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" style="cursor: pointer;">
+              <span class="navbar-toggler-icon me-1"></span>
+              <span class="nav-link m-0 p-0 text-primary">All Categories</span>
+            </div>
+          
+            <div class="collapse navbar-collapse" id="mainNavbar">
+              <ul class="navbar-nav me-auto ms-lg-4 ms-0 mt-4 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Return and Payment</a></li>
+              </ul>
+              <div class="d-flex align-items-center mt-lg-0 mt-4 mt-lg-0">
+                <img src="assets/images/delete-Buttons.svg" alt="delete-btn" style="cursor: pointer;">
+              </div>
+            </div>
+          
+          </nav>
+        </div>
       </div>
-    </div>
-     <!--nav end-->
-  </header>
+       <!--nav end-->
+    </header>
     <!--header end-->
+    
   <main>
     <!--title start-->
     <section class="pro-title">
-        <div class="container-xl text-center">
+        <div class="container-xl text-center pt-3">
+          <div class="page-heading">
             <h2 class="page-title m-0 p-0">Lorem Ipsum</h2>
             <img src="assets/images/our-product-images/title-line.svg" alt="line image">
-            <div class="direction d-flex justify-content-center">
+            <div class="direction d-flex justify-content-center pt-3">
                 <a href="index.html">Home</a>
                 <img src="assets/images/our-product-images/title-Vector.svg" alt="image">
                 <a href="our-product.html">Product Category</a>
                 <img src="assets/images/our-product-images/title-Vector.svg" alt="image">
                 <a href="product-details.html" class="active">Product name</a>
             </div>
+          </div>
         </div>
     </section>
     <!--title end-->
@@ -123,13 +132,13 @@
           
           <!-- Left Column -->
           <div class="col-12 col-lg-6 product-details-left">
-              <img class="d-left-img" src="assets/images/product1.svg" alt="product image">
+              <img class="d-left-img" src="assets/images/product-details-image/d-slider3.svg" alt="product image">
               <div class="swiper-container-wrapper d-flex justify-content-center align-items-center">
                 <div class="swiper-button-prev"></div>
                 <div class="swiper mySwiper">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <img src="assets/images/product1.svg" alt="Image 1">
+                      <img src="assets/images/product-details-image/d-slider3.svg" alt="Image 1">
                     </div>
                     <div class="swiper-slide">
                       <img src="assets/images/product-details-image/d-slider2.svg" alt="Image 2">
@@ -141,7 +150,7 @@
                       <img src="assets/images/product-details-image/d-slider4.svg" alt="Image 4">
                     </div>
                     <div class="swiper-slide">
-                      <img src="assets/images/product1.svg" alt="Image 5">
+                      <img src="assets/images/product-details-image/d-slider3.svg" alt="Image 5">
                     </div>
                     <div class="swiper-slide">
                       <img src="assets/images/product-details-image/d-slider2.svg" alt="Image 6">
@@ -360,91 +369,90 @@
   </main>
     <!--related products start-->
       <!--footer start-->
-      <footer>
-          <div class="container-xl">
-            <div class="footer-upper row justify-content-center align-items-center">
-              <div class="footer-upper-left col-12 col-md-6 mb-3 mb-md-0">
-                <h3>NewsLetter</h3>
-                <p>Be the first one to know about discounts, offers and events</p>
+  <footer>
+        <div class="container-xl">
+          <div class="footer-upper row justify-content-center align-items-center">
+            <div class="footer-upper-left col-12 col-md-6 mb-3 mb-md-0">
+              <h3>NewsLetter</h3>
+              <p>Be the first one to know about discounts, offers and events</p>
+            </div>
+            <div class="footer-upper-right col-12 col-md-6">
+              <div class="input-wrapper position-relative">
+                <input type="email" class="form-control" placeholder="Enter Your Work Email">
+                <a href="#" class="btn btn-primary submit-btn">Submit</a>
               </div>
-              <div class="footer-upper-right col-12 col-md-6">
-                <div class="input-wrapper position-relative">
-                  <input type="email" class="form-control" placeholder="Enter Your Work Email">
-                  <button class="btn btn-primary submit-btn">Submit</button>
-                </div>
-              </div>
+            </div>
+          </div>
+        
+          <div class="footer-lower row row-cols-1 row-cols-sm-2 row-cols-md-4">
+            <div class="f-col-1 col">
+              <img src="assets/images/logo.svg" width="165px" height="45px">
+              <ul class="ul d-flex gap-3">
+                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+              </ul>
             </div>
           
-            <div class="footer-lower row row-cols-1 row-cols-sm-2 row-cols-md-4">
-              <div class="f-col-1 col">
-                <img src="assets/images/logo.svg" width="165px" height="45px">
-                <ul class="ul d-flex gap-3">
-                  <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-                  <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-                  <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                </ul>
-              </div>
-            
-              <div class="f-col-2 col">
-                <h5>Quick Links</h5>
-                <ul class="nav flex-column">
-                  <li class="nav-item mb-2"><a href="#" class="nav-link">About Us</a></li>
-                  <li class="nav-item mb-2"><a href="#" class="nav-link">Contact Us</a></li>
-                  <li class="nav-item mb-2"><a href="#" class="nav-link">Payment Card Options</a></li>
-                </ul>
-              </div>
-            
-              <div class="f-col-2 col">
-                <h5>Help And Information</h5>
-                <ul class="nav flex-column">
-                  <li class="nav-item mb-2"><a href="#" class="nav-link">Privacy Policy</a></li>
-                  <li class="nav-item mb-2"><a href="#" class="nav-link">Terms & Conditions</a></li>
-                  <li class="nav-item mb-2"><a href="#" class="nav-link">Disclamers</a></li>
-                  <li class="nav-item mb-2"><a href="#" class="nav-link">FAQs</a></li>
-                </ul>
-              </div>
-            
-              <div class="f-col-4 col">
-                <div class="f-last-row d-flex align-items-center gap-3">
-                  <div class="f-last-left"><i class="fa-solid fa-phone-volume"></i></div>
-                  <div class="f-last-right">
-                    <h6>Contact Number</h6>
-                    <p>0000-111-2222</p>
-                  </div>
+            <div class="f-col-2 col">
+              <h5>Quick Links</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link">About Us</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link">Contact Us</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link">Payment Card Options</a></li>
+              </ul>
+            </div>
+          
+            <div class="f-col-2 col">
+              <h5>Help And Information</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link">Privacy Policy</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link">Terms & Conditions</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link">Disclamers</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link">FAQs</a></li>
+              </ul>
+            </div>
+          
+            <div class="f-col-4 col">
+              <div class="f-last-row d-flex align-items-center gap-3">
+                <div class="f-last-left"><i class="fa-solid fa-phone-volume"></i></div>
+                <div class="f-last-right">
+                  <h6>Contact Number</h6>
+                  <p>0000-111-2222</p>
                 </div>
-  
-                <div class="f-last-row d-flex align-items-center gap-3">
-                  <div class="f-last-left"><i class="fa-solid fa-envelope"></i></div>
-                  <div class="f-last-right">
-                    <h6>Email Address</h6>
-                    <p>demo@gamil.com</p>
-                  </div>
+              </div>
+
+              <div class="f-last-row d-flex align-items-center gap-3">
+                <div class="f-last-left"><i class="fa-solid fa-envelope"></i></div>
+                <div class="f-last-right">
+                  <h6>Email Address</h6>
+                  <p>demo@gamil.com</p>
                 </div>
-  
-                <div class="f-last-row d-flex align-items-center gap-3">
-                  <div class="f-last-left"><i class="fa-solid fa-location-dot"></i></div>
-                  <div class="f-last-right">
-                    <h6>Office Address</h6>
-                    <p>31 Turtle Creek Road, Pickens,sc, 29631  United States</p>
-                  </div>
+              </div>
+
+              <div class="f-last-row d-flex align-items-center gap-3">
+                <div class="f-last-left"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="f-last-right">
+                  <h6>Office Address</h6>
+                  <p>31 Turtle Creek Road, Pickens,sc, 29631  United States</p>
                 </div>
               </div>
             </div>
-           <!--copy right-->
-           <div class="copy-right text-center pb-4">
-            <hr class="text-primary mb-4">
-            <p>© 2023 All rights reserved</p>
-         </div>
-        </div>
-
-        <!--msg icon-->
-        <div class="msg-icon d-none d-lg-block">
-          <button class="msg-button">
-            <img src="assets/images/msg-logo.svg" alt="msg-icon" class="img-fluid">
-          </button>
-        </div>
-      </footer>
-      <!--footer end-->
+          </div>
+         <!--copy right-->
+         <div class="copy-right text-center pb-4">
+          <hr class="text-primary mb-4">
+          <p>© 2023 All rights reserved</p>
+       </div>
+      </div>
+      <!--msg icon-->
+      <div class="msg-icon d-none d-lg-block">
+        <button class="msg-button">
+          <img src="assets/images/msg-logo.svg" alt="msg-icon" class="img-fluid">
+        </button>
+      </div>
+  </footer>
+    <!--footer end-->
         </footer>
         <!--footer end-->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

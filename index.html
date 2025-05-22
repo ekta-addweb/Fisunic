@@ -1364,12 +1364,77 @@
          </div>
         </div>
 
-        <!--msg icon-->
-        <div class="msg-icon d-none d-lg-block">
-          <button class="msg-button">
-            <img src="assets/images/msg-logo.svg" alt="msg-icon" class="img-fluid" >
-          </button>
+        <!--chat-bot-->
+       <div class="msg-icon">
+        <button class="msg-button" id="ChatBtn">
+          <img src="assets/images/chat-bot-images/bg-chat-img.svg" alt="msg-bg" class="img-fluid msg-chat-bg" id="chatIcon">
+          <img src="assets/images/chat-bot-images/msg-Vector.svg" alt="msg-icon" class="msg-Vector-01" id="msg-Vector">
+        </button>
+      </div>
+
+
+        <!-- Chat Board -->
+        <div class="chat-board" id="chatBoard">
+
+          <!--chat-bot-heading-->
+          <div class="chat-header">
+            <div class="chat-bot-icon">
+              <img src="assets/images/chat-bot-images/chat-board-icon.svg" alt="chat-board-icon" width="24px" height="24px">
+              <div class="status-online"></div>
+            </div>
+
+            <div class="chat-bot-heading">
+              <h4 class="chat-bot-title">Ticket Bot</h4>
+              <p class="chat-bot-status">Online</p>
+            </div>
+            <div class="chat-btn-close" id="closeChatBtn">
+              <img src="assets/images/chat-bot-images/chat-bot-close-icon.svg" alt="chat-bot" width="39px" height="39px">
+            </div>
+          </div>
+
+
+          <!--chat-bot-body-->
+          <div class="chat-body">
+            <div class="bot-chat">
+              <div class="msg-heading">
+                <img src="assets/images/chat-bot-images/chat-icon.svg" alt="chat-bot-icon" width="22px" height="22px">
+                <p class="msg-title">Ticket Bot</p>
+              </div>
+              <div class="bot-msg">
+                Hi! What can i do for you today?
+              </div>
+            </div>
+          
+            <div class="user-chat">
+              <p class="msg-title">You</p>
+              <div class="user-msg">
+                Create Ticket
+              </div>
+            </div>
+          
+            <div class="bot-chat">
+              <div class="msg-heading">
+                <img src="assets/images/chat-bot-images/chat-icon.svg" alt="chat-bot-icon" width="22px" height="22px">
+                <p class="msg-title">Ticket Bot</p>
+              </div>
+              <div class="bot-msg">
+                Okay, Let’s get started then!
+              </div>
+              <div class="bot-msg">
+                What’s your name?
+              </div>
+            </div>
+          </div>
+
+          <!--msg box-->
+          <div class="msg-box">
+            <input type="text" placeholder="Type your message here">
+            <img src="assets/images/chat-bot-images/msg-send-icon.svg" alt="send-msg" class="send-msg-icon">
+          </div>
+
         </div>
+
+
     </footer>
       <!--footer end-->
 
@@ -1379,6 +1444,42 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
+
+
+  /*Chat 
+            board 
+                    js 
+                        start*/
+
+
+  const chatBtn = document.getElementById("ChatBtn");
+  const chatBoard = document.getElementById("chatBoard");
+  const closeBtn = document.getElementById("closeChatBtn");
+  const chatIcon = document.getElementById("chatIcon");
+  const msg_Vector = document.getElementById("msg-Vector");
+  
+
+  chatBtn.addEventListener("click", () => {
+    chatBoard.style.display = "flex";
+    chatIcon.classList.add("rotated");
+    msg_Vector.classList.add("msg_Vector");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    chatBoard.style.display = "none";
+    chatIcon.classList.remove("rotated"); 
+    msg_Vector.classList.remove("msg_Vector");
+
+  });
+
+
+  /*Chat 
+            board 
+                    js 
+                        start*/
+
+
+
   // Category Swiper
   const categorySwiper = new Swiper(".categorySwiper", {
   slidesPerView: 6,
