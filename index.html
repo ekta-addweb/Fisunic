@@ -1392,7 +1392,6 @@
             </div>
           </div>
 
-
           <!--chat-bot-body-->
           <div class="chat-body">
             <div class="bot-chat">
@@ -1431,10 +1430,7 @@
             <input type="text" placeholder="Type your message here">
             <img src="assets/images/chat-bot-images/msg-send-icon.svg" alt="send-msg" class="send-msg-icon">
           </div>
-
         </div>
-
-
     </footer>
       <!--footer end-->
 
@@ -1445,32 +1441,28 @@
 
 <script>
 
-
   /*Chat 
             board 
                     js 
                         start*/
 
+      const chatBtn = document.getElementById("ChatBtn");
+      const chatBoard = document.getElementById("chatBoard");
+      const closeBtn = document.getElementById("closeChatBtn");
+      const chatIcon = document.getElementById("chatIcon");
+      const msgVector = document.getElementById("msg-Vector");
 
-  const chatBtn = document.getElementById("ChatBtn");
-  const chatBoard = document.getElementById("chatBoard");
-  const closeBtn = document.getElementById("closeChatBtn");
-  const chatIcon = document.getElementById("chatIcon");
-  const msg_Vector = document.getElementById("msg-Vector");
-  
+      chatBtn.addEventListener("click", () => {
+        chatBoard.classList.add("show");
+        chatIcon.classList.add("rotated");
+        msgVector.classList.add("vector-moved");
+      });
 
-  chatBtn.addEventListener("click", () => {
-    chatBoard.style.display = "flex";
-    chatIcon.classList.add("rotated");
-    msg_Vector.classList.add("msg_Vector");
-  });
-
-  closeBtn.addEventListener("click", () => {
-    chatBoard.style.display = "none";
-    chatIcon.classList.remove("rotated"); 
-    msg_Vector.classList.remove("msg_Vector");
-
-  });
+      closeBtn.addEventListener("click", () => {
+        chatBoard.classList.remove("show");
+        chatIcon.classList.remove("rotated");
+        msgVector.classList.remove("vector-moved");
+      });
 
 
   /*Chat 
